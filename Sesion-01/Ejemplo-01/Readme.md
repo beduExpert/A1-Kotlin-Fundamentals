@@ -22,20 +22,20 @@ Una vez que tengamos instalado nuestro IDE vamos acrear nuestro primer proyecto 
 
 > Al iniciar IntelliJ vamos a seleccionar la opcion de crear nuevo proyecto.
 
-![Creating project](https://isaiin-space-one.sfo2.digitaloceanspaces.com/KotlinFundamentalsImages/%20KtlinFundamentals-s1-img1.png)
+![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img1.png)
 
 > Debido a que en este curso vamos a aprender los fundamentos de Kotlin como lenguage, vamos a seleccionar la opcion 
 > Kotlin y a continuacion JVM | IDEA, despues daremos en siguiente para continuar con la configuracion de nuestro 
 > proyecto.
 
-![imagen](https://isaiin-space-one.sfo2.digitaloceanspaces.com/KotlinFundamentalsImages/%20KtlinFundamentals-s1-img2.png)
+![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img2.png)
 
 > Para finalizar, solo nos falta asignar un nombre a nuestro proyecto e indicarle a nuestro IDE la ubicacion de los 
 > archivos de nuestro proyecto en nuestro sistema de archivos, cuando hayas agregado esta informacion terminaremos 
 > la configuracion de nuestro proyecto dando click en el boton Finalizar.
 > A continuacion IntelliJ comenzara a crear la estructura y los archivos necesarios para nuestro proyecto.
 
-![imagen](https://isaiin-space-one.sfo2.digitaloceanspaces.com/KotlinFundamentalsImages/%20KtlinFundamentals-s1-img3.png)
+![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img3.png)
 
 > Ya con nuestro proyecto creado identifiquemos los archivos de nuestro proyecto (Fig. 1) y ten en cuenta que dentro de 
 > la carpeta src siempre estaran nuestros archivos fuente, los cuales tendran la extencion kt.
@@ -44,7 +44,7 @@ Una vez que tengamos instalado nuestro IDE vamos acrear nuestro primer proyecto 
 
 > Haz clic derecho sobre la carpeta src y a continuacion selecciona la opcion New > Kotlin File/Class (Fig. 2).
 
-![imagen](https://isaiin-space-one.sfo2.digitaloceanspaces.com/KotlinFundamentalsImages/%20KtlinFundamentals-s1-img5.png)
+![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img5.png)
 
 Una vez creado nuestro primer archivo de kotlin tenemos que decalrar nuestro punto de entrada.
 
@@ -61,12 +61,12 @@ fun main(args: Array<String>) {
 }
 ```
 
-![imagen](https://isaiin-space-one.sfo2.digitaloceanspaces.com/KotlinFundamentalsImages/%20KtlinFundamentals-s1-img6.png)
+![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img6.png)
 
 > El resultado, que en nuestro caso sera 
 > la impresion de un mensaje, lo podremos ver en la consola que nuestro editor nos provee.
 
-![imagen](https://isaiin-space-one.sfo2.digitaloceanspaces.com/KotlinFundamentalsImages/%20KtlinFundamentals-s1-img7.png)
+![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img7.png)
 
 ## Variables y Objetos
 
@@ -198,7 +198,7 @@ a que tenemos acceso sobre un valor de estos:
 
 > Observa que los elementos que nos suguiere nuestro editor no son mas que ayuda del mismo y no forman parte como tal del numero.
 
-![imagen](https://isaiin-space-one.sfo2.digitaloceanspaces.com/KotlinFundamentalsImages/%20KtlinFundamentals-s1-img8.png)
+![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img8.png)
 
 Ahora bien, si declaramos nuestras variables como acontinuacion, kotlin las tratara como un objeto y tendremos acceso a un 
 sinfin de metodos o acciones sobre nuestras variables que nos van a facilitar mucho las operaciones sobre nuestas variables
@@ -223,7 +223,7 @@ kotlin nos ofrese sobre cada tipo basta con que coloques un puntodespues de tu v
 
 > Observa que los elementos que nos suguiere nuestro editor ahora son todas las operaciones que podemos hacer sobre nuestro valor y forman parte de el como tal.
 
-![imagen](https://isaiin-space-one.sfo2.digitaloceanspaces.com/KotlinFundamentalsImages/%20KtlinFundamentals-s1-img9.png)
+![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img9.png)
 
 Si ejecutamos nuestro programa nos daremos cuenta de que el resultaco con ambas formas aparentemente es lo mismo, pero la verdadera razon del 
 porque kotlin suguiere que todo sea tratado como un objeto es por que por ejemplo en este caso, las operaciones que hicimos al final estan 
@@ -231,6 +231,6 @@ mucho mas optimizadas y como lo exolicamos antes, esta nueva forma nos permite h
 
 > Observa en la consola que nuestro editor nos provee el resultado de la ejecucion de nuestro programa.
 
-![imagen](https://isaiin-space-one.sfo2.digitaloceanspaces.com/KotlinFundamentalsImages/%20KtlinFundamentals-s1-img10.png)
+![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img10.png)
 
 Ahora ya conoces los tipos de variables y las formas en las que las trata kotlin, ve al Reto 1 y completalo con tu nuevo conocimiento.
