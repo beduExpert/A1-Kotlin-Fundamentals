@@ -5,10 +5,10 @@
 
 ### OBJETIVO
 
-- Que el alumno conozca la forma en la que Kotlin trata a las variables.
-- Conocer las diferentes formas de declarar nuestras variables y el por que de cada una.
-- Conocer la diferencia entre una variable elemental y una variable como objeto y el por que kotlin sugiere que todo 
-  sea un objeto en este lenguage.
+- Reconocer la  forma en la que Kotlin trata a las variables.
+- Conocer las diferentes formas de declarar nuestras variables y el por qué de cada una.
+- Diferenciar entre una variable elemental y una variable como objeto y el por qué kotlin sugiere que todo 
+  sea un objeto en este lenguaje.
 
 #### REQUISITOS
 
