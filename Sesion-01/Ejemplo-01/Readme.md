@@ -233,4 +233,4 @@ mucho mas optimizadas y como lo exolicamos antes, esta nueva forma nos permite h
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img10.png)
 
-Ahora ya conoces los tipos de variables y las formas en las que las trata kotlin, ve al [Reto 1](/../Reto-01) y completalo con tu nuevo conocimiento.
+Ahora ya conoces los tipos de variables y las formas en las que las trata kotlin, ve al [Reto 1](/../../tree/master/Sesion-01/Reto-01) y completalo con tu nuevo conocimiento.
