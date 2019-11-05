@@ -1,5 +1,5 @@
 
-#Ejemplo 1: Fundamentos - Kotlin Fundamentals
+# Ejemplo 1: Fundamentos - Kotlin Fundamentals
 
 ## Configuracion de nuestro entorno
 
@@ -22,7 +22,7 @@ Una vez que tengamos instalado nuestro IDE vamos acrear nuestro primer proyecto 
 
 > Al iniciar IntelliJ vamos a seleccionar la opcion de crear nuevo proyecto.
 
-![imagen](https://isaiin-space-one.sfo2.digitaloceanspaces.com/KotlinFundamentalsImages/%20KtlinFundamentals-s1-img1.png)
+![Creating project](https://isaiin-space-one.sfo2.digitaloceanspaces.com/KotlinFundamentalsImages/%20KtlinFundamentals-s1-img1.png)
 
 > Debido a que en este curso vamos a aprender los fundamentos de Kotlin como lenguage, vamos a seleccionar la opcion 
 > Kotlin y a continuacion JVM | IDEA, despues daremos en siguiente para continuar con la configuracion de nuestro 
