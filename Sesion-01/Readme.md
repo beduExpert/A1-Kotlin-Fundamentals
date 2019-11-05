@@ -3,7 +3,7 @@
 ### OBJETIVOS 
 
 - Conocer la sintaxis basica de kotlin.
-- Utilizar variables y tipos de datos¡; operadores logicos y condicionales.
+- Utilizar variables y tipos de datos; operadores logicos y condicionales.
 - Crear los primeros programas en kotlin.
 
 ### REQUISITOS
