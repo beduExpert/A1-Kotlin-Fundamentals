@@ -12,33 +12,33 @@
 
 #### REQUISITOS
 
-1. Tener instalado [IntelliJ IDEA CE](https://www.jetbrains.com/es-es/idea/download/) (La version mas reciente)
-2. Tener conocimiento basico de cualquier lenguaje de programacion.
-3. Tener ganas de aprender a crear el futuro con la mejor tecnologia :).
+1. Instalar [IntelliJ IDEA CE](https://www.jetbrains.com/es-es/idea/download/) (La version más reciente)
+2. Tener conocimiento básico de cualquier lenguaje de programación.
+3. Tener ganas de aprender a crear el futuro con la mejor tecnología :).
 
 #### DESARROLLO
 
-Una vez que tengamos instalado nuestro IDE vamos acrear nuestro primer proyecto de Kotlin.
+Una vez que tengamos instalado nuestro IDE (IntelliJ IDEA) vamos acrear nuestro primer proyecto de Kotlin.
 
-> Al iniciar IntelliJ vamos a seleccionar la opcion de crear nuevo proyecto.
+> Al iniciar IntelliJ vamos a seleccionar la opción de crear nuevo proyecto.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img1.png)
 
-> Debido a que en este curso vamos a aprender los fundamentos de Kotlin como lenguage, vamos a seleccionar la opcion 
-> Kotlin y a continuacion JVM | IDEA, despues daremos en siguiente para continuar con la configuracion de nuestro 
+> Debido a que en este curso vamos a aprender los fundamentos de Kotlin como lenguaje, vamos a seleccionar la opción 
+> Kotlin y a continuacion JVM | IDEA, después daremos en siguiente para continuar con la configuracion de nuestro 
 > proyecto.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img2.png)
 
 > Para finalizar, solo nos falta asignar un nombre a nuestro proyecto e indicarle a nuestro IDE la ubicacion de los 
-> archivos de nuestro proyecto en nuestro sistema de archivos, cuando hayas agregado esta informacion terminaremos 
+> archivos de nuestro proyecto en nuestro sistema de archivos. Cuando hayas agregado esta informacion terminaremos 
 > la configuracion de nuestro proyecto dando click en el boton Finalizar.
 > A continuacion IntelliJ comenzara a crear la estructura y los archivos necesarios para nuestro proyecto.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img3.png)
 
-> Ya con nuestro proyecto creado identifiquemos los archivos de nuestro proyecto (Fig. 1) y ten en cuenta que dentro de 
-> la carpeta src siempre estaran nuestros archivos fuente, los cuales tendran la extencion kt.
+> Con nuestro proyecto creado identifiquemos los archivos de nuestro proyecto (Fig. 1) Toma en cuenta que dentro de 
+> la carpeta src siempre estarán nuestros archivos fuente, los cuales tendrán la extencion kt.
 
 #### Creando nuestro primer archivo.
 
@@ -46,14 +46,14 @@ Una vez que tengamos instalado nuestro IDE vamos acrear nuestro primer proyecto 
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img5.png)
 
-Una vez creado nuestro primer archivo de kotlin tenemos que decalrar nuestro punto de entrada.
+Una vez creado nuestro primer archivo de kotlin tenemos que declarar nuestro punto de entrada.
 
-En kotlin cualquier programa que hagamos tiene que tener un punto de entrada, en nuestro caso escribiremos una funcion 
-llamada **main** que recibira como parametro un arreglo de Strings (no te preocupes, mas adelante en el curso entenderas
-de que se trata), de esta forma podremos ejecutar nuestro programa y ver sus resultados, hagamos una prueba.
+En kotlin cualquier programa que hagamos tiene que tener un punto de entrada, en nuestro caso escribiremos una función 
+llamada **main** que recibirá como parámetro un arreglo de Strings (no te preocupes si por ahora no entiendes algunos conceptos, más adelante en el curso entenderás
+de qué se trata), de esta forma podremos ejecutar nuestro programa y ver sus resultados, hagamos una prueba.
 
-> Escribe la funcion main de la sigiente forma y a continuacion da click derecho sobre el archivo y busca la opcion Run,
-> esto provocoara que nuestro IDE compile y ejecute nuestro programa en kotlin.
+> Escribe la funcion **main** de la siguiente forma y a continuación da click derecho sobre el archivo y busca la opcion Run,
+> esto provocará que nuestro IDE compile y ejecute nuestro programa en kotlin.
 
 ```kotlin
 fun main(args: Array<String>) {
@@ -63,7 +63,7 @@ fun main(args: Array<String>) {
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img6.png)
 
-> El resultado, que en nuestro caso sera 
+> El resultado, que en nuestro caso será 
 > la impresion de un mensaje, lo podremos ver en la consola que nuestro editor nos provee.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img7.png)
