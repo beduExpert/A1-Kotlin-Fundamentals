@@ -1,27 +1,23 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 1: Sintaxis y variables - Kotlin Fundamentals
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno sea capaz de declarar variables de sus distintas formas.
+- Que el alumno sea capaz de diferenciar entre variables de acceso local y acceso global.
+- Que el alumno haga uso de los metodos de las **variables objeto** de kotlin.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber visto por completo el [Ejemplo 1](/../../tree/master/Sesion-01/Ejemplo-01)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En el proyecto incluido en este directorio encontraras un proyecto ya iniciado, en el archivo **main.kt** 
+completa los siguientes puntos.
 
-<details>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+- En seccion **Declaracion de variables** declara la variable como se indica en el comentario.
+- En la seccion **Operaciones** traduce las operaciones que se presentan a continuacion con 
+variables elementales a los metodos ofrecidos por los objetos de kotlin [Referencia](https://kotlinlang.org/docs/reference/operator-overloading.html).
+- Declara una variable de acceso global.
 
