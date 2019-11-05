@@ -2,9 +2,9 @@
 
 ### OBJETIVO 
 
-- Que el alumno sea capaz de declarar variables de sus distintas formas.
-- Que el alumno sea capaz de diferenciar entre variables de acceso local y acceso global.
-- Que el alumno haga uso de los metodos de las **variables objeto** de kotlin.
+- Declarar variables de sus distintas formas.
+- Diferenciar entre variables de acceso local y acceso global.
+- Usar los métodos de las **variables objeto** de kotlin.
 
 #### REQUISITOS 
 
