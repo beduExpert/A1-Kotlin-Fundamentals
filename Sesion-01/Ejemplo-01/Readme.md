@@ -12,33 +12,33 @@
 
 #### REQUISITOS
 
-1. Tener instalado [IntelliJ IDEA CE](https://www.jetbrains.com/es-es/idea/download/) (La version mas reciente)
-2. Tener conocimiento basico de cualquier lenguaje de programacion.
-3. Tener ganas de aprender a crear el futuro con la mejor tecnologia :).
+1. Instalar [IntelliJ IDEA CE](https://www.jetbrains.com/es-es/idea/download/) (La version más reciente)
+2. Tener conocimiento básico de cualquier lenguaje de programación.
+3. Tener ganas de aprender a crear el futuro con la mejor tecnología :).
 
 #### DESARROLLO
 
-Una vez que tengamos instalado nuestro IDE vamos acrear nuestro primer proyecto de Kotlin.
+Una vez que tengamos instalado nuestro IDE (IntelliJ IDEA) vamos acrear nuestro primer proyecto de Kotlin.
 
-> Al iniciar IntelliJ vamos a seleccionar la opcion de crear nuevo proyecto.
+> Al iniciar IntelliJ vamos a seleccionar la opción de crear nuevo proyecto.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img1.png)
 
-> Debido a que en este curso vamos a aprender los fundamentos de Kotlin como lenguage, vamos a seleccionar la opcion 
-> Kotlin y a continuacion JVM | IDEA, despues daremos en siguiente para continuar con la configuracion de nuestro 
+> Debido a que en este curso vamos a aprender los fundamentos de Kotlin como lenguaje, vamos a seleccionar la opción 
+> Kotlin y a continuacion JVM | IDEA, después daremos en siguiente para continuar con la configuracion de nuestro 
 > proyecto.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img2.png)
 
 > Para finalizar, solo nos falta asignar un nombre a nuestro proyecto e indicarle a nuestro IDE la ubicacion de los 
-> archivos de nuestro proyecto en nuestro sistema de archivos, cuando hayas agregado esta informacion terminaremos 
+> archivos de nuestro proyecto en nuestro sistema de archivos. Cuando hayas agregado esta informacion terminaremos 
 > la configuracion de nuestro proyecto dando click en el boton Finalizar.
 > A continuacion IntelliJ comenzara a crear la estructura y los archivos necesarios para nuestro proyecto.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img3.png)
 
-> Ya con nuestro proyecto creado identifiquemos los archivos de nuestro proyecto (Fig. 1) y ten en cuenta que dentro de 
-> la carpeta src siempre estaran nuestros archivos fuente, los cuales tendran la extencion kt.
+> Con nuestro proyecto creado identifiquemos los archivos de nuestro proyecto (Fig. 1) Toma en cuenta que dentro de 
+> la carpeta src siempre estarán nuestros archivos fuente, los cuales tendrán la extencion kt.
 
 #### Creando nuestro primer archivo.
 
@@ -46,14 +46,14 @@ Una vez que tengamos instalado nuestro IDE vamos acrear nuestro primer proyecto 
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img5.png)
 
-Una vez creado nuestro primer archivo de kotlin tenemos que decalrar nuestro punto de entrada.
+Una vez creado nuestro primer archivo de kotlin tenemos que declarar nuestro punto de entrada.
 
-En kotlin cualquier programa que hagamos tiene que tener un punto de entrada, en nuestro caso escribiremos una funcion 
-llamada **main** que recibira como parametro un arreglo de Strings (no te preocupes, mas adelante en el curso entenderas
-de que se trata), de esta forma podremos ejecutar nuestro programa y ver sus resultados, hagamos una prueba.
+En kotlin cualquier programa que hagamos tiene que tener un punto de entrada, en nuestro caso escribiremos una función 
+llamada **main** que recibirá como parámetro un arreglo de Strings (no te preocupes si por ahora no entiendes algunos conceptos, más adelante en el curso entenderás
+de qué se trata), de esta forma podremos ejecutar nuestro programa y ver sus resultados, hagamos una prueba.
 
-> Escribe la funcion main de la sigiente forma y a continuacion da click derecho sobre el archivo y busca la opcion Run,
-> esto provocoara que nuestro IDE compile y ejecute nuestro programa en kotlin.
+> Escribe la funcion **main** de la siguiente forma y a continuación da click derecho sobre el archivo y busca la opcion Run,
+> esto provocará que nuestro IDE compile y ejecute nuestro programa en kotlin.
 
 ```kotlin
 fun main(args: Array<String>) {
@@ -63,26 +63,26 @@ fun main(args: Array<String>) {
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img6.png)
 
-> El resultado, que en nuestro caso sera 
+> El resultado, que en nuestro caso será 
 > la impresion de un mensaje, lo podremos ver en la consola que nuestro editor nos provee.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img7.png)
 
 ## Variables y Objetos
 
-En kotlin existen dos tipos de variables (changeables y unchangeables) es decir, las que se pueden modificar, y las que no,
+En kotlin existen dos tipos de variables (mutable and immutable) es decir, las que se pueden modificar, y las que no,
 para las cuales tenemos las palabras reservadas:
 
-- val -> Unchangeable
-- var -> Changeable
+- val -> immutable
+- var -> mutable
 
 Debido a que kotlin se rige por la inmutabilidad, uno de los principios de la programacion funcional, vamos a preferir el uso 
-de variables unchangeables.
+de variables inmutables.
 
-#### Decalracion de Variables.
+#### Declaración de Variables.
 
-Existen varias formas de declarar o nombrar tus variables en kotlin, estas cambian de acuerdo a la necesidad de la solucion,
-es importante que a la hora de nombrar tus variables recuerdes que tienen que ser lo mas descriptivas posibles, teniendo esto claro
+Existen varias formas de declarar o nombrar tus variables en Kotlin, Éstas cambian de acuerdo a la necesidad de la solución.
+Es importante que a la hora de nombrar tus variables recuerdes que tienen que ser lo mas descriptivas posibles. Teniendo esto claro
 veamos de que formas podemos declararlas.
 
 ```kotlin
@@ -99,10 +99,10 @@ veamos de que formas podemos declararlas.
     var numExt: Int
 ```
 
-Las variables de **asignacion inmediata** son aquellas a las que se les asigna su valor en tiempo de compilacion, es decir cuando 
+Las variables de **asignacion inmediata** son aquellas a las que se les asigna su valor en tiempo de compilación, es decir cuando 
 nuestro compilador esta traduciendo nuestro codigo kotlin a bitecode.
 
-Cuando en la declaracion, no especificamos el tipo de dato, kotlin por si solo lo infiere, es decir que podemos declarar nuestras variables
+Cuando en la declaración, no especificamos el tipo de dato, kotlin por si solo lo infiere, es decir que podemos declarar nuestras variables
 tanto asi:
 
 ```kotlin
