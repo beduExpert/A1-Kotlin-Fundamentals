@@ -70,19 +70,19 @@ fun main(args: Array<String>) {
 
 ## Variables y Objetos
 
-En kotlin existen dos tipos de variables (changeables y unchangeables) es decir, las que se pueden modificar, y las que no,
+En kotlin existen dos tipos de variables (mutable and immutable) es decir, las que se pueden modificar, y las que no,
 para las cuales tenemos las palabras reservadas:
 
-- val -> Unchangeable
-- var -> Changeable
+- val -> immutable
+- var -> mutable
 
 Debido a que kotlin se rige por la inmutabilidad, uno de los principios de la programacion funcional, vamos a preferir el uso 
-de variables unchangeables.
+de variables inmutables.
 
-#### Decalracion de Variables.
+#### Declaración de Variables.
 
-Existen varias formas de declarar o nombrar tus variables en kotlin, estas cambian de acuerdo a la necesidad de la solucion,
-es importante que a la hora de nombrar tus variables recuerdes que tienen que ser lo mas descriptivas posibles, teniendo esto claro
+Existen varias formas de declarar o nombrar tus variables en Kotlin, Éstas cambian de acuerdo a la necesidad de la solución.
+Es importante que a la hora de nombrar tus variables recuerdes que tienen que ser lo mas descriptivas posibles. Teniendo esto claro
 veamos de que formas podemos declararlas.
 
 ```kotlin
@@ -99,10 +99,10 @@ veamos de que formas podemos declararlas.
     var numExt: Int
 ```
 
-Las variables de **asignacion inmediata** son aquellas a las que se les asigna su valor en tiempo de compilacion, es decir cuando 
+Las variables de **asignacion inmediata** son aquellas a las que se les asigna su valor en tiempo de compilación, es decir cuando 
 nuestro compilador esta traduciendo nuestro codigo kotlin a bitecode.
 
-Cuando en la declaracion, no especificamos el tipo de dato, kotlin por si solo lo infiere, es decir que podemos declarar nuestras variables
+Cuando en la declaración, no especificamos el tipo de dato, kotlin por si solo lo infiere, es decir que podemos declarar nuestras variables
 tanto asi:
 
 ```kotlin
