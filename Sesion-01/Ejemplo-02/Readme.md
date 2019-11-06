@@ -436,4 +436,4 @@ Como puedes ver, no estamos comparando directamnte a con b, mas bien el valor qu
 que esta funcion retorna que puede ser -1 ~ 1. 
 
 Ahora que ya sabes que tipos de datos y operadores nos ofrece kotlin, te invito a que le des una leida a la [documentacin oficial](https://kotlinlang.org/docs/reference/basic-types.html)
-para que refuerzes tu conocimiento, ve al Reto 2 y resulevelo con lo que acabas de aprender.
+para que refuerzes tu conocimiento, ve al [Reto 2](/../../tree/master/Sesion-01/Reto-02) y resulevelo con lo que acabas de aprender.

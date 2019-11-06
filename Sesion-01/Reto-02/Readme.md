@@ -1,27 +1,67 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 2: Tipos de datos y Operadores - Kotlin Fundamentals
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno ponga en pactica los diferentes tipos de datos en kotlin.
+- Que el alumno entianda la diferencia entre los operadores en su forma de exprecion y haciendo
+uso del Operator overloading de kotlin.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber visto por completo el [Ejemplo 2](/../../tree/master/Sesion-01/Ejemplo-02)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En el proyecto incluido en este directorio encontraras un proyecto ya iniciado, en el archivo main.kt 
+completa los siguientes puntos.
 
-<details>
+- En la seccion:
+```kotlin
+    /*
+    * Tipos de datos
+    */
+```
+Declara una variable **changeable** de cada tipo de dato visto en el ejemplo con su tipo explicito.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+- En la seccion:
+```kotlin
+    /*
+    * Operadores
+    */
+```
+Considerando las variables:
+```kotlin
+    var A:Int = 5
+    var B:Int = 10
+    var numbers:Array<Int> = arrayOf(1, 2, 3, 4, 5)
+    var yes:Boolean = true
+```
+Usa las funciones del Operator overloading de android para realizar cada una de las siguintes expreciones, adicional a 
+esto, imprime los valores de las variables despues de cada operacion.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+> Las expresiones en esta tabla son un ejemplo, considera los valores y los tipos de datos de las variables declaradas antes
+> para determinar con que variables representar cada expresion.
 
+Expresion|
+---------|
++a|
+-a|
+!a|
+a++|
+a--|
+a + b|
+a - b|
+a * b|
+a / b|
+a % b|
+a..b|
+a in b|
+a !in b|
+a\[i]|
+a\[i] = b|
+a == b|
+a != b|
+a > b|
+a < b|
+a >= b|
+a <= b|
