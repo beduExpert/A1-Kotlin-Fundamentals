@@ -3,7 +3,7 @@
 
 ## Configuracion de nuestro entorno
 
-### OBJETIVO
+### OBJETIVO 
 
 - Reconocer la  forma en la que Kotlin trata a las variables.
 - Conocer las diferentes formas de declarar las variables y explicar cada una.
