@@ -142,7 +142,7 @@ fun multiplicar(a: Int, b: Int): Int {
 ``` 
 
 Ahora bien, si tuviesemos que usar la misma variable desde distintos puntos de nuestro programa, es decir desde distintas funciones,
-tendriamos que declarar una variable de forma global o top-level. Éstas se declaran fuera de cualquier funciÓn, incluso de nuestra funcion main
+tendriamos que declarar una variable de forma global o top-level. Éstas se declaran fuera de cualquier función, incluso de nuestra función main
 y de esta forma podremos acceder a dicha variable desde cualquier parte de nuestro programa:
 
 ```kotlin
