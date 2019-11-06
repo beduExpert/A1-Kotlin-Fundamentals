@@ -1,7 +1,7 @@
 
 # Ejemplo 1: Sintaxis y variables - Kotlin Fundamentals
 
-## Configuracion de nuestro entorno
+## Configuración de nuestro entorno
 
 ### OBJETIVO 
 
