@@ -20,11 +20,20 @@ fun main(args: Array<String>) {
     val double: Double = 123.5
     val float: Float = 123.5f
 
+    // Enteros sin signo (Unsigned integers)
+
+    val uByte: UByte = 1u
+    val uShort: UShort = 2u
+    val uInt: UInt = 3u
+    val uLong: ULong = 4u
+
     // Caracteres (Characters)
 
     val letra: Char = 'A'
     val escapeSecuence: Char = '\t'
-    val unucode: Char = '\uFF00'
+    val unicode: Char = '\uFF00'
+
+    println("Char " + unicode)
 
     // Boleanos (Booleans)
 
@@ -35,8 +44,8 @@ fun main(args: Array<String>) {
 
     val numeros: Array<Int> = arrayOf(1, 2, 3, 4, 5)
     val vocales: Array<String> = arrayOf("A", "B", "C", "D", "E")
-    val numerosString: Array<String> = Array(5) { i -> (i * i).toString()}
-    val numerosString2: Array<String> = Array(5) { i -> i.times(i).toString()}
+    val numerosString: Array<String> = Array(5) { i -> (i * i).toString() }
+    val numerosString2: Array<String> = Array(5) { i -> i.times(i).toString() }
 
     numeros.forEach { println(it) }
     vocales.forEach { println(it) }
@@ -48,13 +57,6 @@ fun main(args: Array<String>) {
     val iArray: IntArray = intArrayOf(5)
     var bArray: ByteArray = byteArrayOf(5, 6, 7, 8, 9)
     val sArray: ShortArray = shortArrayOf(123, 123, 123, 123, 123)
-
-    // Enteros sin signo (Unsigned integers)
-
-    val uByte: UByte = 1u
-    val uShort: UShort = 2u
-    val uInt: UInt = 3u
-    val uLong: ULong = 4u
 
     // Cadenas de texto (Strings)
 
@@ -76,4 +78,83 @@ fun main(args: Array<String>) {
 
     val texto: String = "Hola BEDU!"
     println("texto tiene ${texto.length} caracteres")
+
+    /*
+    * Operadores
+    */
+
+    var a = 100
+    val b = 120
+    var c:Int = 12
+    var d:Int = 23
+    var yes = true
+
+    // Operaciones Unarias (Unary operations)
+
+    a.unaryPlus()
+    a.unaryMinus()
+    yes.not()
+
+    // Incrementales y decrementles (Increments and decrements)
+
+    a.inc()
+    a.dec()
+
+    // Operaciones binarias (Binary operations)
+
+    a.plus(b)
+    a.minus(b)
+    a.times(b)
+    a.div(b)
+    a.rem(b)
+    a.rangeTo(b)
+
+    // Operador 'In' (In Operator)
+
+    val numbersArray: Array<Int> = arrayOf(1, 2, 3, 4, 5, 6, 7)
+    println(numbersArray.contains(a))
+    println(!numbersArray.contains(a))
+
+    // operador de acceso indexado (Indexed access operator)
+
+    val secondNumber = numbersArray.get(1)
+    numbersArray.set(numbersArray.size - 1, 8)
+
+    // Asignaciones aumentadas (Augmented assignments)
+
+    a += b
+    a -= c
+    a *= c
+    a /= c
+    a %= c
+
+    // Operadores de Igualdad (Equality opoerators)
+
+    if(a.equals(b)) {
+       println("a es igual a b")
+    }
+
+    if (!a.equals(b)) {
+        println("a no es igual a b")
+    }
+
+    // Operadores de comparacion
+
+    println(a.compareTo(b))
+
+    if (a.compareTo(b) > 0) {
+        println("a es mayor que b")
+    }
+
+    if (a.compareTo(b) < 0) {
+        println("a es menor que b")
+    }
+
+    if (a.compareTo(b) >= 0) {
+        println("a es mayor o igual que b")
+    }
+
+    if (a.compareTo(b) <= 0) {
+        println("a es menor o igual que b")
+    }
 }
