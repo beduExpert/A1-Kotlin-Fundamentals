@@ -1,36 +1,35 @@
 
 ## Ejemplo 2: Tipos de datos y operadores - Kotlin Fundamentals
 
-### OBJETIVO
+### OBJETIVOS
 
-- Que el alumno conozca los principales tipos de datos que el lenguage nos 
-ofrece.
-- Que el alumno comprenda el uso de los operadores de la forma tracicional vs la sobre carga de operadores.
+- Reconocer y diferenciar los principales tipos de datos de Kotlin 
+- Distinguir el uso de los operadores de la forma tradicional vs la sobre carga de operadores.
 
 #### REQUISITOS
 
-1. Tener conocimientro previo sobre tipos de datos y operadores (ver prework)
+1. Realizar el prework de la sesión 1 para tener conocimientos previos básicos sobre tipos de datos y operadores 
 
 ## DESARROLLO
 
 ### Tipos de datos
 
-Ya habiamos hablado de que en kotlin todo es un objeto por lo que tu y yo sabemos que
-aunque se trate de un numero entero (Int) por ejemplo, podremos acceder a metodos 
-directamente sobre nuestra "variable (que kotlin trata como objeto)", estos metodos represntan
-a los operadores que ya conocemos (aqui los recordamos, no te preocupes) pero con la diferencia de 
-que estas funciones, metodos o aciones que nos ofrece kotlin sobre cada tipo
-ya estan optimizadas para cualquier escenario en el que se tanga que hacer uso
-de los mismos.
+Anteriormente mencionamos que en Kotlin todo es un objeto. Esto quiere decir que
+aunque por ejemplo se trate de un número entero (Int), podremos acceder a métodos 
+directamente sobre nuestra "variable" (que Kotlin trata como objeto). 
 
-Pero primero veamos los tipos basicos que kotlin nos ofrece y la forma de declararlos.
+Estos métodos representan a los operadores que ya conocemos (aquí los recordaremos) pero con la diferencia de 
+que estas funciones, métodos o acciones que nos ofrece Kotlin sobre cada tipo,
+ya están optimizadas para cualquier escenario en el que se tengan que usar.
 
-### Numeros 
+Pero primero veamos los tipos de datos básicos que Kotlin nos ofrece y la forma de declararlos.
 
-Kotlin viene con un conjunto de tipos integrados que representan numeros que cubren
+### Números 
+
+Kotlin viene con un conjunto de tipos de datos integrados que representan números que cubren
 distintas necesidades, es decir, cada tipo es diferenciado por el tamaño que 
-ocupa en memoria y el rango de valores que puede almacenar, en la siguiente tabla veras 
-la comparacion de los tipos numericos.
+ocupa en memoria y el rango de valores que puede almacena. En la siguiente tabla verás 
+la comparacion de los datos numericos.
 
 Tipo | Tamaño (bits) | Valor minimo | Valor maximo
 -----|---------------|--------------|-------------
@@ -39,7 +38,7 @@ Short | 16 | -32768 | 32767
 Int | 32 | -2,147,483,648 (-2^31) | 2,147,483,647 (2^31 - 1)
 Long | 64 | -9,223,372,036,854,775,808 (-2^63) | 9,223,372,036,854,775,807 (2^63 - 1)
 
-> La declaracion de nuestras variables con el tipo explicito nos ayuda a identificar el uso 
+> La declaración de nuestras variables con el tipo explícito nos ayuda a identificar el uso 
 > que le vamos a dar a cada variable.
 
 ```kotlin
@@ -51,19 +50,19 @@ Long | 64 | -9,223,372,036,854,775,808 (-2^63) | 9,223,372,036,854,775,807 (2^63
     val long: Long = 1000000000000 // 64 bits
 ```
 
-Si por alguna razon declaramos las variables sin el tipo, kotlin infiere el tipo **Int**
-siempre y cuando el numero dado no exceda el maximo valor permitido por Int
+Si por alguna razón declaramos las variables sin el tipo de dato, Kotlin infiere el tipo **Int**
+siempre y cuando el número dado no exceda el máximo valor permitido por Int
 , es decir:
 
-> Con fines practicos podemos declarar un valor del tipo **Long** con el sufijo **L**.
+> Con fines prácticos podemos declarar un valor del tipo **Long** con el sufijo **L**.
 ```kotlin
     var edad = 27 //Int
     var long = 27L //Long
 ```
-Ahora bien, te pregutaras que pasa con los numeros con punto flotante, hexadecimales o binarios?, no te preocupes, 
-kotlin nos permite declararlos sin ningun problema tal como son, por ejemplo:
+Ahora bien, te pregutarás ¿qué pasa con los números con punto flotante, hexadecimales o binarios? 
+Kotlin nos permite declararlos sin ningún problema tal como son. Por ejemplo:
 
-> Nota: Los numeros Octales literales no son soportados.
+> Nota: Los números Octales literales no son soportados.
 ```kotlin
 // Constantes Literales (Literal constants)
 
