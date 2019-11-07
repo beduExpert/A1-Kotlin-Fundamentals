@@ -1,27 +1,33 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 3: Condiciones y cilos - Kotlin Fundamentals 
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno sea capas de usar adecuadamente las expresiones de control de flujo (Control flow) If, When y For. 
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber visto por completo el [Ejemplo 3](/../../tree/master/Sesion-01/Ejemplo-03)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En el proyecto incluido en este directorio encontraras un proyecto ya iniciado, en el archivo main.kt completa los siguientes puntos.
 
-<details>
+- Dadas las siguientes variables:
+```kotlin
+    val vocales = arrayOf("A", "E", "I", "O", "U")
+    val letra = "A"
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+    var letraBuscada: String
+```
+Utiliza if como expresion para asignarle a la variable **letraBuscada** el valor de la variable **letra** en caso de que si este contenida
+en el arreglo **vocales**, en caso de que no este contenida asignale una "X".
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+- Haciendo uso de for y when, dadas las siguientes variables:
+```kotlin
+    var numeros: Array<Int> = arrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+    val n1 = 4
+```
+Itera sobre todos los elementos del arreglo numeros, en cada iteracion compara el elemento actual contra el valor de la variable n1, cuando este 
+coincida imprime en consola el valor de la variable n1 pero de forma textual es decir **Cuatro**, de no coincidir imprime **Cualquier otro numero** (textual).
 
+- Realiza el punto anterion pero ahora usando **forEach()**
