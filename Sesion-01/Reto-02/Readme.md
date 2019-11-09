@@ -21,7 +21,7 @@ completa los siguientes puntos.
     * Tipos de datos
     */
 ```
-Declara una variable **changeable** de cada tipo de dato visto en el ejemplo con su tipo explicito.
+Declara una variable **changeable** e imprimela en consola usando String templates de cada tipo de dato visto en el ejemplo con su tipo explicito.
 
 - En la seccion:
 ```kotlin

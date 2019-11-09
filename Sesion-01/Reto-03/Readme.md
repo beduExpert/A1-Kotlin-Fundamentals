@@ -20,7 +20,8 @@ En el proyecto incluido en este directorio encontraras un proyecto ya iniciado, 
     var letraBuscada: String
 ```
 Utiliza if como expresion para asignarle a la variable **letraBuscada** el valor de la variable **letra** en caso de que si este contenida
-en el arreglo **vocales**, en caso de que no este contenida asignale una "X".
+en el arreglo **vocales**, en caso de que no este contenida asignale una "X" e imprime el valor de **letraBuscada** en consola
+haciendo uso de String templates.
 
 - Haciendo uso de for y when, dadas las siguientes variables:
 ```kotlin
