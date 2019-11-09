@@ -1,24 +1,36 @@
-## Titulo del Ejemplo
+## Ejemplo 1: Tipos de funciones - Kotlin Fundamentals.
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender a utilizar los diferentes tipos de funciones en kotlin.
+- Tener un acercamiento a la programacion funcional.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Conocer los diferentes tipos de datos y operadores en kotlin.
+2. Tener conocimientro previo sobre arreglos, matrices y vectores.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+### FUNCIONES
 
-<details>
+Ahora que ya hemos visto los tipos de datos y operadores de kotlin es momento de conocer que son y para 
+que nos sirven las funciones.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Imagina (pensando en codigo) que tienes que realizar determinada accion mas de una vez, seria complicado 
+e incorrecto tener que replicar el codigo encargado de realizar dicha accion cada vez que lo necesitemos,
+para solucionar esto, podriamos escribir solo una vez este codigo y solo invocarlo cada que lo necesitemos
+sin tener que volver a escribirlo.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Una funcion o metodo es un bloque de codigo ejecutable, es decir ese conjunto de instucciones se ejecutaran 
+solo hasta que sea invocada la funcion que las contiene.
 
+En kotlin se usa la palabra reservada **fun** para declarar las funciones.
+```kotlin
+	fun crearSaludo(nombre: String): String {
+		return "Hola $nombre Bienvenido al curso de fundamentos de kotlin."
+	} 
+
+	println(crearSaludo())
+```
 
