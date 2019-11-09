@@ -1,16 +1,21 @@
+## Funciones y estructuras de datos
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
+### OBJETIVOS
 
-## Titulo de la Sesion 
+- Conocer y utilizar la sintaxs de las estructuras para almacenar y acceder a elementos.
+- Aprender a utilizar funciones en kotlin.
+- Conocer las bases de la programacion estructurada y el concepto DRY (Dont repeat yourself).
 
-### OBJETIVOS 
+### REQUISITOS
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Haber completado la [Sesion 1](/../../tree/master/Sesion-01/)
+- Comprender las bases de la programacion orientada a objetos.
 
-#### ORGANIZACION DE LA CLASE 
+#### ORGANIZACION DE LA CLASE
 
 - Tema que veran en el ejemplo
 
-	- [Ejemplo 01](Ejemplo-01)
+	- [Ejemplo 01: Tios de Funciones](Ejemplo-01)
 	- [Reto 01](Reto-01)
-
+	- [Ejemplo 02: Estructuras de datos (Colecciones)](Ejemplo-02)
+	- [Reto 02](Reto-01)
