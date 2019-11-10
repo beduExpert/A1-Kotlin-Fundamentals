@@ -143,6 +143,97 @@ Este tipo de funciones si son declaradas dentro de una clase, y la forma de acce
 	val suma = Calculadora().sumar(5, 4)
 ```
 
-### Hig-order functions
+### Lambdas y Hig-order functions
 
+#### Lambdas
 
+En otrs lenguages son conocidas como funciones anonimas o funciones literales, es decir, es una funcion que no tiene nombre, para declarar una funcion de este tipo, tenemos que seguir la siguiente notacion:
+>Las sentencias de nuesta funcion van entre llaves **{}** y es importante que al final de estas se coloquen
+>parentesis.
+```kotlin
+	{println("Hola BEDU!")}()
+```
+Asi de simple, ahora, algo importante es que si queremos ejecutar nuestra funcion tenemos que asignarla a una variable:
+>Asignamos nuestra lambda a la variable **saludo**
+```kotlin
+	var saludo = {println("Hola BEDU")}()
+
+	//Ejecutamos nuestra funcion lambda
+	saludo()
+```
+Ahora bien, te preguntaras, que pasa con los parametros en las funciones lambda?, pues simple, a la hora de declarar nuestras funciones lambda vamos a separar los parametros de las sentencias con **->** entonces del lado izquierdo van nuestros parametros y del lado derecho las sentencias.
+>asignamos una funcion lambda que hace una suma de dos numeros a la variable sumar:
+```kotlin
+	var suma = {a: Int, b: Int -> a + b}
+
+	//Ejecutamos nuestra lambda mandandole dos numeros como parametros
+	print(suma(4, 5))
+```
+Si observas, nuestra funcion recibe dos numeros y con **->** le decimos que va a retornar la suma de los mismos.
+
+#### Hig-order functions
+
+Cuando hablamos de este tipo de funciones tenemos que hacer referencia a la programacion funcional, es un tema mas complejo pero es importante que desde ahora veas la importancia del tema ya que kotlin esta pensado para ser usado en programacion funcional.
+
+Entonces, recordemos que podemos enviar parametros a una funcion, pues bien, las Hig-order functions aparte de poder recibir variables como parametros tambien pueden recibir **funciones** como parametros e incluso retornarlas.
+
+Para declarar una funcion de orden superior vamos a usar la notacion que ya conocemos, con la diferencia de que dentro de los parentesis (donde van nuestros parametros) por una parte van los parametros y por otra va la funcion que recibira nuestra Hig-order function, hay que tomar en cuanta que la funcion que va como parametro la vamos a escribir con la notacion de lambda ojo con lo que sigue, los parametros "tradicionales" son los que van a entrar a unuestra lambda, ejemplo:
+>Funcion de orden superior que recibe dos numeros enteros y una funcion lambda que va a sumar esoso numeros:
+```
+	fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int) -> Int {
+		return suma(a, b)
+	}
+
+```
+Analizemos el ejemplo de arriba:
+>Declaramos una funcion de orden superior **sumaOrdenSuperior**
+```kotlin
+	fun sumaOrdenSuperior() {
+
+	}
+```
+>Pasamos como parametros dos variables del tipo Int
+```kotlin
+	fun sumaOrdenSuperior(a: Int, b: Int) {
+
+	}
+```
+>Tambien como parametro pasamos una lambda que va a indicar la estructura del tipo de funcion que va a recibir 
+>nuestra Hig-order function, es decir esta funcion de orden superior va a poder recibir cualquier funcion que 
+>cumpla con esa estructura.
+```kotlin
+	fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int) {
+
+	}
+```
+Como nuestra funcion **suma** esta retornando un valor entero, entonces nuestra funcion de orden superior tambien tendria que hacerlo, existiran casos en los que no tengan que tener el mismo tipo de retorno, pero eso depende mucho de la solucion que tengamos que hacer.
+>Colocamos el tipo de retorno de nuestra funcion de orden superior igual al de nuestra funcion que va como 
+>parametro. y por ultimo retornamos la funcion suma con los parametros que recibimos.
+```kotlin
+	fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int): Int {
+		return suma(a, b)
+	}
+```
+Y entonces, pra que nos sirven las funciones de orden superior?, hagamos un ejemplo con un caso real, supongamos que tenemo que hacer una calculadora, tenemos que hacer suma, resta y multiplicacion de dos numeros, tendriamos que hacer una funcion para cada operacion, cierto, lo tenemos que hacer, pero combinando el uso de lambdas y las funciones de orden superior podemos hacerlo tan cencillo que al principio lo vas a dudar, veamos el ejemplo:
+```kotlin
+	//Declaramos nuestra funcion de orden superior
+
+	fun calculadora(a: Int, b: Int, operacion: (Int, Int) -> Int): Int {
+		return operacion(a, b)
+	}
+
+	//Funciones inline por cada una de nuestras operaciones
+
+	fun suma(a: Int, b: Int) = a + b
+	fun resta(a: Int, b: Int) = a - b
+	fun multiplica(a: Int, b: Int) = a * b
+
+	//Almacenamos el resultado de cada operacion en una variable
+
+	val suma = calculadora(10, 5, ::suma)
+	val restar = calculadora(10, 5, ::resta)
+	val multiplicar = calculadora(10, 5, ::multiplicacion)
+```
+Si observas estamos resutilizando codigo para hacer nuestras operaciones, y ya que las tres funciones que decalramos para cada una de nuestras operaciones cumplen con la misma estructura podemos usarlas de la misma forma con nuestra funcion de orden superior, usamos **::** para indicar que los parametros que lleva nuestra Hig-order function se van a pasar a nuestra funcion que va como parametro.
+
+Es importante que siempre vallas a la documentacion oficial de kotlin, ahi encontraras recursos utiles y profundizacion en el tema.
