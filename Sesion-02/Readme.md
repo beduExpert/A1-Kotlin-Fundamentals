@@ -15,7 +15,7 @@
 
 - Tema que veran en el ejemplo
 
-	- [Ejemplo 01: Tios de Funciones](Ejemplo-01)
+	- [Ejemplo 01: Tipos de Funciones](Ejemplo-01)
 	- [Reto 01](Reto-01)
 	- [Ejemplo 02: Estructuras de datos (Colecciones)](Ejemplo-02)
 	- [Reto 02](Reto-01)
