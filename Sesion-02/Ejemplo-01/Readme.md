@@ -81,7 +81,7 @@ Bien, ya conocemos la anatomia de una funcion, ahora veamos los tipos de funcion
 - Top level functions.
 - Local functions.
 - Member functions.
-- Hig-order functions.
+- Higher-order functions.
 
 #### Single-expression functions
 
@@ -143,7 +143,7 @@ Este tipo de funciones si son declaradas dentro de una clase, y la forma de acce
 	val suma = Calculadora().sumar(5, 4)
 ```
 
-### Lambdas y Hig-order functions
+### Lambdas y Higher-order functions
 
 #### Lambdas
 
@@ -171,13 +171,13 @@ Ahora bien, te preguntaras, que pasa con los parametros en las funciones lambda?
 ```
 Si observas, nuestra funcion recibe dos numeros y con **->** le decimos que va a retornar la suma de los mismos.
 
-#### Hig-order functions
+#### Higher-order functions
 
 Cuando hablamos de este tipo de funciones tenemos que hacer referencia a la programacion funcional, es un tema mas complejo pero es importante que desde ahora veas la importancia del tema ya que kotlin esta pensado para ser usado en programacion funcional.
 
-Entonces, recordemos que podemos enviar parametros a una funcion, pues bien, las Hig-order functions aparte de poder recibir variables como parametros tambien pueden recibir **funciones** como parametros e incluso retornarlas.
+Entonces, recordemos que podemos enviar parametros a una funcion, pues bien, las Higher-order functions aparte de poder recibir variables como parametros tambien pueden recibir **funciones** como parametros e incluso retornarlas.
 
-Para declarar una funcion de orden superior vamos a usar la notacion que ya conocemos, con la diferencia de que dentro de los parentesis (donde van nuestros parametros) por una parte van los parametros y por otra va la funcion que recibira nuestra Hig-order function, hay que tomar en cuanta que la funcion que va como parametro la vamos a escribir con la notacion de lambda ojo con lo que sigue, los parametros "tradicionales" son los que van a entrar a unuestra lambda, ejemplo:
+Para declarar una funcion de orden superior vamos a usar la notacion que ya conocemos, con la diferencia de que dentro de los parentesis (donde van nuestros parametros) por una parte van los parametros y por otra va la funcion que recibira nuestra Higher-order function, hay que tomar en cuanta que la funcion que va como parametro la vamos a escribir con la notacion de lambda ojo con lo que sigue, los parametros "tradicionales" son los que van a entrar a unuestra lambda, ejemplo:
 >Funcion de orden superior que recibe dos numeros enteros y una funcion lambda que va a sumar esoso numeros:
 ```
 	fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int) -> Int {
@@ -199,7 +199,7 @@ Analizemos el ejemplo de arriba:
 	}
 ```
 >Tambien como parametro pasamos una lambda que va a indicar la estructura del tipo de funcion que va a recibir 
->nuestra Hig-order function, es decir esta funcion de orden superior va a poder recibir cualquier funcion que 
+>nuestra Higher-order function, es decir esta funcion de orden superior va a poder recibir cualquier funcion que 
 >cumpla con esa estructura.
 ```kotlin
 	fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int) {
@@ -234,6 +234,8 @@ Y entonces, pra que nos sirven las funciones de orden superior?, hagamos un ejem
 	val restar = calculadora(10, 5, ::resta)
 	val multiplicar = calculadora(10, 5, ::multiplicacion)
 ```
-Si observas estamos resutilizando codigo para hacer nuestras operaciones, y ya que las tres funciones que decalramos para cada una de nuestras operaciones cumplen con la misma estructura podemos usarlas de la misma forma con nuestra funcion de orden superior, usamos **::** para indicar que los parametros que lleva nuestra Hig-order function se van a pasar a nuestra funcion que va como parametro.
+Si observas estamos resutilizando codigo para hacer nuestras operaciones, y ya que las tres funciones que decalramos para cada una de nuestras operaciones cumplen con la misma estructura podemos usarlas de la misma forma con nuestra funcion de orden superior, usamos **::** para indicar que los parametros que lleva nuestra Higher-order function se van a pasar a nuestra funcion que va como parametro.
 
 Es importante que siempre vallas a la documentacion oficial de kotlin, ahi encontraras recursos utiles y profundizacion en el tema.
+
+Hahora ve al [Reto 01](/../../tree/master/Sesion-02/Reto-01) y completalo con lo que acabas de aprender.
