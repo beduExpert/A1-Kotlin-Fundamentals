@@ -8,7 +8,7 @@
 
 ### REQUISITOS
 
-- Haber completado la [Sesion 1](/../../tree/master/Sesion-01/)
+- Completar la [Sesión1](/../../tree/master/Sesion-01/)
 - Comprender las bases de la programacion orientada a objetos.
 
 #### ORGANIZACION DE LA CLASE
