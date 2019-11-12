@@ -8,10 +8,10 @@
 
 ### REQUISITOS
 
-- Tener conocimiento previo de cualquier lenguage de programacion.
-- Comprender las bases de la programacion orientada a objetos.
-- Tener conocimiento basico de programacion funcional (opcional)
-- Tener instalado IntelliJ IDEA CE (la version mas reciente)
+- Tener conocimiento previo de cualquier lenguage de programación.
+- Comprender las bases de la programación orientada a objetos.
+- Tener conocimiento básico de programación funcional (opcional)
+- Tener instalado IntelliJ IDEA CE (la versión mas reciente)
 - Tener muchas ganas de cambiar el futuro creando la mejor tecnologia :).
 
 #### ORGANIZACION DE LA CLASE 
