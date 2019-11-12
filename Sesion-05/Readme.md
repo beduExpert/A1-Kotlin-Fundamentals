@@ -1,7 +1,7 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
 
-## Titulo de la Sesion 
+## In line functions/ anonymous functions y high orden fuction
 
 ### OBJETIVOS 
 
