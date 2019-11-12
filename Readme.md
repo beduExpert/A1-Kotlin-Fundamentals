@@ -6,7 +6,7 @@
 
  ### ORGANIZACIÓN DE MÓDULO 
  
- - [Sesión 1](): Sintáxis, variables, tipos de datos, operadores lógicos, condicionales y ciclos. 
+ - [Sesión 1](https://github.com/beduExpert/A1-Kotlin-Fundamentals/tree/master/Sesion-01): Sintáxis, variables, tipos de datos, operadores lógicos, condicionales y ciclos. 
  - [Sesión 2](): Funciones y estructuras de dato 
  - [Sesión 3](): Programación orientada a objetos 
  - [Sesión 4](): Programación orientada a Objetos II
