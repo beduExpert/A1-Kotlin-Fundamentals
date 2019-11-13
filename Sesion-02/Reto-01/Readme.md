@@ -1,6 +1,6 @@
  
 
-## Ejemplo 1: Funciones - Kotlin Fundamentals 
+## Reto 1: Funciones - Kotlin Fundamentals 
 
 ### OBJETIVO 
 
@@ -10,7 +10,7 @@
 
 #### REQUISITOS 
 
-1. Haber visto por completo el [Ejemplo 01](/../../tree/master/Sesion-02/Ejemplo-02)
+1. Haber visto por completo el [Ejemplo 01](/../../tree/master/Sesion-02/Ejemplo-01)
 
 #### DESARROLLO
 

@@ -1,27 +1,28 @@
  
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 2: Colecciones - Kotlin Fundamentals 
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno aprenda a usar los diferentes tipos de colecciones en kotlin
+	- List
+	- Set
+	- Map
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber visto por completo el [Ejemplo 02](/../../tree/master/Sesion-02/Ejemplo-02)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En el proyecto incluido en este directorio dentro de la carpeta src encotraras un archivo llamado main.kt, completa los siguientes puntos dentro el mismo archivo
 
-<details>
+- Crea una lista, un conjunto y un mapa con los elementos que prefieras.
+- Crea una lista, un conjunto y unmapa mutables con los elementos que prefieras.
+- De cada coleccion mutable implementa las principales operaciones de escritura que encontraras en la documentacion oficial de kotlin:
+	- [listas](https://kotlinlang.org/docs/reference/list-operations.html)
+	- [sets](https://kotlinlang.org/docs/reference/set-operations.html)
+	- [maps](https://kotlinlang.org/docs/reference/map-operations.html)
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+Recuerda marcar con un comentario **//** cada operacion que hagas.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 
