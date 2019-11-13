@@ -433,5 +433,5 @@ a <= b | a.compareTo(b) <= 0
 Como puedes ver, no estamos comparando directamnte a con b, mas bien el valor que estamos evaluando el entero
 que esta función retorna que puede ser -1 ~ 1. 
 
-Ahora que ya sabes qué tipos de datos y operadores nos ofrece kotlin, te invito a qa revisar la [documentacin oficial](https://kotlinlang.org/docs/reference/basic-types.html)
+Ahora que ya sabes qué tipos de datos y operadores nos ofrece kotlin, te invito a qa revisar la [documentación oficial](https://kotlinlang.org/docs/reference/basic-types.html)
 para que refuerzes tu conocimiento, ve al [Reto 2](/../../tree/master/Sesion-01/Reto-02) y resuélvelo con lo que acabas de aprender.
