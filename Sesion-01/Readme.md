@@ -2,16 +2,16 @@
 
 ### OBJETIVOS 
 
-- Conocer la sintaxis basica de kotlin.
-- Utilizar variables y tipos de datos; operadores logicos y condicionales.
+- Conocer la sintaxis básica de kotlin.
+- Utilizar variables y tipos de datos; operadores lógicos y condicionales.
 - Crear los primeros programas en kotlin.
 
 ### REQUISITOS
 
-- Tener conocimiento previo de cualquier lenguage de programación.
-- Comprender las bases de la programación orientada a objetos.
+- Tener conocimiento previo de cualquier lenguaje de programación.
+- Comprender las bases de la Programación Orientada a Objetos.
 - Tener conocimiento básico de programación funcional (opcional)
-- Tener instalado IntelliJ IDEA CE (la versión mas reciente)
+- Tener instalado IntelliJ IDEA CE (la versión más reciente)
 - Tener muchas ganas de cambiar el futuro creando la mejor tecnologia :).
 
 #### ORGANIZACION DE LA CLASE 
