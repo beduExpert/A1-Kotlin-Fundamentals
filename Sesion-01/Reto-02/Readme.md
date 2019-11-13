@@ -2,17 +2,17 @@
 
 ### OBJETIVO 
 
-- Que el alumno ponga en pactica los diferentes tipos de datos en kotlin.
-- Que el alumno entianda la diferencia entre los operadores en su forma de exprecion y haciendo
+- Practicar los diferentes tipos de datos en kotlin.
+- Reconocer la diferencia entre los operadores en su forma de expresión y hacer
 uso del Operator overloading de kotlin.
 
 #### REQUISITOS 
 
-1. Haber visto por completo el [Ejemplo 2](/../../tree/master/Sesion-01/Ejemplo-02)
+1. Revisar a detalle el [Ejemplo 2](/../../tree/master/Sesion-01/Ejemplo-02)
 
 #### DESARROLLO
 
-En el proyecto incluido en este directorio encontraras un proyecto ya iniciado, en el archivo main.kt 
+En el proyecto incluido en este directorio encontrarás un proyecto ya iniciado, en el archivo main.kt 
 completa los siguientes puntos.
 
 - En la seccion:
@@ -21,7 +21,7 @@ completa los siguientes puntos.
     * Tipos de datos
     */
 ```
-Declara una variable **changeable** e imprimela en consola usando String templates de cada tipo de dato visto en el ejemplo con su tipo explicito.
+Declara una variable **changeable** e imprímela en consola usando String templates de cada tipo de dato visto en el ejemplo con su tipo explícito.
 
 - En la seccion:
 ```kotlin
@@ -36,11 +36,11 @@ Considerando las variables:
     var numbers:Array<Int> = arrayOf(1, 2, 3, 4, 5)
     var yes:Boolean = true
 ```
-Usa las funciones del Operator overloading de android para realizar cada una de las siguintes expreciones, adicional a 
-esto, imprime los valores de las variables despues de cada operacion.
+Usa las funciones del Operator overloading de android para realizar cada una de las siguintes expresiones, adicional a 
+esto, imprime los valores de las variables después de cada operación.
 
 > Las expresiones en esta tabla son un ejemplo, considera los valores y los tipos de datos de las variables declaradas antes
-> para determinar con que variables representar cada expresion.
+> para determinar con que variables representar cada expresión.
 
 Expresion|
 ---------|
