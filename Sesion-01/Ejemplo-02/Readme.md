@@ -14,12 +14,12 @@
 
 ### Tipos de datos
 
-Anteriormente mencionamos que en Kotlin todo es un objeto. Esto quiere decir que
+Anteriormente mencionamos que **en Kotlin todo es un objeto**. Esto quiere decir que
 aunque por ejemplo se trate de un número entero (Int), podremos acceder a métodos 
 directamente sobre nuestra "variable" (que Kotlin trata como objeto). 
 
 Estos métodos representan a los operadores que ya conocemos (aquí los recordaremos) pero con la diferencia de 
-que estas funciones, métodos o acciones que nos ofrece Kotlin sobre cada tipo,
+que estas funciones, métodos o acciones, que nos ofrece Kotlin sobre cada tipo,
 ya están optimizadas para cualquier escenario en el que se tengan que usar.
 
 Pero primero veamos los tipos de datos básicos que Kotlin nos ofrece y la forma de declararlos.
@@ -29,7 +29,7 @@ Pero primero veamos los tipos de datos básicos que Kotlin nos ofrece y la forma
 Kotlin viene con un conjunto de tipos de datos integrados que representan números que cubren
 distintas necesidades, es decir, cada tipo es diferenciado por el tamaño que 
 ocupa en memoria y el rango de valores que puede almacena. En la siguiente tabla verás 
-la comparacion de los datos numericos.
+la comparacion de los datos numéricos.
 
 Tipo | Tamaño (bits) | Valor minimo | Valor maximo
 -----|---------------|--------------|-------------
@@ -59,7 +59,7 @@ siempre y cuando el número dado no exceda el máximo valor permitido por Int
     var edad = 27 //Int
     var long = 27L //Long
 ```
-Ahora bien, te pregutarás ¿qué pasa con los números con punto flotante, hexadecimales o binarios? 
+Ahora bien, te pregutarás **¿qué pasa con los números con punto flotante, hexadecimales o binarios?** 
 Kotlin nos permite declararlos sin ningún problema tal como son. Por ejemplo:
 
 > Nota: Los números Octales literales no son soportados.
@@ -75,7 +75,7 @@ Kotlin nos permite declararlos sin ningún problema tal como son. Por ejemplo:
     val double: Double = 123.5
     val float: Float = 123.5f
 ``` 
-Y ademas para que nuestras constantes sean mucho mas claras y entendibles podemos usar **_** (Underscores)
+Y además para que nuestras constantes sean mucho mas claras y entendibles podemos usar **_** (Underscores)
 a la hora de declararlas, esto con el fin de que siempre tengamos un codigo limpio y que sea 
 auto descriptivo.
 
@@ -86,11 +86,11 @@ auto descriptivo.
     val hexBytes = 0xFF_EC_DE_5E
     val bytes = 0b11010010_01101001_10010100_10010010
 ```
-Ahora, recuerdas que los tipos de datos numericos se definen por el tamaño en memoria y el rango de numeros que puede contener? 
-pues bien, que pasa si necesitamos que nuestro numero sea siempre un numero positivo? es decir, un numero sin signo.
+Ahora, ¿recuerdas que los tipos de datos numéricos se definen por el tamaño en memoria y el rango de números que puede contener? 
+pues bien, ¿qué pasa si necesitamos que nuestro número sea siempre un numero positivo? es decir, un número sin signo.
 
-Para esto contamos con los mismos tipos numericos que ya hemos visto pero con la diferencia de que se decalran con el prefijo **U**
-en el tipo y con el sufijo **u** en el valor, de esta forma kotlin entiende que esos son valores numericos absolutos.
+Para esto contamos con los mismos tipos numéricos que ya hemos visto, pero con la diferencia de que se declaran con el prefijo **U**
+en el tipo y con el sufijo **u** en el valor. De esta forma kotlin entiende que esos son valores numéricos absolutos.
 
 ```kotlin
     // Enteros sin signo (Unsigned integers)
@@ -102,9 +102,9 @@ en el tipo y con el sufijo **u** en el valor, de esta forma kotlin entiende que 
 ```
 ### Caracteres
 
-En este como en otros leguages de programacion, siempre tenemos la nesecidad de representar caracteres, ta sean numericos,
-alfanumericos o especiales, kotlin nos brinda el tipo de datos **Char** el cual nos permitira representarlos, en la declaracion
-los caracteres tendran que ir entre comillas simples **'** es decir:
+En este como en otros leguajes de programación, siempre tenemos la necesidad de representar caracteres, ya sean numéricos,
+alfanumericos o especiales, kotlin nos brinda el tipo de datos **Char** el cual nos permitirá representarlos, en la declaración
+los caracteres tendrán que ir entre comillas simples **'** es decir:
 
 ```kotlin
     val letra: Char = 'A'
@@ -113,7 +113,7 @@ los caracteres tendran que ir entre comillas simples **'** es decir:
 Adicional a esto, con el tipo **Char** es posible representar secuencias de escape como **\t**, **\b**, **\n**,
 **\r** etc. 
 
-Si, tambien podemos representar caracteres con su codigo **Unicode**, por ejemplo:
+Sí, también podemos representar caracteres con su código **Unicode**, por ejemplo:
 
 ```kotlin
     // Caracteres (Characters)
@@ -125,13 +125,13 @@ Si, tambien podemos representar caracteres con su codigo **Unicode**, por ejempl
     println("Char " + unicode)
 ``` 
 
-### Boleanos
+### Booleanos
 
-Este tipo de dato es sumamente util (indispensable) a la hora de tomar desiciones o crear iteraciones (mas adelante heblaremos de ello),
-los tipos boleanos tiene la caracteristica de que solo pueden contener uno de dos valores, es decir, **true** o **false**, o como coloquialmente
-lo conocemos, cierto o falso, la declaracion de estos es como a continuacion se muestra:
+Este tipo de dato es sumamente útil (indispensable) a la hora de tomar desiciones o crear iteraciones (más adelante heblaremos de ello),
+los tipos booleanos tienen la característica de que solo pueden contener uno de dos valores, es decir, **true** o **false**, o como coloquialmente
+lo conocemos, cierto o falso, la declaración de estos es como a continuación se muestra:
 
->En las proximas clases veremos la importancia del uso de los boleanos.
+>En las próximas clases veremos la importancia del uso de los booleanos.
 ```kotlin
     // Boleanos (Booleans)
 
@@ -159,15 +159,15 @@ println(edadPersona_3)
 println(edadPersona_4)
 println(edadPersona_5)
 ```
-Sencillo cierto?, ahora imagina que tienes que almacenar las edades de 1000 personas, aqui es donde el asunto 
-se vuelve complicado, para eso, como en la mayoria de los lenguages de programacion podemos crear colecciones
-o conjuntos de datos almacenados en una sola variable, es decir en un solo espacio en menoria.
+Sencillo ¿cierto?, ahora imagina que tienes que almacenar las edades de 1000 personas, aquí es donde el asunto 
+se vuelve complicado, para eso, como en la mayoría de los lenguajes de programación podemos crear colecciones
+o conjuntos de datos almacenados en una sola variable, es decir en un solo espacio en memoria.
 
-Los Arrays en kotlin representan un espacio en memoria en el cual podemos almacenar una coleccion o conjunto de datos y pueden declararse de distintas formas, veamos algunas:
+Los Arrays en Kotlin representan un espacio en memoria en el cual podemos almacenar una colección o conjunto de datos y pueden declararse de distintas formas, veamos algunas:
 
 > Declaramos los arreglos **numeros** y **vocales** con la ayuda de la clase **arrayOf()**
 > Los arreglos **numerosString** y **numerosString2** estan declarados con ayuda de la clase Array la cual cuenta
-> con un inicializador que nos permite crear iteraciones definidas por el parametro que recibe
+> con un inicializador que nos permite crear iteraciones definidas por el parámetro que recibe
 > que en este caso es la cantidad de elementos que va a contener.
 ```kotlin
     val numeros: Array<Int> = arrayOf(1, 2, 3, 4, 5)
@@ -176,11 +176,11 @@ Los Arrays en kotlin representan un espacio en memoria en el cual podemos almace
     val numerosString2: Array<String> = Array(5) { i -> i.times(i).toString() }
 ```
 
-Con los arreglos existe un sin numero de operaciones/interacciones que podemos tener, las mas comunes y que vamos a 
-usar con mas frecuencia son:
+Con los arreglos existe un sin número de operaciones/interacciones que podemos tener, las más comunes y que vamos a 
+usar con más frecuencia son:
 
 - Iterar sobre cada uno de los elementos.
-- Insertar nuevos elemetos (siemore y cuando nuestra variable Array se haya declarado con un tipo de variable changeable, es decir var).
+- Insertar nuevos elemetos (siempre y cuando nuestra variable Array se haya declarado con un tipo de variable changeable, es decir var).
 - Obtener elementos del arreglo. 
 
 Ejemplo:
@@ -197,10 +197,9 @@ Ejemplo:
     //Obtener un elemento de una posicion especifica dentro del arreglo
     val elemento = numeros.get(1)
 ```
-En el ejemplo anterior imprimimos cada uno de los elementos del arreglo, agregamos uno nuevo, y obtubimos un elemento de una ubucaion especifica en el arreglo (al final de esta clase profundizamos en el tema).
+En el ejemplo anterior imprimimos cada uno de los elementos del arreglo, agregamos uno nuevo, y obtuvimos un elemento de una ubicación específica en el arreglo (al final de esta clase profundizamos en el tema).
 
-Ahora que conocemos la utilidad de los Arrays, retomemos nuestro ejemplo de las edades, con el uso de arreglos podriamos hacer exactamente los mismo que ya habiamos hecho pero 
-de la siguiente forma:
+Ahora que conocemos la utilidad de los Arrays, retomemos nuestro ejemplo de las edades, con el uso de arreglos podríamos hacer exactamente los mismo que ya habiamos hecho pero de la siguiente forma:
 
 ```kotlin
     val edades: Array<Int> = arrayOf(20, 20, 20, 20, 20)
@@ -212,7 +211,7 @@ los Arrays.
 
 ### Cadenas de texto (Strings)
 
-Las cadenas de texto son representadas por el tipo String, si queremos verlo de una forma sencilla 
+Las cadenas de texto son representadas por el tipo **String**, si queremos verlo de una forma sencilla 
 y viniendo de entender los arreglos y colecciones, digamos de un String es una coleccion de caracteres (Char)
 y esto nos resulta en una cadena de texto.
 
@@ -222,7 +221,7 @@ La declaracion de los Strings van entre comillas **"**, ejemplo:
     val nombre: String = "Tu Nombre"
 ```
 
-Tambien existen Strings literales, los cuales nos van a permitir incluir caracteres especiales como secuencias de escape
+También existen Strings literales, los cuales nos van a permitir incluir caracteres especiales como secuencias de escape
 y escribir textos planos en parrafo, ejemplo:
 
 ```kotlin
@@ -233,12 +232,12 @@ y escribir textos planos en parrafo, ejemplo:
     """.trimIndent()
 ```
 
-Por ultimo, en kotlin existen los String templates, que nos van a dar la capacidad de poder incluir expresiones
-y codigo evaluable dentro de una cadena de texto.
+Por último, en kotlin existen los **String templates**, que nos van a dar la capacidad de incluir expresiones
+y código evaluable dentro de una cadena de texto.
 
-En el caso de que necesitemos incluir el valor de una variable dentro de un String este tiene que ir acompañado 
-de un "dollar sign" ($) antes de la variable a evaluar, para las expresiones tambien tendremos que agregar el mismo ($)
-pero con la diferencia de que nuestra expresion a evaluar ira entre llaves ({}), ejemplo:
+En el caso de que necesitemos incluir el valor de una variable dentro de un String, este tiene que ir acompañado 
+de un "dollar sign" ($) antes de la variable a evaluar. Para las expresiones también tendremos que agregar el mismo ($)
+pero con la diferencia de que nuestra expresión a evaluar irá entre llaves ({}), ejemplo:
 
 ```kotlin
     val edad: Int = 27
@@ -250,14 +249,14 @@ pero con la diferencia de que nuestra expresion a evaluar ira entre llaves ({}),
 
 ### Operadores
 
-En el Ejemplo 1 y al principio de este hablamos sobre como es que kotlin trata a las variables, sabemos que en kotlin todo es un objeto, ahora bien,
-veamos los operadores con los que contamos en kotlin junto con la funcion o metodo a la que se han transportado.
+En el Ejemplo 1 y al principio de este, hablamos sobre cómo es que kotlin trata a las variables, sabemos que en kotlin todo es un objeto, ahora bien,
+veamos los operadores con los que contamos en kotlin junto con la función o método a la que se han transportado.
 
-Es importante que recuerdes que puedes hacer uso de los operadores como su expresion lo indica o bien accesando a ellos por medio del metodo que forma parte 
-de la variable (objeto) que estes usando.
+Es importante que recuerdes que puedes hacer uso de los operadores como su expresión lo indica o bien accesando a ellos por medio del método que forma parte 
+de la variable (objeto) que estés usando.
 
-Estamos hablando del Operator overloadig, que consiste en transladar los operadores como expresiones a funciones, a continuacion veras
-los operadores mas comunes, su representacion como expresion, su equivalente en funcion y su uso.
+Estamos hablando del **Operator overloadig**, que consiste en transladar los operadores como expresiones a funciones. A continuación verás
+los operadores más comunes, su representacion como expresión, su equivalente en función y su uso.
 
 ### Unarios
 
@@ -267,7 +266,7 @@ Expresion | Funcion
 -a | a.unaryMinus()
 !a | a.not()
 
-> Este es un ejemplo de como puedes hacer overloading de los operadores unarios.
+> Este es un ejemplo de cómo puedes hacer overloading de los operadores unarios.
 ```kotlin
     /*
     * Operadores
@@ -293,7 +292,7 @@ Expresion | Funcion
 a++ | a.inc()
 a-- | a.dec()
 
-> Estos operadores van a incrementar o decrementar en 1 el valor de nuestra variable, ya que esta accion mutara el valor de la misma, es necesario que nuestra
+> Estos operadores van a incrementar o decrementar en 1 el valor de nuestra variable, ya que esta acción mutara el valor de la misma, es necesario que nuestra
 >variable sea **var** y no **val**.
 ```kotlin
     // Incrementales y decrementles (Increments and decrements)
@@ -313,7 +312,7 @@ a / b | a.div(b)
 a % b | a.rem(b)
 a..b | a.rangeTo(b)
 
-> Estos operadores son los mas comunes, los que conocemos como aritmeticos y su uso es el suguiente:
+> Estos operadores son los más comunes, los que conocemos como aritméticos y su uso es el suguiente:
 ```kotlin
     var a = 100
     val b = 120
@@ -335,7 +334,7 @@ Expresion | Funcion
 a in b | b.contains(b)
 a !in b | !b.contains(b)
 
-> El roperador In es utilizado para determinar si un elemento esta presente en otro, es decir, en este caso, preguntamos si el arreglo numbersArray
+> El operador **In** es utilizado para determinar si un elemento esta presente en otro, es decir, en este caso, preguntamos si el arreglo numbersArray
 > contiene al elemento a. 
 ```kotlin
     val numbersArray: Array<Int> = arrayOf(1, 2, 3, 4, 5, 6, 7)
