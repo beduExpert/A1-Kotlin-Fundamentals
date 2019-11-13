@@ -2,25 +2,25 @@
 
 ### OBJETIVO
 
-- Que el alumno comprenda las estructuras de control de flujo en kotlin (if, when, for, while)
+- Comprender las estructuras de control de flujo en kotlin (if, when, for, while)
 
 #### REQUISITOS
 
-1. Tener conocimientro previo sobre Control flow structures (ver prework)
+1. Tener conocimientro previo sobre Control flow structures (ver prework de sesión)
 
 ### DESARROLLO
 
-En este ejemplo vamos a conocer las diferentes estructuras de control de flujo (Control flow) en kotlin, este tipo de 
-estructuras que se dividen en dos, Condicionales y Ciclos, nos ayudan a tomar desiciones y controlar el flujo de nuestro programa asi como tambien facilitar el tratado 
+En este ejemplo vamos a conocer las diferentes estructuras de control de flujo (Control flow) en kotlin. Este tipo de 
+estructuras que se dividen en dos, Condicionales y Ciclos, nos ayudan a tomar decisiones y controlar el flujo de nuestro programa, así como facilitar el tratado 
 de los datos cuando estos vienen en grandes cantidades.
 
 #### Expresion If
 
-En kotlin if es una expresion, esto quiere decir que retorna un valor, por esta razon en kotlin no tenemos un operador ternario
+En kotlin, **if** es una expresión, esto quiere decir que retorna un valor. Por esta razón, en kotlin no tenemos un operador ternario,
 ya que de esta forma el if ordinario juega perfecto este rol.
 
 > Uso tradicional de **if**.
-> Comparamos si a es mayor que b, si esta **Condicion** se cumple entonces asignamos el valor de a a la variable max. 
+> Comparamos si **a** es mayor que **b**, si esta **Condición** se cumple, entonces asignamos el valor de **a** a la variable max. 
 
 ```kotlin
     val a = 5
@@ -40,18 +40,18 @@ ya que de esta forma el if ordinario juega perfecto este rol.
     }
 ```
 
-> Usando if como una expresion.
+> Usando if como una expresión.
 
 ```kotlin
     max = if (a > b) a else b
 ```
 
-Como puedes ver el uso de if es muy versatil, si quieres saber mas acerca de los operadores ternarios puedes visitar [aqui](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Conditional_Operator)
-y puedas comparar entre el operador ternario y el uso de if como expresion en kotlin.
+Como puedes ver el uso de if es muy versátil, si quieres saber más acerca de los operadores ternarios puedes visitar [aqui](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Conditional_Operator)
+y comparar entre el operador ternario y el uso de if como expresión en kotlin.
 
 #### When
 
-En kotlin no existe el operador switch, en su lugar kotlin nos ofrece la expresion when que se encarga de comparar su argumento con cada una de sus "ramas", si se usa como expresion el valor
+En kotlin no existe el operador switch, en su lugar kotlin nos ofrece la expresión **when** que se encarga de comparar su argumento con cada una de sus "ramas", si se usa como expresión el valor
 de la rama que coincide con el argumento se convierte el el valor de toda la exprecion, si se usa como declaracion los valores de las ramas individuales se ignoran.
 
 La rama else se evalua si no se cumple ninguna de las otras y en caso de que use como expresion esta rama es obligatoria.
