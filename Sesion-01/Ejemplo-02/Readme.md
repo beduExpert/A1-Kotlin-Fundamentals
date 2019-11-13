@@ -141,8 +141,8 @@ lo conocemos, cierto o falso, la declaración de estos es como a continuación s
 
 ### Arreglos
 
-Imagina que tienes un grupo de 5 personas, y por alguna razon te toca almacenar la edad de cada una 
-de las personas para posteriormente mostrarlas, podriamos hacerlo de esta forma:
+Imagina que tienes un grupo de 5 personas, y por alguna razón te toca almacenar la edad de cada una 
+de las personas para posteriormente mostrarlas, podríamos hacerlo de esta forma:
 
 ```kotlin
 //Edades
@@ -206,7 +206,7 @@ Ahora que conocemos la utilidad de los Arrays, retomemos nuestro ejemplo de las 
     edades.forEach { println(it) }
 ```
 
-Como puedes ver, es mucho mas sencillo y claro lo que estamos haciendo, por eso es que es tan importante que conozcas lo necesarios que son 
+Como puedes ver, es mucho más sencillo y claro lo que estamos haciendo, por eso es que es tan importante que conozcas lo necesarios que son 
 los Arrays.
 
 ### Cadenas de texto (Strings)
@@ -222,7 +222,7 @@ La declaracion de los Strings van entre comillas **"**, ejemplo:
 ```
 
 También existen Strings literales, los cuales nos van a permitir incluir caracteres especiales como secuencias de escape
-y escribir textos planos en parrafo, ejemplo:
+y escribir textos planos en párrafo, ejemplo:
 
 ```kotlin
     val escapingString: String = "Hola BEDU!\n"
@@ -256,7 +256,7 @@ Es importante que recuerdes que puedes hacer uso de los operadores como su expre
 de la variable (objeto) que estés usando.
 
 Estamos hablando del **Operator overloadig**, que consiste en transladar los operadores como expresiones a funciones. A continuación verás
-los operadores más comunes, su representacion como expresión, su equivalente en función y su uso.
+los operadores más comunes, su representación como expresión, su equivalente en función y su uso.
 
 ### Unarios
 
@@ -292,7 +292,7 @@ Expresion | Funcion
 a++ | a.inc()
 a-- | a.dec()
 
-> Estos operadores van a incrementar o decrementar en 1 el valor de nuestra variable, ya que esta acción mutara el valor de la misma, es necesario que nuestra
+> Estos operadores van a incrementar o decrementar en 1 el valor de nuestra variable, ya que esta acción mutará el valor de la misma, es necesario que nuestra
 >variable sea **var** y no **val**.
 ```kotlin
     // Incrementales y decrementles (Increments and decrements)
@@ -303,7 +303,7 @@ a-- | a.dec()
 
 ### Operadores binarios
 
-Expresion | Funcion
+Expresión | Función
 ----------|--------
 a + b | a.plus(b)
 a - b | a.minus(b)
@@ -350,7 +350,7 @@ a\[i] | a.get(i)
 a\[i] = b | a.set(i, b)
 
 El operador de acceso indexado es el que nos permite obtener y colocar elementos en un array basandose en su 
-posicion dentro del mismo, recordemos que un arreglo indexado comienza sus posiciones desde 0, es decir que si 
+posición dentro del mismo, recordemos que un arreglo indexado comienza sus posiciones desde 0, es decir que si 
 tenemos un arreglo con 3 elementos las pociiones del mismo serian 0, 1, 2.
 
 > En este ejemplo hacemos uso del operador de acceso indexado para insertar y obtener un elemento de nuestro Array.
@@ -374,7 +374,7 @@ a %= b | a.remAssign(b)
   - Si la función de la columna derecha está disponible se usa como tal.
   - De lo contrario, tenemos que generar código para a = a + b (esto incluye una verificación de tipo: el tipo de a + b debe ser un subtipo de a).
   
-  Por lo que es mas comun representarlas como expresiones.
+  Por lo que es más comun representarlas como expresiones.
 ```kotlin
     a += b
     a -= c
@@ -403,7 +403,7 @@ a != b | !a.equals(b)
     }
 ```
 
-### Operadores de comparacion
+### Operadores de comparación
 
 Expresion | Funcion
 ----------|--------
@@ -412,7 +412,7 @@ a < b | a.compareTo(b) < 0
 a >= b | a.compareTo(b) >= 0
 a <= b | a.compareTo(b) <= 0
 
-> Todas las comparaciones que se traducen a la funcion compareTo() devolveran un entero (In)
+> Todas las comparaciones que se traducen a la función compareTo() devolverán un entero (In)
 ```kotlin
     if (a.compareTo(b) > 0) {
         println("a es mayor que b")
@@ -431,7 +431,7 @@ a <= b | a.compareTo(b) <= 0
     }
 ```
 Como puedes ver, no estamos comparando directamnte a con b, mas bien el valor que estamos evaluando el entero
-que esta funcion retorna que puede ser -1 ~ 1. 
+que esta función retorna que puede ser -1 ~ 1. 
 
-Ahora que ya sabes que tipos de datos y operadores nos ofrece kotlin, te invito a que le des una leida a la [documentacin oficial](https://kotlinlang.org/docs/reference/basic-types.html)
+Ahora que ya sabes qué tipos de datos y operadores nos ofrece kotlin, te invito a que le des una leida a la [documentacin oficial](https://kotlinlang.org/docs/reference/basic-types.html)
 para que refuerzes tu conocimiento, ve al [Reto 2](/../../tree/master/Sesion-01/Reto-02) y resulevelo con lo que acabas de aprender.
