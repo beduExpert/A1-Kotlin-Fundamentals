@@ -20,20 +20,21 @@
 
 Una vez que tengamos instalado el IDE (IntelliJ IDEA) vamos a crear nuestro primer proyecto de Kotlin.
 
-> Al iniciar IntelliJ selecciona la opción de crear nuevo proyecto.
+> Al iniciar IntelliJ selecciona la opción de "crear nuevo proyecto".
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img1.png)
 
-> Debido a que en este curso vamos a aprender los fundamentos de Kotlin como lenguaje, vamos a seleccionar la opción 
+> Debido a que en este curso vamos a aprender los fundamentos de Kotlin como lenguaje, seleccionaremos la opción 
 > Kotlin y a continuacion JVM | IDEA. Después daremos en siguiente para continuar con la configuracion de nuestro 
 > proyecto.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img2.png)
 
-> Para finalizar, solo nos falta asignar un nombre a nuestro proyecto e indicarle a nuestro IDE la ubicacion de los 
-> archivos de nuestro proyecto en nuestro sistema de archivos. Cuando hayas agregado esta informacion terminaremos 
-> la configuracion de nuestro proyecto dando click en el boton Finalizar.
-> A continuacion IntelliJ comenzará a crear la estructura y los archivos necesarios para nuestro proyecto.
+> Para finalizar, solo nos falta asignar un nombre a nuestro proyecto e indicarle a nuestro IDE la ubicación de los 
+> archivos de nuestro proyecto en nuestro sistema de archivos. Cuando hayas agregado esta información terminaremos 
+> la configuración de nuestro proyecto dando click en el boton Finalizar.
+
+> A continuación IntelliJ comenzará a crear la estructura y los archivos necesarios para nuestro proyecto.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img3.png)
 
@@ -42,7 +43,7 @@ Una vez que tengamos instalado el IDE (IntelliJ IDEA) vamos a crear nuestro prim
 
 #### Creando nuestro primer archivo.
 
-> Haz clic derecho sobre la carpeta **src** y a continuación selecciona la opcion New > Kotlin File/Class (Fig. 2).
+> Haz clic derecho sobre la carpeta **src** y a continuación selecciona la opción New > Kotlin File/Class (Fig. 2).
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img5.png)
 
@@ -63,8 +64,8 @@ fun main(args: Array<String>) {
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img6.png)
 
-> El resultado, que en nuestro caso será 
-> la impresión de un mensaje, lo podremos ver en la consola que nuestro editor nos provee.
+> El resultado - que en nuestro caso será 
+> la impresión de un mensaje- lo podremos ver en la consola de nuestro editor. 
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img7.png)
 
@@ -77,7 +78,7 @@ para las cuales usamos las palabras reservadas:
 - var -> mutable
 
 Debido a que Kotlin se rige por la inmutabilidad, uno de los principios de la programacion funcional, vamos a preferir el uso 
-de variables inmutables.
+de variables **inmutables**.
 
 #### Declaración de Variables.
 
@@ -128,9 +129,9 @@ almacenar como se muestra a continuación:
     var numExt: Int
 ```
 
-Si te preguntas, ¿qué pasó con el medio de acceso de las variables? no te preocupes, Kotlin suguiere que las variables de acceso local,
+Si te preguntas, **¿qué pasó con el medio de acceso de las variables?**  Kotlin suguiere que las variables de acceso local,
 es decir, solo dentro de su función, sean declaradas como **val** siguiendo el principio de inmutabilidad. 
-Es decir si tuvieramos una función que multiplicara dos numeros dados (a * b), la variable que almacenara el valor no tendria que mutar jamás y tampoco
+Es decir si tuvieramos una función que multiplicara dos números dados (a * b), la variable que almacenara el valor no tendría que mutar jamás y tampoco
 tendría que afectar o ser afectada por elemetos externos a dicha función. Por eso lo ideal sería declararla de la siguiente forma:
 
 ```kotlin
@@ -142,7 +143,7 @@ fun multiplicar(a: Int, b: Int): Int {
 ``` 
 
 Ahora bien, si tuviesemos que usar la misma variable desde distintos puntos de nuestro programa, es decir desde distintas funciones,
-tendriamos que declarar una variable de forma global o top-level. Éstas se declaran fuera de cualquier función, incluso de nuestra función main
+tendríamos que declarar una variable de forma global o top-level. Éstas se declaran fuera de cualquier función, incluso de nuestra función main
 y de esta forma podremos acceder a dicha variable desde cualquier parte de nuestro programa:
 
 ```kotlin
@@ -168,15 +169,15 @@ Como puedes ver nuestra variable **PI** está siendo accedida desde dos funcione
 
 #### Variables VS Objetos
 
-En Kotlin las variables se manejan de dos formas. Existen las variables "normales" por nombralas de alguna forma
-y las variables tratadas como objetos. Las variables "normales" son elementales, es decir, representan un espacio en memoria
+En Kotlin las variables se manejan de dos formas. Existen las variables **"normales"** por nombralas de alguna forma
+y las **variables tratadas como objetos**. Las variables "normales" son elementales, es decir, representan un espacio en memoria
 que puede almacenar solo un dato.
 
 Las variables que son tratadas como objetos, representan un espacio en memoria más complejo. Es decir un objeto puede contener
 variables elementales y métodos o acciones, ya que en kotlin todo es un objeto, vamos a preferir seguir esta linea que nos propone
-el lenguage mismo.
+el lenguaje mismo.
 
-Veamos de que se trata analizando el siguiente codigo:
+Veamos de qué se trata analizando el siguiente código:
 
 ```kotlin
     /*
@@ -190,8 +191,8 @@ Veamos de que se trata analizando el siguiente codigo:
     println(5 / 4)
 ```
 
-Cuando "declaramos" variables de esta forma, Kotlin les asigna un tipo de dato primitivo. En este caso Int a cada número 
-que estamos imprimiendo. Es decir, de esta forma el 1, 5 o 4 están siendo almacenados en memoria como un solo dato y por tanto 
+Cuando "declaramos" variables de esta forma, Kotlin les asigna un tipo de dato primitivo. En este caso **Int** a cada número 
+que estamos imprimiendo. Es decir, de esta forma el 1, 5 ó 4 están siendo almacenados en memoria como un solo dato y por tanto 
 no existen propiedades o métodos a los que podamos acceder sobre ellos. Para probarlo escribamos 1 y a continuación un punto para ver 
 a que tenemos acceso sobre un valor de estos:
 
@@ -218,14 +219,13 @@ sinfin de métodos o acciones sobre nuestras variables, que nos van a facilitar 
 
 Como puedes ver, declaramos nuestras variables con la palabra reservada **val** y ahora podemos hacer las mismas operaciones que habíamos hecho
 con nuestras variables elementales, pero de una forma más clara y descriptiva. Para probar y que descubras la gran cantidad de métodos que
-Kotlin nos ofrece sobre cada tipo, basta con que coloques un punto después de tu variable como a continuacion:
+Kotlin nos ofrece sobre cada tipo, basta con que coloques un punto después de tu variable como a continuación:
 
-> Observa que los elementos que nos suguiere nuestro editor, ahora son todas las operaciones que podemos hacer sobre nuestro valor y forman parte de él como tal.
+> Observa que los elementos que nos suguiere nuestro editor,  son todas las operaciones que podemos hacer sobre nuestro valor y forman parte de él como tal.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img9.png)
 
-Si ejecutamos nuestro programa, nos daremos cuenta de que el resultaco con ambas formas aparentemente es lo mismo, pero la verdadera razon del 
-porque kotlin suguiere que todo sea tratado como un objeto, es por que por ejemplo en este caso, las operaciones que hicimos al final están 
+Si ejecutamos nuestro programa, nos daremos cuenta de que el resultaco con ambas formas aparentemente es lo mismo, pero la verdadera razon del porque kotlin suguiere que todo sea tratado como un objeto, es por que por ejemplo en este caso, las operaciones que hicimos al final están 
 mucho más optimizadas y como lo explicamos antes, esta nueva forma permite hacer que nuestro código sea más descriptivo.
 
 > Observa en la consola que nuestro editor nos provee el resultado de la ejecución de nuestro programa.
