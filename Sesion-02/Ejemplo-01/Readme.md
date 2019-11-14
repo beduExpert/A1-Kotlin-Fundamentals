@@ -197,23 +197,23 @@ Analizemos el ejemplo de arriba:
 
 	}
 ```
->También como parámetro pasamos una lambda que va a indicar la estructura del tipo de funcion que va a recibir 
->nuestra Higher-order function, es decir esta funcion de orden superior va a poder recibir cualquier funcion que 
+>También, como parámetro pasamos una lambda, que va a indicar la estructura del tipo de funcion que va a recibir 
+>nuestra Higher-order function, es decir, esta función de orden superior va a poder recibir cualquier función que 
 >cumpla con esa estructura.
 ```kotlin
 	fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int) {
 
 	}
 ```
-Como nuestra funcion **suma** esta retornando un valor entero, entonces nuestra funcion de orden superior tambien tendria que hacerlo, existiran casos en los que no tengan que tener el mismo tipo de retorno, pero eso depende mucho de la solucion que tengamos que hacer.
+Como nuestra función **suma** está retornando un valor entero, entonces nuestra función de orden superior también tendría que hacerlo, existirán casos en los que no tengan que tener el mismo tipo de retorno, pero eso depende mucho de la solución que tengamos que hacer.
 >Colocamos el tipo de retorno de nuestra funcion de orden superior igual al de nuestra funcion que va como 
->parametro. y por ultimo retornamos la funcion suma con los parametros que recibimos.
+>parámetro, y por último retornamos la función suma con los parametros que recibimos.
 ```kotlin
 	fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int): Int {
 		return suma(a, b)
 	}
 ```
-Y entonces, pra que nos sirven las funciones de orden superior?, hagamos un ejemplo con un caso real, supongamos que tenemo que hacer una calculadora, tenemos que hacer suma, resta y multiplicacion de dos numeros, tendriamos que hacer una funcion para cada operacion, cierto, lo tenemos que hacer, pero combinando el uso de lambdas y las funciones de orden superior podemos hacerlo tan cencillo que al principio lo vas a dudar, veamos el ejemplo:
+Y entonces, ¿para qué nos sirven las funciones de orden superior?. Hagamos un ejemplo con un caso real. Supongamos que tenemos que hacer una calculadora, tenemos que hacer suma, resta y multiplicación de dos números, tendríamos que hacer una función para cada operación, ¿cierto?, lo tenemos que hacer, pero combinando el uso de lambdas y las funciones de orden superior. Podemos hacerlo tan sencillo que al principio lo vas a dudar, veamos el ejemplo:
 ```kotlin
 	//Declaramos nuestra funcion de orden superior
 
@@ -233,8 +233,9 @@ Y entonces, pra que nos sirven las funciones de orden superior?, hagamos un ejem
 	val restar = calculadora(10, 5, ::resta)
 	val multiplicar = calculadora(10, 5, ::multiplicacion)
 ```
-Si observas estamos resutilizando codigo para hacer nuestras operaciones, y ya que las tres funciones que decalramos para cada una de nuestras operaciones cumplen con la misma estructura podemos usarlas de la misma forma con nuestra funcion de orden superior, usamos **::** para indicar que los parametros que lleva nuestra Higher-order function se van a pasar a nuestra funcion que va como parametro.
+Si observas, estamos reutilizando código para hacer nuestras operaciones, y ya que las tres funciones que declaramos para cada una de nuestras operaciones cumplen con la misma estructura, podemos usarlas de la misma forma con nuestra función de orden superior. Usamos **::** para indicar que los parámetros que lleva nuestra Higher-order function se van a pasar a nuestra función que va como parámetro.
 
-Es importante que siempre vallas a la documentacion oficial de kotlin, ahi encontraras recursos utiles y profundizacion en el tema.
+¡No lo olvides! Es importante que siempre vayas a la documentacion oficial de kotlin, ahí encontrarás recursos útiles y podrás profundizar en el tema.
 
-Hahora ve al [Reto 01](/../../tree/master/Sesion-02/Reto-01) y completalo con lo que acabas de aprender.
+Ahora ve al [Reto 01](/../../tree/master/Sesion-02/Reto-01) y complétalo con lo que acabas de aprender. 
+**¡Mucho éxito!**
