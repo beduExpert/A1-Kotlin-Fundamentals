@@ -113,7 +113,7 @@ así:
 y también así:
 
 ```kotlin
-    var nombre = "Tu Nnombre"
+    var nombre = "Tu Nombre"
 ```
 
 Con el fin de comenzar con buenas prácticas, es importante especificar el tipo de dato, así aseguramos que nuestro código sea 
