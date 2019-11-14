@@ -13,7 +13,7 @@
 
 #### ORGANIZACION DE LA CLASE
 
-- Tema que veran en el ejemplo
+- Temas que verán en el ejemplo
 
 	- [Ejemplo 01: Tipos de Funciones](Ejemplo-01)
 	- [Reto 01](Reto-01)
