@@ -50,31 +50,31 @@ Una función consta de varios elementos importantes: nombre, argumentos, tipo de
 		println("Hola $nombre")
 	}
 ```
->Lo últimos dos elementos (tipo de retorno y sentencia de retoro) son muy importantes ya qye nos permiter usar nuestra funcion
->como una expresion, es decir, nuestra funcion va a tener un valor del cual indicaremos su tipo colocando **:** despues de los parentesis 
->seguido de el tipo de dato que va acontener nuestra funcion.
+>Los últimos dos elementos (tipo de retorno y sentencia de retoro) son muy importantes, ya que nos permiter usar nuestra función
+>como una expresion, es decir, nuestra función va a tener un valor, del cual indicaremos su tipo colocando **:** después de los paréntesis 
+>seguido del tipo de dato que va a contener nuestra función.
 ```kotlin
 	fun saludar(nombre): String {
 		println("Hola $nombre")
 	}
 ```
->Pero eso no es todo, es necesario que al colocar un tipo de retorno en nuestra funcion coloquemos tambien una instruccion de retorno, de
->lo contrario el precompilador de kotlin indicara un error **las funciones que retornan algun valor, siempre llevaran el tipo de retorno**
->**junto con la instruccion de retorno**
+>Pero eso no es todo, es necesario que al colocar un tipo de retorno en nuestra función, coloquemos también una instrucción de retorno, de
+>lo contrario el precompilador de kotlin indicará un error **las funciones que retornan algun valor, siempre llevarán el tipo de retorno**
+>**junto con la instrucción de retorno**
 ```kotlin
 	fun saludar(nombre: String): String {
 		return "Hola $nombre"
 	}
 ```
-Nota que ahora en lugar de imprimir un String estamos **retornando** un String, ahora nuestra funcion tiene el valor de ese String lo que quiere decir que la podemos usar como si fuese una expresion.
->Podriamos imprimir el saludo de la siguiente forma, dentro de la funcion println() **invocamos** nuestra funcion saludar colocando el 
->nombre de la funcion segui de los parentesis (lo qe indica que queremos que se ejecute) pasandole como parametro un nombre, entonces la 
->funcion println() va a imprimir lo que vale la funcion saludar y por supuesto, la funcion saludar vale lo que la misma retorna.
+Nota que ahora en lugar de imprimir un String estamos **retornando** un String, Nuestra funcion tiene el valor de ese String lo que quiere decir que la podemos usar como si fuese una expresión.
+>Podríamos imprimir el saludo de la siguiente forma, dentro de la funcion println() **invocamos** nuestra función **saludar** colocando el 
+>nombre de la función seguido de los paréntesis (lo que indica que queremos que se ejecute) pasándole como parámetro un nombre, entonces la 
+>funcion println() va a imprimir lo que vale la función saludar y por supuesto, la función saludar vale lo mismo que retorna.
 ```kotlin
 	println(saludar("Tu Nombre"))
 ```
 
-Bien, ya conocemos la anatomia de una funcion, ahora veamos los tipos de funciones que nos ofrece kotlin y sus formas de declaralas y usarlas, estos son los tipos de funciones:
+Bien, ya conocemos la anatomía de una función, ahora veamos los tipos de funciones que nos ofrece kotlin y sus formas de declaralas y usarlas, estos son los tipos de funciones:
 
 - Single-expression functions.
 - Top level functions.
@@ -84,9 +84,9 @@ Bien, ya conocemos la anatomia de una funcion, ahora veamos los tipos de funcion
 
 #### Single-expression functions
 
-Cuando una funcion retorna una sola expresion es decir una expresion de una sola linea, las llaves **{}** pueden ser omitidas y el cuerpo de la funcion se define despues del signo **=**
->Notese que la funcion recibe dos parametros (a y b) los cuales se tienen que sumar, tambien se coloca el tipo de retorno como Int, 
->esto quiere decir que la funcion retornara la suma de a y b.
+Cuando una función retorna una sola expresión, es decir, una expresión de una sola línea, las llaves **{}** pueden ser omitidas y el cuerpo de la función se define después del signo **=**
+>Nótese que la función recibe dos parámetros (a y b) los cuales se tienen que sumar, también se coloca el tipo de retorno como Int, 
+>esto quiere decir que la función retornara la suma de a y b.
 ```kotlin
 	fun sumar(a: Int, b: Int): Int = a + b
 ```
@@ -97,8 +97,8 @@ Cuando una funcion retorna una sola expresion es decir una expresion de una sola
 
 ### Top level functions
 
-En kotlin a diferencia de otros lenguajes de programacion, como java por elemplo, no es neceario que declaremos una clase (prnto hablaremos de ellas) para contener una funcion, es decir, en cualquier parate de tu codigo puedes declarar una funcion y esta va se accesible desde cualquier clase, o incluso desde cualquier otra funcion, estas son las Top level functions.
->Observa que decalramos nuestra funcion fuera de la **clase** Persona.
+En kotlin, a diferencia de otros lenguajes de programación, como java por elemplo, no es neceario que declaremos una clase (pronto hablaremos de ellas) para contener una función. Es decir, en cualquier parte de tu código puedes declarar una función y esta va ser accesible desde cualquier clase, o incluso desde cualquier otra función, estas son las Top level functions.
+>Observa que declaramos nuestra función fuera de la **clase** Persona.
 ```kotlin
 	fun saludar(nombre: String) {
 		println("Hola $nombre")
@@ -110,11 +110,11 @@ En kotlin a diferencia de otros lenguajes de programacion, como java por elemplo
 		}
 	}
 ``` 
-Como podemos ver la funcion saludar no esta dentro de la clase Persona per esta siendo invocada dentro de la misma, no te preocupes si no entiendes las clases, pronto veremos a detalle lo que son y para que nos sirven.
+Como podemos ver, la función saludar no está dentro de la clase Persona, pero está siendo invocada dentro de la misma. No te preocupes si no entiendes las clases, pronto veremos a detalle lo que son y para qué nos sirven.
 
 ### Local functions
 
-Kotlin nos permite tambien declarar funciones dentrode otras funciones, las cuale solo son accesibles dentro de la funcion que las contiene.
+Kotlin nos permite también declarar funciones dentro de otras funciones, las cuales solo son accesibles dentro de la función que las contiene.
 ```kotlin
 	fun saludar(nombre: String) {
 		fun crearSaludo(nombreParaSaludo: String): String {
@@ -127,8 +127,8 @@ Kotlin nos permite tambien declarar funciones dentrode otras funciones, las cual
 
 ### Member functions
 
-Este tipo de funciones si son declaradas dentro de una clase, y la forma de acceder a ellas es por medio de una instancia de la clase y con un punto, ejemplo:
->Declaramos una clase y dentro de la misma una funcion.
+Este tipo de funciones sí son declaradas dentro de una clase, y la forma de acceder a ellas es por medio de una instancia de la clase y con un punto, ejemplo:
+>Declaramos una clase y dentro de la misma una función.
 ```kotlin
 	class Calculadora {
 		fun sumar(a: Int, b: Int): Int {
@@ -136,8 +136,8 @@ Este tipo de funciones si son declaradas dentro de una clase, y la forma de acce
 		}
 	}
 ```
->Para hacer una instacia de la clase Calculadora lo hacemos con parentesis, despues para accesar a la funcion sumar lo hacemos con un **.**
->e invocamos la funcion con parentesis como ya lo habiamos visto anteriormente.
+>Para hacer una instacia de la clase Calculadora lo hacemos con parentesis, después para accesar a la función sumar, lo hacemos con un **.**
+>e invocamos la función con paréntesis como ya lo habiamos visto anteriormente.
 ```kotlin
 	val suma = Calculadora().sumar(5, 4)
 ```
@@ -146,13 +146,13 @@ Este tipo de funciones si son declaradas dentro de una clase, y la forma de acce
 
 #### Lambdas
 
-En otrs lenguages son conocidas como funciones anonimas o funciones literales, es decir, es una funcion que no tiene nombre, para declarar una funcion de este tipo, tenemos que seguir la siguiente notacion:
->Las sentencias de nuesta funcion van entre llaves **{}** y es importante que al final de estas se coloquen
+En otros lenguajes son conocidas como funciones anónimas o funciones literales, es decir, es una función que no tiene nombre. Para declarar una función de este tipo, tenemos que seguir la siguiente notación:
+>Las sentencias de nuesta función van entre llaves **{}** y es importante que al final de estas se coloquen
 >parentesis.
 ```kotlin
 	{println("Hola BEDU!")}()
 ```
-Asi de simple, ahora, algo importante es que si queremos ejecutar nuestra funcion tenemos que asignarla a una variable:
+Así de simple. Algo importante es que si queremos ejecutar nuestra función tenemos que asignarla a una variable:
 >Asignamos nuestra lambda a la variable **saludo**
 ```kotlin
 	var saludo = {println("Hola BEDU")}()
@@ -160,24 +160,24 @@ Asi de simple, ahora, algo importante es que si queremos ejecutar nuestra funcio
 	//Ejecutamos nuestra funcion lambda
 	saludo()
 ```
-Ahora bien, te preguntaras, que pasa con los parametros en las funciones lambda?, pues simple, a la hora de declarar nuestras funciones lambda vamos a separar los parametros de las sentencias con **->** entonces del lado izquierdo van nuestros parametros y del lado derecho las sentencias.
->asignamos una funcion lambda que hace una suma de dos numeros a la variable sumar:
+Ahora bien, te preguntarás, ¿qué pasa con los parámetros en las funciones lambda?, pues simple, a la hora de declarar nuestras funciones lambda vamos a separar los parámetros de las sentencias con **->** entonces del lado izquierdo van nuestros parámetros y del lado derecho las sentencias.
+>asignamos una funcion lambda que hace una suma de dos números a la variable sumar:
 ```kotlin
 	var suma = {a: Int, b: Int -> a + b}
 
 	//Ejecutamos nuestra lambda mandandole dos numeros como parametros
 	print(suma(4, 5))
 ```
-Si observas, nuestra funcion recibe dos numeros y con **->** le decimos que va a retornar la suma de los mismos.
+Si observas, nuestra función recibe dos numeros y con **->** le decimos que va a retornar la suma de los mismos.
 
 #### Higher-order functions
 
 Cuando hablamos de este tipo de funciones tenemos que hacer referencia a la programacion funcional, es un tema mas complejo pero es importante que desde ahora veas la importancia del tema ya que kotlin esta pensado para ser usado en programacion funcional.
 
-Entonces, recordemos que podemos enviar parametros a una funcion, pues bien, las Higher-order functions aparte de poder recibir variables como parametros tambien pueden recibir **funciones** como parametros e incluso retornarlas.
+Entonces, recordemos que podemos enviar parámetros a una función, pues bien, las Higher-order functions aparte de poder recibir variables como parámetros, también pueden recibir **funciones** como parámetros e incluso retornarlas.
 
-Para declarar una funcion de orden superior vamos a usar la notacion que ya conocemos, con la diferencia de que dentro de los parentesis (donde van nuestros parametros) por una parte van los parametros y por otra va la funcion que recibira nuestra Higher-order function, hay que tomar en cuanta que la funcion que va como parametro la vamos a escribir con la notacion de lambda ojo con lo que sigue, los parametros "tradicionales" son los que van a entrar a unuestra lambda, ejemplo:
->Funcion de orden superior que recibe dos numeros enteros y una funcion lambda que va a sumar esoso numeros:
+Para declarar una función de orden superior, vamos a usar la notación que ya conocemos, con la diferencia de que dentro de los paréntesis (donde van nuestros parametros) por una parte van los parametros y por otra va la función que recibirá nuestra Higher-order function. Hay que tomar en cuenta que la función que va como parámetro la vamos a escribir con la notación de lambda. Ojo con lo que sigue, los parámetros "tradicionales" son los que van a entrar a nuestra lambda, ejemplo:
+>Función de orden superior que recibe dos numeros enteros y una función lambda que va a sumar esos números:
 ```
 	fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int) -> Int {
 		return suma(a, b)
@@ -191,13 +191,13 @@ Analizemos el ejemplo de arriba:
 
 	}
 ```
->Pasamos como parametros dos variables del tipo Int
+>Pasamos como parámetros dos variables del tipo Int
 ```kotlin
 	fun sumaOrdenSuperior(a: Int, b: Int) {
 
 	}
 ```
->Tambien como parametro pasamos una lambda que va a indicar la estructura del tipo de funcion que va a recibir 
+>También como parámetro pasamos una lambda que va a indicar la estructura del tipo de funcion que va a recibir 
 >nuestra Higher-order function, es decir esta funcion de orden superior va a poder recibir cualquier funcion que 
 >cumpla con esa estructura.
 ```kotlin
