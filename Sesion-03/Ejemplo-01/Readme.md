@@ -81,10 +81,10 @@ Veamos cómo podemos crear una representación de **Persona** de la vida real us
 En el ejemplo anterior, ya declaramos una clase Person que tiene como priopiedad el nombre y que puede saludar, esta clase es un molde
 que podemos usar para representar personas que cumplan con esas caracteristicas y que tengan esas habilidades.
 
-Bien ya sabemos lo que es una clase, es un molde, que usamos para representar cualquier cosa de la vida real, pero ¿porque **Objetos**?
+Bien ya sabemos lo que es una clase, es un molde que usamos para representar cualquier cosa de la vida real, pero ¿porque **Objetos**?
 
 Como hemos dicho, las clases son nuestros moldes, los objetos los creamos con esos moldes, es decir, un objeto es una instancia 
-de determinada clase, por ejemplo, retomando nuestra clase persona, queremos hacer un objeto de **tu** persona, ese objeto lo crearemos a 
+de determinada clase. Por ejemplo, retomando nuestra clase **persona**, queremos hacer un objeto de **tu** persona, ese objeto lo crearemos a 
 partir de la clase Person:
 >Los Objetos (instancia de una clase) se almacenan en variables (espacios en memoria).
 ```kotlin
@@ -98,34 +98,35 @@ partir de la clase Person:
 
     val me: Person = Person()
 ```
-Si te estas preguntando por que usamos parentesis para crear un objeto desde una clase, no te preocupes, tambien tiene que ver con funciones,
+Si te estás preguntando por qué usamos paréntesis para crear un objeto desde una clase, no te preocupes, también tiene que ver con funciones,
 pronto veremos ese tema.
 
-Una vez creado nuestro objeto podemos acceder a sus propiedades y metodos usando la sintaxis de **.**, es decir:
->Para acceder a las propiedades o metodos de un objeto usamos **.**
+Una vez creado nuestro objeto podemos acceder a sus propiedades y métodos usando la sintaxis de **.**, es decir:
+>Para acceder a las propiedades o métodos de un objeto usamos **.**
 ```kotlin
     //Asignamos valor a una propiedad
     me.name = "Tu Nombre"
     //Invocamos uno de sus metodos
     me.sayHello()
 ```
-Ahora que ya sabemos como acceder a las propiedades y metodos de nuestros objetos tenemos que saber que de acuerdo al paradigma POO
-solo en casos muy especiales podemos acceder a las propiedades de un objeto usando el punto, esto por cuestiones de integridad, ya que 
-no debemos permitir que cualquier otro objeto externo a nuestra clase modifique el valor de nuestras propiedades, estas tienen que ser 
-accedidas por unos metodos llamados getters & setters, por lo tanto en kotlin como en la mayoria de los lenguages de programacion existen 
-los modificadores de acceso.
+Ahora que ya sabemos como acceder a las propiedades y metodos de nuestros objetos, tenemos que saber que de acuerdo al paradigma **POO**
+solo en casos muy especiales podemos acceder a las propiedades de un objeto usando el punto. Esto por cuestiones de integridad, ya que 
+no debemos permitir que cualquier otro objeto externo a nuestra clase modifique el valor de nuestras propiedades. Estas tienen que ser 
+accedidas por unos métodos llamados getters & setters. Por lo tanto, en kotlin como en la mayoria de los lenguaJEes de programación existen 
+los **modificadores de acceso**.
 
-Los modificadores de acceso van a determinar desde donde podemos acceder a nuestras variables y metodos, kotlin cuenta con los siguientes
+Los modificadores de acceso van a determinar desde donde podemos acceder a nuestras variables y métodos. Kotlin cuenta con los siguientes
 modificadores de acceso:
 
-- private: Que es accesible solo dentro de la clase que lo contiene y sus metodos.
-- protected: Igual que private pero tambien aplicable a sus subclases.
-- internal: Accesible entre modulos o paquetes.
-- public: Es accesible desde cualquier clase, metodo etc..
+- **private**: Que es accesible solo dentro de la clase que lo contiene y sus metodos.
+- **protected**: Igual que private y también aplicable a sus subclases.
+- **internal**: Accesible entre módulos o paquetes.
+- **public**: Es accesible desde cualquier clase, método etc..
 
 Por defecto en kotlin todo es public, pero tenemos la habilidad de cambiarlo, entonces, retomando el ejemplo anterior.
 
-Lo correcto seria **esconder** la propiedad nombre y modificarla por medio de algun metodo o asignala desde su **constructor**. 
+Lo correcto sería **esconder** la propiedad nombre y modificarla por medio de algun método o asignarla desde su **constructor**. 
+
 Veamos que significa esto:
 >Escondemos la variable name, del exterior de la clase para que ningun objeto externo la pueda modificar directamente:
 ```kotlin
@@ -137,10 +138,10 @@ Veamos que significa esto:
         }
     }
 ```
-Pero entonces, si ya no podemos acceder a nuestra propiedad nombre desde el exterior, como es que asignariamos un nombre 
+Pero entonces, si ya no podemos acceder a nuestra propiedad nombre desde el exterior, ¿cómo es que asignaríamos un nombre 
 a cualquier objeto del tipo Persona?
 
-Una forma de solucionarlo es por medio de su constructor, el constructor es una funcion especial y presente en cada clase que 
+Una forma de solucionarlo es por medio de su constructor. El constructor es una funcion especial y presente en cada clase que 
 se encarga de **construir/inicializar** un objeto a partir de una clase, eso quiere decir que en el constructor es el lugar perfecto
 para asignar los valores por defecto de nuestras propiedades, es decir, piensa que en la vida real, desde que se crea un objeto (imagina cualquiera)
 desde su creacion este objeto ya tiene ciertas propiedades, como tamaño, peso, color etc.
