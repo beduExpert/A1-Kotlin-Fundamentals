@@ -1,28 +1,24 @@
-## Programacion orientada a objetos
+## Programación orientada a objetos
 
 ### OBJETIVO
 
-- Que el alumno aprenda los siguientes temas:
-    - Programación orientada a objetos
-    - Clases y objetos
-    - Propiedades y métodos
-    - Constructores
+- Reconocer los principios de la Programación orientada a objetos: Clases y objetos, Propiedades y métodos, Constructores. 
 
 #### REQUISITOS
 
-1. Tener conocimiento basico sobre el paradigma de programacion POO (Programacion orientada a objetos).
-2. Conocer los tipos de datos, operadores y variables en kotlin.
+1. Tener conocimiento básico sobre el paradigma de programacion POO (Programacion orientada a objetos).
+2. Conocer los tipos de datos, operadores y variables en kotlin. (Revisar a detalle los ejemplos y retos de las sesiones 1 y 2) 
 
 ### DESARROLLO
 
 ## POO: Programacion Orientada a Objetos
 
-La POO es un paradigma de programacion que nos permite crear representaciones abstractas de nuestra realidad por medio 
+La POO es un paradigma de programación que nos permite crear representaciones abstractas de nuestra realidad por medio 
 de moldes.
 
-Basandonos en la definicion anterior, piensa por un momento en tu red social favorita, seguro has visto que tu, dentro de
-esa red social eres un usuario, lo tienes? bien, entonces tu como usuario sabras que tienes ciertas caracteristicas y puedes
-realizar ciertas acciones, es decir, tienes ciertas habilidades, cierto?
+Basándonos en la definición anterior, piensa por un momento en tu red social favorita. Seguro has visto que dentro de
+esa red social eres un usuario. Bien, Tú como usuario sabes que tienes ciertas características y puedes
+realizar ciertas acciones, es decir, tienes ciertas habilidades, ¿cierto?
 
 Por ejemplo:
 
@@ -37,32 +33,32 @@ Por ejemplo:
     - Guardar un post.
 
 Eso es una representacion de la realidad, ya que en la vida real tu eres una persona con ciertas caracteristicas y habilidades, 
-pero que pasa en la vida real? somos miles de millones de personas y es imposible que todos tengamos las mismas caracteristicas
-y habilidades, de la misma forma sucede en la programacion, la red social en la que pensaste seguramente tiene millones de 
-usuarios y como en la vida real hay una variedad inmensa de personas, en la red social tambien puede que exista una gran variedad de 
+pero ¿qué pasa en la vida real? somos miles de millones de personas y es imposible que todos tengamos las mismas caracteristicas
+y habilidades. De la misma forma sucede en la programación, la red social en la que pensaste seguramente tiene millones de 
+usuarios, y como en la vida real hay una variedad inmensa de personas, en la red social tambien puede que exista una gran variedad de 
 tipos de usuarios.
 
-Por ejemplo, si hicieramos una representacion de una persona podriamos decir que sus caracteristicas podrian ser:
+Por ejemplo, si hiciéramos una representación de una persona podríamos decir que sus caracteristicas pueden ser:
 
 - Tiene pelo.
 - Usa lentes.
 - Tiene ojos azules.
 
-Y sus habilidades podrian ser: 
+Y sus habilidades pueden ser: 
 
 - Correr.
-- Hablar ingles.
+- Hablar inglés.
 - Programar en kotlin.
 
-El objetivo de la **POO** es descomponer estos **problemas de la vida real** en partes mas pequeñas y hacer una representacion abstracta
-por medio de modelos (moldes genericos) de la realidad, estos moldes o modelos son llamados **Clases** en kotlin.
+El objetivo de la **POO** es descomponer estos **problemas de la vida real** en partes más pequeñas y hacer una representación abstracta
+por medio de modelos (moldes genéricos) de la realidad. Estos moldes o modelos son llamados **Clases** en kotlin.
 
-Las clases se declaran con la palabra reservada **class** de kotlin, y como lo mencionabamos, una clase puede tener propiedades (caracteristicas)
-y metodos(habilidades).
+Las clases se declaran con la palabra reservada **class** de kotlin, y como lo mencionábamos, una clase puede tener propiedades (características)
+y métodos(habilidades).
 
-Veamos como podemos crear una representacion de **Persona** de la vida real usando la **POO**.
+Veamos cómo podemos crear una representación de **Persona** de la vida real usando la **POO**.
 
-> Esta es la representacion mas basica de una clase
+> Esta es la representación más basica de una clase
 ```kotlin
     class Person {  }   
 ```
@@ -72,7 +68,7 @@ Veamos como podemos crear una representacion de **Persona** de la vida real usan
         var name: String = ""
     }
 ```
->Las habilidades o capacidades (metodos) se representan con funciones.
+>Las habilidades o capacidades (métodos) se representan con funciones.
 ```kotlin
     class Person {
         var name: String = ""
@@ -82,12 +78,12 @@ Veamos como podemos crear una representacion de **Persona** de la vida real usan
         }
     }
 ```
-En el ejemplo anterior ya declaramos una clase Person que tiene como priopiedad el nombre y que puede saludar, esta clase es un molde
+En el ejemplo anterior, ya declaramos una clase Person que tiene como priopiedad el nombre y que puede saludar, esta clase es un molde
 que podemos usar para representar personas que cumplan con esas caracteristicas y que tengan esas habilidades.
 
-Bien ya sabemos lo que es una clase, es un molde, que usamos para representar cualquier cosa de la vida real, pero porque **Objetos**?
+Bien ya sabemos lo que es una clase, es un molde, que usamos para representar cualquier cosa de la vida real, pero ¿porque **Objetos**?
 
-Como lo venimos diciendo las clases son nuestros moldes, los objetos los creamos con esos moldes, es decir, un objeto es una instancia 
+Como hemos dicho, las clases son nuestros moldes, los objetos los creamos con esos moldes, es decir, un objeto es una instancia 
 de determinada clase, por ejemplo, retomando nuestra clase persona, queremos hacer un objeto de **tu** persona, ese objeto lo crearemos a 
 partir de la clase Person:
 >Los Objetos (instancia de una clase) se almacenan en variables (espacios en memoria).
