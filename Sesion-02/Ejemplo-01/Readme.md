@@ -3,7 +3,7 @@
 ### OBJETIVO
 
 - Aprender a utilizar los diferentes tipos de funciones en kotlin.
-- Tener un acercamiento a la programacion funcional.
+- Reconocer algunas bases de la programación funcional.
 
 #### REQUISITOS
 
@@ -14,18 +14,17 @@
 
 ### FUNCIONES
 
-Ahora que ya hemos visto los tipos de datos y operadores de kotlin es momento de conocer que son y para 
+Ahora que ya hemos visto los tipos de datos y operadores de Kotlin es momento de conocer qué son y para 
 que nos sirven las funciones.
 
-Imagina (pensando en codigo) que tienes que realizar determinada accion mas de una vez, seria complicado 
-e incorrecto tener que replicar el codigo encargado de realizar dicha accion cada vez que lo necesitemos,
-para solucionar esto, podriamos escribir solo una vez este codigo y solo invocarlo cada que lo necesitemos
+Imagina (pensando en código) que tienes que realizar determinada acción mas de una vez. Sería complicado 
+e incorrecto tener que replicar el código encargado de realizar dicha acción cada vez que lo necesitemos. Para solucionarlo, podríamos escribir solo una vez este codigo e invocarlo cada que lo necesitemos
 sin tener que volver a escribirlo.
 
-Una funcion o metodo es un bloque de codigo ejecutable, es decir ese conjunto de instucciones se ejecutaran 
-solo hasta que sea invocada la funcion que las contiene.
+Una función o método es un bloque de código ejecutable, es decir, ese conjunto de instucciones se ejecutarán 
+solo cuando sea invocada la función que las contiene.
 
-En kotlin se usa la palabra reservada **fun** para declarar las funciones.
+En Kotlin se usa la palabra reservada **fun** para declarar las funciones.
 ```kotlin
 	fun crearSaludo(nombre: String): String {
 		return "Hola $nombre Bienvenido al curso de fundamentos de kotlin."
@@ -33,25 +32,25 @@ En kotlin se usa la palabra reservada **fun** para declarar las funciones.
 
 	println(crearSaludo())
 ```
-Una funcion consta de varios elementos importantes: nombre, argumentos, tipo de retorno, sentencia de retorno, veamos cada una a detalle.
+Una función consta de varios elementos importantes: nombre, argumentos, tipo de retorno, sentencia de retorno. Veamos cada una a detalle.
 
->Esta funcion solo se encarga de imprimir en consola un mensaje de bienvenida, la funcion solo consta de el nombre, es decir, se declara    
+>Esta función solo se encarga de imprimir en consola un mensaje de bienvenida, la función solo consta de el nombre, es decir, se declara    
 >con la palabra reservada **fun** seguido del nombre **saludar**, los parentesis indican el lugar donde van los argumentos (enseguida lo 
->veremos) y por ultimo, entre las llaves van todas las sentencias de codigo que va a ejecutar eta funcion cuando sea invocada.
+>veremos) y por último, entre las llaves, van todas las sentencias de código que va a ejecutar esta funcion cuando sea invocada.
 ```kotlin
 	fun saludar() {
 		println("Hola BEDU!")
 	}
 ```
->Ahora, si necesitamos utilizar esa funcion saludar, pero para saludar a cualquier nombre que introduzcamos, lo haremos por medio de los 
->argumentos de la funcion, los cuales podemos nombrar de la siguiente forma **nombre: String**, como puedes ver, del lado izquierdo del 
->argumento va el nombre de tu argumento y del lado derecho el tipo de dato.
+>Ahora, si necesitamos utilizar esa función **saludar**, para saludar a cualquier nombre que introduzcamos, lo haremos por medio de los 
+>argumentos de la función, los cuales podemos nombrar de la siguiente forma **nombre: String**. Como puedes ver, del lado izquierdo  
+> va el nombre de tu argumento y del lado derecho el tipo de dato.
 ```kotlin
 	fun saludar(nombre: String) {
 		println("Hola $nombre")
 	}
 ```
->Lo ultimos dos elementos (tipo de retorno y sentencia de retoro) son muy importantes ya qye nos permiter usar nuestra funcion
+>Lo últimos dos elementos (tipo de retorno y sentencia de retoro) son muy importantes ya qye nos permiter usar nuestra funcion
 >como una expresion, es decir, nuestra funcion va a tener un valor del cual indicaremos su tipo colocando **:** despues de los parentesis 
 >seguido de el tipo de dato que va acontener nuestra funcion.
 ```kotlin
