@@ -253,3 +253,112 @@ aqui entra la herencia.
     }
 
 ```
+Como puedes ver la clase persona contiene las propiedades y metodos que tendrian que contener tambien nuestras otras dos clases, pero para evitar escribir dos veces ese codigo, creamos una clase lo mas generica posible, en este caso Person y hacemos que Artist y Firefighter hereden de esa clase.
+
+Dentro de las clases hijo poremos acceder a la clase padre llamandola con **super**.
+
+>Artist y Firefighter heredan de Person
+```kotlin
+    class Artist: Person() {
+        private var stageName:String = ""
+        
+        fun setStageName(name: String) {
+            this.stageName = name
+        }
+    
+        fun getStageName():String {
+            return this.stageName
+        }
+
+        fun sing() {
+            println("Hello I'm singing")
+        }
+    }
+
+    class Firefighter: Person {
+        private var department:String = ""
+        
+        fun setDepartment(department: String) {
+            this.department = department
+        }
+    
+        fun getDepartment():String {
+            return this.department
+        }
+
+        fun sing() {
+            putOutTheFire("Putting out the fire")
+        }
+    }
+```
+Para indicar que una clase hereda de otra lo hacemos en la cabecera de la declaracion de la clase antes de abrir las llaves que determinan el cuerpo de la misma, se escriben **:** y enseguida el nombre de la clase de la que heredaremos mas los parentesis.
+
+Entonces en este punto veamos lo que ya sucedio tomando como ejemplo nuestra clase Artist.
+
+Ya que Artist hereda de persona entonces automaticamnte Artist cuenta con sus propiedades y tambien con las de person, es decir que podemos hacer lo siguiente:
+```kotlin
+    //Instamnciamos uno bjeto de la clase Person
+    var me:Person = Person()
+
+    //Seteamos el nombre a me
+    me.setName("Nombre Uno")
+
+    //Instanciamos un objeto de la clase Artist
+    var artistOne: Artist = Artist()
+
+    //Aunque Artist no tiene como tal la propiedad name, ni el metodo setName, podemos usarlos como si de una //
+    //instancia de Person se tratara, ya que Artist esta heredando de Person.
+    artistOne.setName("Nombre Artista")
+
+    //Tambien asignamos una propiedad que se pertenece implicitamente en la clase Artist
+    asrtistOne.setStageName("Stage Name Uno")
+```
+Como puedes observas la instancia de Artist ahora hace propias las porpiedades y metodosde la clase Person.
+
+Recuerda que la herencia nos permite crear clases a partir de otras clases y es muy util ya que gracias a la herencia podemos ahorrarnos mucho codigo y reutilizar.
+
+#### Polimosrfismo
+
+Este concepto siempre va de la mano de la herencia, se refiere a que tanto un objeto como una funcion pueden adoptar multiples formas, recuerdas que la clase Person cuenta con un metodo sayHello()?
+
+Bien, este metodo lo que hace es que imprime en consola un saludo:
+```kotlin
+    fun sayHello() {
+        println("Hello my name is $name")
+    }
+```
+aunque no lo tengamos definido en la clase Artist esta puede ejecutarlo ya que esta heredando de Person, por eso es que podemos hacer esto:
+```kotlin
+    artistOne.sayHello()
+```
+de esta forma tanto person como artist van a saludar de la misma forma, es decir ambas van a imprimir "Hello, my name is $name", pero que pasa si queremos que el artista salude a su modo, que salude "Hello my name is $name an I'm an artist"
+
+estamos diciendo que la funcion sayHello tome otra forma, si, eso es el polimorfismo, esto lo logramos **sobre escribiendo la funcion** con la palabra reservada **override**, te preguntaras que quiere decir que sobre escribamos una funcion, bien pues esto quiere decir que vamos a partir de la definicion de nuestra clase padre, e este caso Person y vamos a re-definir la misma funcion pero ahora en la clase hijo, en este caso la clase Artist comenzando con lapalabra override.
+
+Ejemplo:
+
+>La class Person tiene declarada la funcion sayHello()
+```kotlin
+
+    //Recordando nuestra clase Person
+    class Person {
+        /*...*/
+    
+        fun sayHello() {
+            println("Hello my name is $name")
+        }
+    }
+
+    //Sobre escribimos la funcion sayHello con override
+    class Artist: Person() {
+        /*...*/
+
+        override fun sayHello() {
+            println("Hello my name is $name ans I'm an artist")
+        }
+    }
+
+```
+Como puedes ver en ambas clases llamamos de la misma forma a la funcion sayHello pero debido a que en Artist la sobre escribimos se va a comportar de diferente forma que en Person.
+
+Ahora que conoces mas sobre herencia y polimorfismo, dirigete al [Reto 02](/../../tree/master/Sesion-03/Reto-02/) y no olvides revisar la documentacion oficial de kotlin.
