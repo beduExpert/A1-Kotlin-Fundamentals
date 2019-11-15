@@ -1,4 +1,4 @@
-## Ejemplo 1: Clases internas y anidadas - Kotlin Fundamentasl
+## Ejemplo 2: Clases internas y anidadas - Kotlin Fundamentasl
 
 ### OBJETIVO
 
