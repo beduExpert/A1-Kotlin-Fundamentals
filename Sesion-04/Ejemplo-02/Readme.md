@@ -1,27 +1,56 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Ejemplo 1: Clases internas y anidadas - Kotlin Fundamentasl
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Que el alumno comprenda el uso y la definicion de :
+    - Clases internas.
+    - Clases anidadas. 
+- Que el alumno logre reconocer las areas donde implementar las Clases internas y Clases anidadas.
 
-#### REQUISITOS
+### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Tener conocimiendto base sobre Programacion Orientada a Objetos
 
-#### DESARROLLO
+### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+#### Clases anidadas (Nested Class)
 
-<details>
+Como su nombre lo dice las clases anidadas son aquellas que declaramos dentro de otras clases, cuentan con las mismas caracteriticas que cualquer otra clase, es decir, pueden tener propiedades, metodos e incluso pueden heredar de otras clases. la unica diferencia es que estan contenidas por otra clase, ejemplo:
+```kotlin
+	class Person {
+		var personalInfo: PersonalInfo = PersonalInfo()
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+		class PersonalInfo {
+			var name: String = "Name"
+			var age: Int = 20
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+			fun sayHello() {
+				println("Hello my name is $name and I'm $age years old")
+			}
+		}
+	}
+```
+Analizando el codigo anterior veremos que la clase Person tiene una propiedad llamada **personalInfo**, esta propiedad es del tipo **PersonalInfo** que es una clase que declaramos dentro de Person.
 
+Las clases anidadas cuentan con las siguientes caracteristicas:
+- No pueden acceder a las propiedades/metodos de la clase que las contiene.
+- Si quisieremos instanciar un objeto a partir de la clase anidada dependera de los modificadores de acceso que ya vimos en temas anteriores, pero usualmente se hace de la siguiente forma:
+``` kotlin
+	var personalInfo: Person.PersonalInfo = Person.PersonalInfo()
+```
 
+Nota que se hace referencia primero a la clase que la contiene y con punto se accede a la o las clases que esta contenga.
+
+#### Clases Internas (Inner Class)
+
+Las clases internas o Inner Class tienen exactamente las mismas caracteristicas que las Nested Class, pero a diferencia de estas ultimas las inner class si pueden acceder a las propiedades/metodos de la clase que las contiene, estncoes esta clase es una nested class pero marcada como interna con la palabra reservada **inner**, es decir:
+```kotlin
+	class Car {
+		val model: Int = 2019
+
+		inner class Engine {
+			val forModel: Int = model
+		}
+	}
+```
+La clase Car tiene una nested class marcada como inner, ahora que sabes esto ve al [Reto 02](/../../tree/master/Sesion-04/Reto-02/)
