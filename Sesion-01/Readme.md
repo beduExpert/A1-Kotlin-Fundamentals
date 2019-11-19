@@ -12,7 +12,7 @@
 - Comprender las bases de la Programación Orientada a Objetos.
 - Tener conocimiento básico de programación funcional (opcional)
 - Tener instalado IntelliJ IDEA CE (la versión más reciente)
-- Tener muchas ganas de cambiar el futuro creando la mejor tecnologia :).
+- Tener muchas ganas de cambiar el futuro creando la mejor tecnología :).
 
 #### ORGANIZACION DE LA CLASE 
 
