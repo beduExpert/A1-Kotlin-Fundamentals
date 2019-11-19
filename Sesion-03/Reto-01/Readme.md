@@ -1,27 +1,18 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 1: Clases y objetos, Propiedades, metodos y contructores - Kotlin fundamentals.
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno sea capaz de representar problemas de la vida real por medio de la programacion orientada a objetos.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber visto a detalle el [Ejemplo 01](/../../tree/master/Sesion-03/Ejemplo-01)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Resuelve los siguientes retos en el archivo main.kt incluido en el proyecto dentro de este reto:
 
-<details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+- Crea una clase que represente un automovil, incluye almenos 5 propiedades y 3 metodos.
+- Crea una clse que represente a una persona, incluye almenos 6 propiedades y 3 metodos.
+- Implementa el constructor con almenos un parametro de cada clase.
 

@@ -1,27 +1,18 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 2: Getters y Setters & Herencia y Polimorfismo - Kotlin fundamentals.
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno sea capaz de encapsular las propiedades de las clases.
+- Que el alumno sea capaz de implementar la herencia y el porlimorfismo con sus clases.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber visto a detalle el [Ejemplo 02](/../../tree/master/Sesion-03/Ejemplo-02)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Resuelve los siguientes retos en el archivo main.kt incluido en el proyecto dentro de este reto, considera usar las clases que creaste en el reto anterior:
 
-<details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+- Encapsula con getters y setters proporcionados por el programador todas las propiedades de las clases que creaste en el ejemplo anterior.
+- Utiliza los getters y setters proporcionados por kotlin sobre almenos una propiedad de cada clase, condicionando el seteo.
+- Considerando que creaste una clase automovil y una clase persona en el reto anterior: crea una clase vehiculo (Que contenga propiedades y metodos genericas de vehiculos) y que automovil herede de esta-

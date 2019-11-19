@@ -1,27 +1,21 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 1: Lambdas & Higher-order functions - Kotlin Fundamentals 
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- implementar funciones de orden superior usando funciones lambda. 
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Revisar a detalle el  [Ejemplo 01](/../../tree/master/Sesion-05/Ejemplo-01)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En el proyecto incluido en este directorio dentro de la carpeta src, encotrarás un archivo llamado main.kt, completa el siguiente reto dentro el mismo archivo.
 
-<details>
+- Escribe una Higher-order function que reciba nombre y apellido de una persona por separado y retorne un String, usa esa funcion para ** ejecutar las funciones que se encarguen de generar los siguientes mensajes:
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+	- Mensaje de bienvenida con nombre y apellido.
+	- Mensaje de tu eleccion con nombre y apellido.
+	- Mensaje de despedida con nombre y apellido.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+A continuación almacena cada uno de los mensajes en un arreglo de strings y después itera sobre cada uno de los elementos del arreglo para imprimirlos.
