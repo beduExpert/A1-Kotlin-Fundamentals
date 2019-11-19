@@ -48,3 +48,21 @@ Recuerda que este ejmplo **Singleton** es el nombre de nuestra clase.
 
 #### Companion Object
 
+En lenguajes de programacion como java existe un modificador de acceso llamado **static** este modificador nos permite crear objetos,variables o metodos en una clase para utilizarlos sin necesidad de hacer una instancia de la clase, en kotlin no existe **static** y su equivalente es companion object, con estos vamos a poder crear objetos dentro de nuestras clases a los cuales podremos acceder sin instanciar nuestra clase.
+
+Ejemplo: 
+
+```kotlin
+    class Vehicle {
+        companion object Factory {
+            fun create(): Vehicle = Vehicle()
+        }
+    }
+```
+
+En el ejemplo podemos ver que nuestra clase vehicle tiene dentro un companion object que se encarga de crear instancias de la clase vehicle, los metodos de un companion object pueden llamarse haciendo referencia a el nombre de la case sin parentesis y con punto:
+```kotlin
+    val vehicleInstance = Vehicle.create()
+```
+
+No olvides visitar la documentacion oficial de kotlin para que veas todas las formas de usar los companion objects, ve al [Reto 03](/../../tree/master/Sesion-04/Reto-03) y resuelvelo con lo que aprendiste en este ejemplo.
