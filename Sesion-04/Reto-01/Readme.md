@@ -1,27 +1,36 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Ejemplo 1: Interfaces & Clases abstractas - Kotlin Fundamentals.
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno comprenda el uso de la POO y logre hacer implementaciones de los siguientes temas:
+	- Interfaces
+	- Clases abstractas
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Tener conocimiento basico sobre Programacion Orientada a Objetos. 
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En el archivo main de este proyecto estan incluidas las estructuras de la Clase abstracta Person, la interface PersonActions y la clase Worker escrible el contenido de cada una dada la siguiente descripcion:
 
-<details>
+- Person: Propiedades
+	- name: String
+	- age: Int
+	- availabe: Bool
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+- PersonActions: Metodos
+	- sayHello()
+	- increaseAge()
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+- Worker: Propiedades
+	- typeOfWork: String
+	- workAddress: String
 
+- Worker: Metodos
+	- startWorking()
+	- stopWorking()
+
+- Has que Worker herede la clase abstracta e implemente la interface.
+- Sobreescribe las propiedades y metodos de ambos.
+- No olvides los getters & setters de las propiedades de Worker.
