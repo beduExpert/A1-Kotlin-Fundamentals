@@ -12,7 +12,7 @@
 
 #### REQUISITOS
 
-1. Instalar [IntelliJ IDEA CE](https://www.jetbrains.com/es-es/idea/download/) (La version más reciente)
+1. Instalar [IntelliJ IDEA CE](https://www.jetbrains.com/es-es/idea/download/) (La versión más reciente).
 2. Tener conocimiento básico de cualquier lenguaje de programación.
 3. Tener ganas de aprender a crear el futuro con la mejor tecnología. 
 
@@ -25,21 +25,21 @@ Una vez que tengamos instalado el IDE (IntelliJ IDEA) vamos a crear nuestro prim
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img1.png)
 
 > Debido a que en este curso vamos a aprender los fundamentos de Kotlin como lenguaje, seleccionaremos la opción 
-> Kotlin y a continuacion JVM | IDEA. Después daremos en siguiente para continuar con la configuracion de nuestro 
+> Kotlin y a continuacion JVM | IDEA. Después daremos en siguiente para continuar con la configuración de nuestro 
 > proyecto.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img2.png)
 
 > Para finalizar, solo nos falta asignar un nombre a nuestro proyecto e indicarle a nuestro IDE la ubicación de los 
 > archivos de nuestro proyecto en nuestro sistema de archivos. Cuando hayas agregado esta información terminaremos 
-> la configuración de nuestro proyecto dando click en el boton Finalizar.
+> la configuración de nuestro proyecto dando clic en el botón Finalizar.
 
 > A continuación IntelliJ comenzará a crear la estructura y los archivos necesarios para nuestro proyecto.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img3.png)
 
 > Con nuestro proyecto creado identifiquemos los archivos de nuestro proyecto (Fig. 1) Toma en cuenta que dentro de 
-> la carpeta src siempre estarán nuestros archivos fuente, los cuales tendrán la extencion **kt**.
+> la carpeta src siempre estarán nuestros archivos fuente, los cuales tendrán la extensión **kt**.
 
 #### Creando nuestro primer archivo.
 
@@ -53,7 +53,7 @@ En kotlin cualquier programa que hagamos debe tener un punto de entrada. En este
 llamada **main** que recibirá como parámetro un arreglo de Strings (no te preocupes si por ahora no entiendes algunos conceptos, más adelante en el curso entenderás
 de qué se trata), de esta forma podremos ejecutar nuestro programa y ver sus resultados. Hagamos una prueba.
 
-> Escribe la funcion **main** como se muestra a continuación. Luego, da click derecho sobre el archivo y busca la opción **Run**,
+> Escribe la funcion **main** como se muestra a continuación. Luego, da clic derecho sobre el archivo y busca la opción **Run**,
 > esto provocará que nuestro IDE compile y ejecute nuestro programa en Kotlin.
 
 ```kotlin
@@ -80,11 +80,11 @@ para las cuales usamos las palabras reservadas:
 Debido a que Kotlin se rige por la inmutabilidad, uno de los principios de la programacion funcional, vamos a preferir el uso 
 de variables **inmutables**.
 
-#### Declaración de Variables.
+#### Declaración de Variables
 
-Existen varias formas de declarar o nombrar tus variables en Kotlin, Éstas cambian de acuerdo a la necesidad de la solución.
+Existen varias formas de declarar o nombrar tus variables en Kotlin. Estas cambian de acuerdo a la necesidad de la solución.
 Es importante que a la hora de nombrar tus variables recuerdes que tienen que ser lo mas descriptivas posibles. Teniendo esto claro
-veamos de que formas podemos declararlas.
+veamos de qué formas podemos declararlas.
 
 ```kotlin
     // Variables locales de asignacion inmediata
@@ -103,7 +103,7 @@ veamos de que formas podemos declararlas.
 Las variables de **asignación inmediata** son aquellas a las que se les asigna su valor en tiempo de compilación, es decir, cuando 
 nuestro compilador está traduciendo nuestro código Kotlin a bitecode.
 
-Cuando en la declaración, no especificamos el tipo de dato, Kotlin por si solo lo infiere. Es decir, podemos declarar nuestras variables
+Cuando en la declaración, no especificamos el tipo de dato, Kotlin por sí solo lo infiere. Es decir, podemos declarar nuestras variables
 así:
 
 ```kotlin
@@ -116,11 +116,11 @@ y también así:
     var nombre = "Tu Nombre"
 ```
 
-Con el fin de comenzar con buenas prácticas, es importante especificar el tipo de dato, así aseguramos que nuestro código sea 
+Con el fin de comenzar con buenas prácticas, es importante especificar el tipo de dato. Así aseguramos que nuestro código sea 
 súper claro y descriptivo.
 
-Podemos tambien declarar variables sin asignarles un valor, éstas forzosamente tienen que ser usando la palabra resevada **var**, 
-cuando declaramos varaibles sin asignarles un valor inicial es necesario especificar el tipo de dato que esta variable va a 
+Podemos también declarar variables sin asignarles un valor. Estas forzosamente tienen que ser usando la palabra reservada **var**, 
+cuando declaramos variables sin asignarles un valor inicial es necesario especificar el tipo de dato que esta variable va a 
 almacenar como se muestra a continuación: 
 
 ```kotlin
@@ -129,7 +129,7 @@ almacenar como se muestra a continuación:
     var numExt: Int
 ```
 
-Si te preguntas, **¿qué pasó con el medio de acceso de las variables?**  Kotlin suguiere que las variables de acceso local,
+Si te preguntas, **¿qué pasó con el medio de acceso de las variables?**  Kotlin sugiere que las variables de acceso local,
 es decir, solo dentro de su función, sean declaradas como **val** siguiendo el principio de inmutabilidad. 
 Es decir si tuvieramos una función que multiplicara dos números dados (a * b), la variable que almacenara el valor no tendría que mutar jamás y tampoco
 tendría que afectar o ser afectada por elemetos externos a dicha función. Por eso lo ideal sería declararla de la siguiente forma:
