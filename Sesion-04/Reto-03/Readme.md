@@ -1,27 +1,20 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 3: Singletons & Companion objects - Kotlin Fundamentals.
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno comprenda el uso de la POO y logre hacer implementaciones de los siguientes temas:
+	- Singleton
+	- Companion Object
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Tener conocimiento basico sobre Programacion Orientada a Objetos. 
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Tomando como base la solucion del reto anterior:
 
-<details>
+- Crea una version Singleton (Object) de la clase CarFactory.
+- Crea un companion object dentro de Carfactory, dentro del companion crea una funcion por cada modelo que devuelva una instancia de car con su correspondiente modelo.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+Nota: al final deberas tener dos CarFactory, una es un Singleton y otra es Una clse normal con un companion object.
