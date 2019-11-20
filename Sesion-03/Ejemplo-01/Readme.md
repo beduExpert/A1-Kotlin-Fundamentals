@@ -7,7 +7,7 @@
 #### REQUISITOS
 
 1. Tener conocimiento básico sobre el paradigma de programación POO (Programación orientada a objetos).
-2. Conocer los tipos de datos, operadores y variables en kotlin. (Revisar a detalle los ejemplos y retos de las sesiones 1 y 2) 
+2. Conocer los tipos de datos, operadores y variables en kotlin. (Revisar a detalle los ejemplos y retos de las sesiones 1 y 2). 
 
 ### DESARROLLO
 
