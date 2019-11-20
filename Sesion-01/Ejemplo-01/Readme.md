@@ -119,8 +119,8 @@ y también así:
 Con el fin de comenzar con buenas prácticas, es importante especificar el tipo de dato. Así aseguramos que nuestro código sea 
 súper claro y descriptivo.
 
-Podemos también declarar variables sin asignarles un valor. Estas forzosamente tienen que ser usando la palabra reservada **var**, 
-cuando declaramos variables sin asignarles un valor inicial es necesario especificar el tipo de dato que esta variable va a 
+Podemos también declarar variables sin asignarles un valor. Estas forzosamente tienen que ser usando la palabra reservada **var**. 
+Cuando declaramos variables sin asignarles un valor inicial, es necesario especificar el tipo de dato que esta variable va a 
 almacenar como se muestra a continuación: 
 
 ```kotlin
@@ -131,8 +131,8 @@ almacenar como se muestra a continuación:
 
 Si te preguntas, **¿qué pasó con el medio de acceso de las variables?**  Kotlin sugiere que las variables de acceso local,
 es decir, solo dentro de su función, sean declaradas como **val** siguiendo el principio de inmutabilidad. 
-Es decir si tuvieramos una función que multiplicara dos números dados (a * b), la variable que almacenara el valor no tendría que mutar jamás y tampoco
-tendría que afectar o ser afectada por elemetos externos a dicha función. Por eso lo ideal sería declararla de la siguiente forma:
+Por ejemplo, si tuviéramos una función que multiplicara dos números dados (a * b), la variable que almacenara el valor no tendría que mutar jamás y tampoco
+tendría que afectar o ser afectada por elementos externos a dicha función. Por eso lo ideal sería declararla de la siguiente forma:
 
 ```kotlin
 // Variable de acceso local
@@ -142,8 +142,8 @@ fun multiplicar(a: Int, b: Int): Int {
 }
 ``` 
 
-Ahora bien, si tuviesemos que usar la misma variable desde distintos puntos de nuestro programa, es decir desde distintas funciones,
-tendríamos que declarar una variable de forma global o top-level. Éstas se declaran fuera de cualquier función, incluso de nuestra función main
+Ahora bien, si tuviésemos que usar la misma variable desde distintos puntos de nuestro programa, o sea desde distintas funciones,
+tendríamos que declarar una variable de forma global o top-level. Estas se declaran fuera de cualquier función, incluso de nuestra función main
 y de esta forma podremos acceder a dicha variable desde cualquier parte de nuestro programa:
 
 ```kotlin
@@ -169,12 +169,12 @@ Como puedes ver nuestra variable **PI** está siendo accedida desde dos funcione
 
 #### Variables VS Objetos
 
-En Kotlin las variables se manejan de dos formas. Existen las variables **"normales"** por nombralas de alguna forma
+En Kotlin las variables se manejan de dos formas. Existen las variables **"normales"** por nombrarlas de alguna forma
 y las **variables tratadas como objetos**. Las variables "normales" son elementales, es decir, representan un espacio en memoria
 que puede almacenar solo un dato.
 
-Las variables que son tratadas como objetos, representan un espacio en memoria más complejo. Es decir un objeto puede contener
-variables elementales y métodos o acciones, ya que en kotlin todo es un objeto, vamos a preferir seguir esta linea que nos propone
+Las variables que son tratadas como objetos, representan un espacio en memoria más complejo. Esto significa que un objeto puede contener
+variables elementales y métodos o acciones, ya que en kotlin todo es un objeto, vamos a preferir seguir esta línea que nos propone
 el lenguaje mismo.
 
 Veamos de qué se trata analizando el siguiente código:
@@ -194,14 +194,14 @@ Veamos de qué se trata analizando el siguiente código:
 Cuando "declaramos" variables de esta forma, Kotlin les asigna un tipo de dato primitivo. En este caso **Int** a cada número 
 que estamos imprimiendo. Es decir, de esta forma el 1, 5 ó 4 están siendo almacenados en memoria como un solo dato y por tanto 
 no existen propiedades o métodos a los que podamos acceder sobre ellos. Para probarlo escribamos 1 y a continuación un punto para ver 
-a que tenemos acceso sobre un valor de estos:
+a qué tenemos acceso sobre un valor de estos:
 
-> Observa que los elementos que nos suguiere nuestro editor no son mas que ayuda del mismo y no forman parte como tal del número.
+> Observa que los elementos que nos suguiere nuestro editor no son más que ayuda del mismo y no forman parte como tal del número.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img8.png)
 
 Ahora bien, si declaramos nuestras variables como se muestra en el siguiente ejemplo, kotlin las tratará como un objeto y tendremos acceso a un 
-sinfin de métodos o acciones sobre nuestras variables, que nos van a facilitar mucho las operaciones sobre nuestas variables
+sinfin de métodos o acciones sobre nuestras variables, que nos van a facilitar mucho las operaciones sobre nuestas variables.
 
 ```kotlin
     /*
@@ -218,14 +218,14 @@ sinfin de métodos o acciones sobre nuestras variables, que nos van a facilitar 
 ```
 
 Como puedes ver, declaramos nuestras variables con la palabra reservada **val** y ahora podemos hacer las mismas operaciones que habíamos hecho
-con nuestras variables elementales, pero de una forma más clara y descriptiva. Para probar y que descubras la gran cantidad de métodos que
-Kotlin nos ofrece sobre cada tipo, basta con que coloques un punto después de tu variable como a continuación:
+con nuestras variables elementales, pero de una forma más clara y descriptiva. Para probar y descubrir la gran cantidad de métodos que
+Kotlin nos ofrece sobre cada tipo, basta con que coloques un punto después de tu variable como se muestra a continuación:
 
 > Observa que los elementos que nos suguiere nuestro editor,  son todas las operaciones que podemos hacer sobre nuestro valor y forman parte de él como tal.
 
 ![](https://github.com/beduExpert/A1-Kotlin-Fundamentals/blob/master/Sesion-01/Ejemplo-01/imagenes/KotlinFundamentals-s1-img9.png)
 
-Si ejecutamos nuestro programa, nos daremos cuenta de que el resultaco con ambas formas aparentemente es lo mismo, pero la verdadera razon del porque kotlin suguiere que todo sea tratado como un objeto, es por que por ejemplo en este caso, las operaciones que hicimos al final están 
+Si ejecutamos nuestro programa, nos daremos cuenta que el resultado con ambas formas aparentemente es lo mismo, pero la verdadera razón del porqué kotlin sugiere que todo sea tratado como un objeto, es porque, por ejemplo en este caso, las operaciones que hicimos al final están 
 mucho más optimizadas y como lo explicamos antes, esta nueva forma permite hacer que nuestro código sea más descriptivo.
 
 > Observa en la consola que nuestro editor nos provee el resultado de la ejecución de nuestro programa.
