@@ -27,6 +27,6 @@ haciendo uso de String templates.
     var numeros: Array<Int> = arrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
     val n1 = 4
 ```
-Itera sobre todos los elementos del arreglo números. En cada iteracion compara el elemento actual contra el valor de la variable n1. Cuando este coincida imprime en consola el valor de la variable n1 pero de forma textual es decir, **Cuatro**. De no coincidir imprime **Cualquier otro numero** (textual).
+Itera sobre todos los elementos del arreglo números. En cada iteracion compara el elemento actual contra el valor de la variable n1. Cuando este coincida, imprime en consola el valor de la variable n1 pero de forma textual, es decir **Cuatro**. De no coincidir imprime **Cualquier otro numero** (textual).
 
-- Realiza el punto anterion pero ahora usando **forEach()**
+- Realiza el punto anterior pero ahora usando **forEach()**
