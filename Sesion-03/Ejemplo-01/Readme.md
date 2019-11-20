@@ -22,7 +22,6 @@ Por ejemplo:
     - Foto de perfil
     - Nickname
     - Email
-    
     - Habilidades
     - Hacer un post
     - Dar like
