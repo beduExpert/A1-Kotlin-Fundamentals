@@ -1,27 +1,26 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 2: Clase internas y anidadas - Kotlin Fundamentals.
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno comprenda el uso de la POO y logre hacer implementaciones de los siguientes temas:
+	- Clases internas
+	- Clases anidadas
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Tener conocimiento basico sobre Programacion Orientada a Objetos. 
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+- Dentro de la clase Car, implementa una clase anidada que represente el sistema de aire acondicionado con las siguientes propiedades y metodos:
 
-<details>
+- AirConditioner: Propiedades
+	- level: Int
+	- isOn: Bool
+- AirConditioner: Metodos
+	- levelUp()
+	- levelDown()
+	- poweOn()
+	- poweOff()
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+- Dentro de la clase CarFactory esta una propiedad, es un arreglo que representa los 3 modelos de motor disponibles, declara tres inner class, una por cada modelo de motor, cada clase se va a encargar de crear una instancia de la clase Car y a esa clase clar se le va a asignar el modelo que corresponde, cada inner class debera tomar el modelo de su clase contenedora.

@@ -1,4 +1,4 @@
-## Ejemplo 1: Interfaces & Clases abstractas - Kotlin Fundamentals.
+## Reto 1: Interfaces & Clases abstractas - Kotlin Fundamentals.
 
 ### OBJETIVO 
 
