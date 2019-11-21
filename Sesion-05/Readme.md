@@ -11,4 +11,5 @@
 
 	- [Ejemplo 01: Higher-order functions & lambdas](Ejemplo-01)
 	- [Reto 01](Reto-01)
+	- [Reto 02](Reto-02)
 

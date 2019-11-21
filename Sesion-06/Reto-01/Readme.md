@@ -1,27 +1,22 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
 ## Titulo del Ejemplo 
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno logre optimizar su codigo mediante el uso de extensiones y genericos con kotlin.
 
-#### REQUISITOS 
+### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Conocer a detalle la estructura de las funciones.
+2. Tener conocimiento previo sobre variables y tipos de datos.
 
-#### DESARROLLO
+### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En el proyecto incluido en este reto encontraras un archivo main.kt, en este archivo Resuelve los siguientes puntos:
 
-<details>
+(Considera el arreglo que esta declarado)
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+- Crea una funcion de extencion para la clase Array especificamente cuando el tipo que contenga sea Int, esta funcion debera hacer una representacion string del contenido del arreglo de enteros separando cada uno por el caracter **|** ducha funcion retornara esta representacion string.
+- Crea una funcion de extension con genericos para la clase Array que se encargue de retornar como string el tipo de dato del cual son sus elementos (para saber que tipo de dato es un valor ve a esta [docmunetacion](https://kotlinlang.org/docs/reference/typecasts.html), has almenos 2 comparaciones) mas una representacion de sus elementos como en el punto anterior.
+- Imprime en consola el resultado de cada funcion que creaste.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 
