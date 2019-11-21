@@ -1,8 +1,8 @@
-## Reto 1: Clases y objetos, Propiedades, metodos y contructores - Kotlin fundamentals.
+## Reto 1: Clases y objetos, Propiedades, métodos y constructores - Kotlin fundamentals.
 
 ### OBJETIVO 
 
-- Que el alumno sea capaz de representar problemas de la vida real por medio de la programacion orientada a objetos.
+- Que el alumno sea capaz de representar problemas de la vida real por medio de la programación orientada a objetos.
 
 #### REQUISITOS 
 
@@ -12,7 +12,7 @@
 
 Resuelve los siguientes retos en el archivo main.kt incluido en el proyecto dentro de este reto:
 
-- Crea una clase que represente un automovil, incluye almenos 5 propiedades y 3 metodos.
-- Crea una clse que represente a una persona, incluye almenos 6 propiedades y 3 metodos.
-- Implementa el constructor con almenos un parametro de cada clase.
+- Crea una clase que represente un automóvil, incluye al menos 5 propiedades y 3 métodos.
+- Crea una clase que represente a una persona, incluye al menos 6 propiedades y 3 métodos.
+- Implementa el constructor con al menos un parámetro de cada clase.
 
