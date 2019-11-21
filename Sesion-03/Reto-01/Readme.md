@@ -2,7 +2,7 @@
 
 ### OBJETIVO 
 
-- Que el alumno sea capaz de representar problemas de la vida real por medio de la programación orientada a objetos.
+Representar problemas de la vida real por medio de la programación orientada a objetos.
 
 #### REQUISITOS 
 
