@@ -1,4 +1,4 @@
-## Reto 1: Lambdas & Higher-order functions - Kotlin Fundamentals 
+## Reto 2: Lambdas & Higher-order functions - Kotlin Fundamentals 
 
 ### OBJETIVO 
 
