@@ -2,18 +2,18 @@
 
 ### OBJETIVOS
 
-- Conocer y utilizar la sintaxs de las estructuras para almacenar y acceder a elementos.
-- Aprender a utilizar funciones en kotlin.
+- Conocer y utilizar la sintaxis de las estructuras para almacenar y acceder a elementos.
+- Aprender a utilizar funciones en Kotlin.
 - Conocer las bases de la programacion estructurada y el concepto DRY (Dont repeat yourself).
 
 ### REQUISITOS
 
-- Completar la [Sesión1](/../../tree/master/Sesion-01/)
+- Completar la [Sesión1](/../../tree/master/Sesion-01/).
 - Comprender las bases de la programacion orientada a objetos.
 
 #### ORGANIZACION DE LA CLASE
 
-- Temas que verán en el ejemplo
+- Temas que verán en el ejemplo:
 
 	- [Ejemplo 01: Tipos de Funciones](Ejemplo-01)
 	- [Reto 01](Reto-01)

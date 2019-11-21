@@ -8,22 +8,15 @@
 #### REQUISITOS
 
 1. Conocer los diferentes tipos de datos y operadores en kotlin.
-2. Tener conocimientro previo sobre arreglos, matrices y vectores.
+2. Tener conocimiento previo sobre arreglos, matrices y vectores.
 
 #### DESARROLLO
 
 ### FUNCIONES
 
-Ahora que ya hemos visto los tipos de datos y operadores de Kotlin es momento de conocer qué son y para 
-que nos sirven las funciones.
-
-Imagina (pensando en código) que tienes que realizar determinada acción mas de una vez. Sería complicado 
-e incorrecto tener que replicar el código encargado de realizar dicha acción cada vez que lo necesitemos. Para solucionarlo, podríamos escribir solo una vez este codigo e invocarlo cada que lo necesitemos
-sin tener que volver a escribirlo.
-
-Una función o método es un bloque de código ejecutable, es decir, ese conjunto de instucciones se ejecutarán 
-solo cuando sea invocada la función que las contiene.
-
+Ahora que ya hemos visto los tipos de datos y operadores de Kotlin es momento de conocer qué son y para qué nos sirven las funciones.
+Imagina (pensando en código) que tienes que realizar determinada acción más de una vez. Sería complicado e incorrecto tener que replicar el código encargado de realizar dicha acción cada vez que lo necesitemos. Para solucionarlo, podríamos escribir solo una vez este código e invocarlo cada que lo necesitemos sin tener que volver a escribirlo.
+Una función o método es un bloque de código ejecutable, o sea, ese conjunto de instrucciones se ejecutarán solo cuando sea invocada la función que las contiene.
 En Kotlin se usa la palabra reservada **fun** para declarar las funciones.
 ```kotlin
 	fun crearSaludo(nombre: String): String {
@@ -34,9 +27,9 @@ En Kotlin se usa la palabra reservada **fun** para declarar las funciones.
 ```
 Una función consta de varios elementos importantes: nombre, argumentos, tipo de retorno, sentencia de retorno. Veamos cada una a detalle.
 
->Esta función solo se encarga de imprimir en consola un mensaje de bienvenida, la función solo consta de el nombre, es decir, se declara    
->con la palabra reservada **fun** seguido del nombre **saludar**, los parentesis indican el lugar donde van los argumentos (enseguida lo 
->veremos) y por último, entre las llaves, van todas las sentencias de código que va a ejecutar esta funcion cuando sea invocada.
+>Esta función solo se encarga de imprimir en consola un mensaje de bienvenida, la función solo consta del nombre, es decir, se declara    
+>con la palabra reservada **fun** seguido del nombre **saludar**, los paréntesis indican el lugar donde van los argumentos (enseguida lo 
+>veremos) y por último, entre las llaves, van todas las sentencias de código que va a ejecutar esta función cuando sea invocada.
 ```kotlin
 	fun saludar() {
 		println("Hola BEDU!")
@@ -50,32 +43,31 @@ Una función consta de varios elementos importantes: nombre, argumentos, tipo de
 		println("Hola $nombre")
 	}
 ```
->Los últimos dos elementos (tipo de retorno y sentencia de retoro) son muy importantes, ya que nos permiter usar nuestra función
->como una expresion, es decir, nuestra función va a tener un valor, del cual indicaremos su tipo colocando **:** después de los paréntesis 
+>Los últimos dos elementos (tipo de retorno y sentencia de retorno) son muy importantes, ya que nos permiten usar nuestra función
+>como una expresión, es decir, nuestra función va a tener un valor, del cual indicaremos su tipo colocando **:** después de los paréntesis 
 >seguido del tipo de dato que va a contener nuestra función.
 ```kotlin
 	fun saludar(nombre): String {
 		println("Hola $nombre")
 	}
 ```
->Pero eso no es todo, es necesario que al colocar un tipo de retorno en nuestra función, coloquemos también una instrucción de retorno, de
->lo contrario el precompilador de kotlin indicará un error **las funciones que retornan algun valor, siempre llevarán el tipo de retorno**
+>Pero eso no es todo, es necesario que al colocar un tipo de retorno en nuestra función, coloquemos también una instrucción de retorno. De
+>lo contrario el precompilador de kotlin indicará un error **las funciones que retornan algún valor, siempre llevarán el tipo de retorno**
 >**junto con la instrucción de retorno**
 ```kotlin
 	fun saludar(nombre: String): String {
 		return "Hola $nombre"
 	}
 ```
-Nota que ahora en lugar de imprimir un String estamos **retornando** un String, Nuestra funcion tiene el valor de ese String lo que quiere decir que la podemos usar como si fuese una expresión.
->Podríamos imprimir el saludo de la siguiente forma, dentro de la funcion println() **invocamos** nuestra función **saludar** colocando el 
->nombre de la función seguido de los paréntesis (lo que indica que queremos que se ejecute) pasándole como parámetro un nombre, entonces la 
+Nota que ahora en lugar de imprimir un String estamos **retornando** un String. Nuestra función tiene el valor de ese String, lo que quiere decir que la podemos usar como si fuese una expresión.
+>Podríamos imprimir el saludo de la siguiente forma, dentro de la función println() **invocamos** nuestra función **saludar** colocando el 
+>nombre de la función seguido de los paréntesis (lo que indica que queremos que se ejecute) pasándole como parámetro un nombre. Entonces la 
 >funcion println() va a imprimir lo que vale la función saludar y por supuesto, la función saludar vale lo mismo que retorna.
 ```kotlin
 	println(saludar("Tu Nombre"))
 ```
 
-Bien, ya conocemos la anatomía de una función, ahora veamos los tipos de funciones que nos ofrece kotlin y sus formas de declaralas y usarlas, estos son los tipos de funciones:
-
+Bien, ya conocemos la anatomía de una función, ahora veamos los tipos de funciones que nos ofrece kotlin y sus formas de declararlas y usarlas, estos son los tipos de funciones:
 - Single-expression functions.
 - Top level functions.
 - Local functions.
@@ -85,19 +77,19 @@ Bien, ya conocemos la anatomía de una función, ahora veamos los tipos de funci
 #### Single-expression functions
 
 Cuando una función retorna una sola expresión, es decir, una expresión de una sola línea, las llaves **{}** pueden ser omitidas y el cuerpo de la función se define después del signo **=**
->Nótese que la función recibe dos parámetros (a y b) los cuales se tienen que sumar, también se coloca el tipo de retorno como Int, 
->esto quiere decir que la función retornara la suma de a y b.
+>Nótese que la función recibe dos parámetros (a y b) los cuales se tienen que sumar. También se coloca el tipo de retorno como Int, 
+>esto quiere decir que la función retornará la suma de a y b.
 ```kotlin
 	fun sumar(a: Int, b: Int): Int = a + b
 ```
->En este tipo de funciones es posible tambien omitir el tipo de retorno, ya que se trata de una single-espression function.
+>En este tipo de funciones es posible también omitir el tipo de retorno, ya que se trata de una single-espression function.
 ```kotlin
 	fun sumar(a: Int, b:Int) = a + b
 ```
 
 ### Top level functions
 
-En kotlin, a diferencia de otros lenguajes de programación, como java por elemplo, no es neceario que declaremos una clase (pronto hablaremos de ellas) para contener una función. Es decir, en cualquier parte de tu código puedes declarar una función y esta va ser accesible desde cualquier clase, o incluso desde cualquier otra función, estas son las Top level functions.
+En kotlin, a diferencia de otros lenguajes de programación, como java por ejemplo, no es necesario que declaremos una clase (pronto hablaremos de ellas) para contener una función. Es decir, en cualquier parte de tu código puedes declarar una función y esta va a ser accesible desde cualquier clase, o incluso desde cualquier otra función, estas son las Top level functions.
 >Observa que declaramos nuestra función fuera de la **clase** Persona.
 ```kotlin
 	fun saludar(nombre: String) {
@@ -136,13 +128,13 @@ Este tipo de funciones sí son declaradas dentro de una clase, y la forma de acc
 		}
 	}
 ```
->Para hacer una instacia de la clase Calculadora lo hacemos con parentesis, después para accesar a la función sumar, lo hacemos con un **.**
->e invocamos la función con paréntesis como ya lo habiamos visto anteriormente.
+>Para hacer una instancia de la clase Calculadora lo hacemos con paréntesis, después para accesar a la función sumar, lo hacemos con un **.**
+>e invocamos la función con paréntesis como ya lo habíamos visto anteriormente.
 ```kotlin
 	val suma = Calculadora().sumar(5, 4)
 ```
 
-¡No lo olvides! Es importante que siempre vayas a la documentacion oficial de kotlin, ahí encontrarás recursos útiles y podrás profundizar en el tema.
+¡No lo olvides! Es importante que siempre vayas a la documentación oficial de kotlin. Ahí encontrarás recursos útiles y podrás profundizar en el tema.
 
 Ahora ve al [Reto 01](/../../tree/master/Sesion-02/Reto-01) y complétalo con lo que acabas de aprender. 
 **¡Mucho éxito!**

@@ -12,12 +12,9 @@
 
 #### DESARROLLO
 
-En el proyecto incluido en este directorio encontrarás un proyecto ya iniciado, en el archivo **main.kt** 
-completa los siguientes puntos.
-
+En el proyecto incluido en este directorio encontrarás un proyecto ya iniciado, en el archivo **main.kt** completa los siguientes puntos.
 
 - En seccion **Declaración de variables** declara la variable como se indica en el comentario.
-- En la seccion **Operaciones** traduce las operaciones que se presentan a continuacion con 
-variables elementales a los métodos ofrecidos por los objetos de kotlin [Referencia](https://kotlinlang.org/docs/reference/operator-overloading.html).
+- En la seccion **Operaciones** traduce las operaciones que se presentan a continuación con variables elementales a los métodos ofrecidos por los objetos de kotlin [Referencia](https://kotlinlang.org/docs/reference/operator-overloading.html).
 - Declara una variable de acceso global.
 

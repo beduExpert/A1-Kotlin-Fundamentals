@@ -3,8 +3,7 @@
 ### OBJETIVO 
 
 - Practicar los diferentes tipos de datos en kotlin.
-- Reconocer la diferencia entre los operadores en su forma de expresión y hacer
-uso del Operator overloading de kotlin.
+- Reconocer la diferencia entre los operadores en su forma de expresión y hacer uso del Operator overloading de kotlin.
 
 #### REQUISITOS 
 
@@ -12,10 +11,9 @@ uso del Operator overloading de kotlin.
 
 #### DESARROLLO
 
-En el proyecto incluido en este directorio encontrarás un proyecto ya iniciado, en el archivo main.kt 
-completa los siguientes puntos.
+En el proyecto incluido en este directorio encontrarás un proyecto ya iniciado, en el archivo main.kt completa los siguientes puntos.
 
-- En la seccion:
+- En la sección:
 ```kotlin
     /*
     * Tipos de datos
@@ -23,7 +21,7 @@ completa los siguientes puntos.
 ```
 Declara una variable **changeable** e imprímela en consola usando String templates de cada tipo de dato visto en el ejemplo con su tipo explícito.
 
-- En la seccion:
+- En la sección:
 ```kotlin
     /*
     * Operadores
@@ -36,11 +34,11 @@ Considerando las variables:
     var numbers:Array<Int> = arrayOf(1, 2, 3, 4, 5)
     var yes:Boolean = true
 ```
-Usa las funciones del Operator overloading de android para realizar cada una de las siguintes expresiones, adicional a 
+Usa las funciones del Operator overloading de android para realizar cada una de las siguientes expresiones, adicional a 
 esto, imprime los valores de las variables después de cada operación.
 
-> Las expresiones en esta tabla son un ejemplo, considera los valores y los tipos de datos de las variables declaradas antes
-> para determinar con que variables representar cada expresión.
+> Las expresiones en esta tabla son un ejemplo. Considera los valores y los tipos de datos de las variables declaradas antes
+> para determinar con qué variables representar cada expresión.
 
 Expresion|
 ---------|

@@ -2,17 +2,16 @@
 
 ### OBJETIVO 
 
-- Que el alumno comprenda el uso de la POO y logre hacer implementaciones de los siguientes temas:
-	- Interfaces
-	- Clases abstractas
+- Comprender el uso de la POO. 
+- Implementar interfaces y clases abstractas.
 
 #### REQUISITOS 
 
-1. Tener conocimiento basico sobre Programacion Orientada a Objetos. 
+1. Tener conocimiento básico sobre Programacion Orientada a Objetos. 
 
 #### DESARROLLO
 
-En el archivo main de este proyecto estan incluidas las estructuras de la Clase abstracta Person, la interface PersonActions y la clase Worker escrible el contenido de cada una dada la siguiente descripcion:
+En el archivo main de este proyecto están incluidas las estructuras de la Clase abstracta Person, la interface PersonActions y la clase Worker escribe el contenido de cada una dada la siguiente descripción:
 
 - Person: Propiedades
 	- name: String
@@ -31,6 +30,6 @@ En el archivo main de este proyecto estan incluidas las estructuras de la Clase 
 	- startWorking()
 	- stopWorking()
 
-- Has que Worker herede la clase abstracta e implemente la interface.
-- Sobreescribe las propiedades y metodos de ambos.
+- Haz que Worker herede la clase abstracta e implemente la interface.
+- Sobreescribe las propiedades y métodos de ambos.
 - No olvides los getters & setters de las propiedades de Worker.

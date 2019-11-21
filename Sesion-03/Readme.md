@@ -3,7 +3,7 @@
 ### OBJETIVOS 
 
 - Reconocer los principios de la Programación orientada a objetos: Clases y objetos, Propiedades y métodos, Constructores. 
-- Reconocer las caracteríticas de los conceptos: -Getters y setters -Herencia y polimorfismo.
+- Reconocer las caracteríticas de los conceptos: Getters y setters, Herencia y polimorfismo.
 
 ### REQUISITOS
 
@@ -11,7 +11,7 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Temas que verán en el ejemplo:
 
 	- [Ejemplo 01: Clases y objetos, Propiedades y métodos, Constructores.](Ejemplo-01)
 	- [Reto 01](Reto-01)

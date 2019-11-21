@@ -10,11 +10,11 @@
 
 #### REQUISITOS 
 
-1. Revisar a detalle el [Ejemplo 02](/../../tree/master/Sesion-02/Ejemplo-02)
+1. Revisar a detalle el [Ejemplo 02](/../../tree/master/Sesion-02/Ejemplo-02).
 
 #### DESARROLLO
 
-En el proyecto incluido en este directorio dentro de la **carpeta src**, encotrarás un archivo llamado main.kt, completa los siguientes puntos de ese archivo:
+En el proyecto incluido en este directorio dentro de la **carpeta src**, encotrarás un archivo llamado main.kt. Completa los siguientes puntos de ese archivo:
 
 - Crea una lista, un conjunto y un mapa con los elementos que prefieras.
 - Crea una lista, un conjunto y un mapa mutables con los elementos que prefieras.
