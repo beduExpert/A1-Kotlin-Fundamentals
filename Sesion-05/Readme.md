@@ -3,7 +3,7 @@
 
 ### OBJETIVOS 
 
-- Que el alumno pueda crear funciones de orden superior con el uso de lambadas o funciones anonimas. 
+- Crear funciones de orden superior con el uso de lambadas o funciones anonimas. 
 
 #### ORGANIZACION DE LA CLASE 
 
