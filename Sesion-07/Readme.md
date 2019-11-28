@@ -1,6 +1,3 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
 ## Null safety- manejo de errores y excepciones
 
 ### OBJETIVOS 
