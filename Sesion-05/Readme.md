@@ -14,4 +14,3 @@
 	- [Reto 01](Reto-01)
 	- [Reto 02](Reto-02)
 	- [Ejemplo 02: Scope functions I](Ejemplo-02)
-	- [Reto 03](Reto-03)
