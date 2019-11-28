@@ -1,50 +1,102 @@
-## Ejemplo 01: Extensions & Generics - Kotlin Fundamentals
+## Ejemplo 2: Scope functions I - Kotlin Fundamentals
 
 ### OBJETIVO
 
-- Que el alumno comprenda el uso de funciones de extencion y la importancia de los genericos en kotlin.
+- Conocer y entender la funcion que cumplen las scope functions en kotlin
 
-### REQUISITOS
+#### REQUISITOS
 
-1. Tener concocimiento previo sobre tipos de datos, variables, funciones y POO.
+1. Tener conocimiento previo sobre:
+	- variables.
+	- tipos de datos.
+	- funciones.
+	- lambdas.
 
-### DESARROLLO
+#### DESARROLLO
 
-#### Extensions
+Ya hemos visto en la sesion pasada Que son las scope functions, como hacemosr referencia al contexto del objeto que las invoca y que es lo que retorna cada una de las funciones, recordando sabemos que existen cinco scope functions:
 
-Las funciones de extencion de kotlin nos van a permitir como su nombre lo indica, extender la funcionalidad de clases que ya estan definidas sin necesidad de tocar su codigo, tomemos como ejemplo la clase Array<T> que si bien recuerdas esta clase nos permite crear arreglos de datos, y ya que es una clase, una instancia de la misma va a contener metodos (funciones declaradas dentro de la clase).
+- let
+- run 
+- with
+- apply
+- also
 
-Bien, si dada nuestra necesidad esa clase no cuenta con un metodo que la solucione no tenemos que escribir una nueva clase Array (eso seria complicado) en su lugar podemos crearle una extencion a la clase Array con las funciones de extension.
+las funciones **run, with y apply** hacen referencia al contexto del objeto por medio de **this**, las funciones **let y also** hacen referencia al contexto del objeto por medio de **it**, las funciones **let, run, with** retornan el objeto del contexto como tal y las funciones **apply y also** retornan el resultado de la funcion.
 
-Veamos un ejemplo:
+Ahora veremos cada una de las funciones a detalle.
+
+### let
+
+Let se puede usar para invocar una o varias funciones en los resultados de cadenas de llamadas, usualmente se usan tambien para remplazar los bloques **if (object != null)**
+
 ```kotlin
-	fun Array<T>.myFunction(plus: Int) {
-		this.forEach { println("${it + plus}") }
+	val numbers = mutableListOf("One", "Two", "Three")
+
+	numbers.map { 
+		it.length 
+	}.filter { 
+		it > 3 
+	}.let {
+		printl(it) 
 	}
 ```
-En kotlin para declarar una funcion de extension lo hacemos con la palabra fun seguido de la clase y el nombre de nuestra funcion separados por un punto, estas funciones puedes recibir parametros y retornar valores tal como las conocemos.
+En el ejemplo anterior estamos usando la funcion map sobre una lista mutable y aplicamos un filtrado sobre el tamaño de la lista, con la funcion let imprimimos dicho valor solo si la lista es mayor que 3.
 
-En el ejemplo declaramos una funcion de extension a la clase Array, entonces podremos acceder a ella desde cualquier array que se haya instanciado con esa clase:
+### with
+
+Esta funcion se usa para llamar a funciones en el contexto del objeto sin proporcionar el resultado lambda, es decir, si lo trataramos de leer textualmente podriamos decir "con este objeto, haga lo sigiente".
+
 ```kotlin
-	val numbers: Array<Int> = arrayOf(0, 1, 2, 3, 4, 5, 6)
+	val numbers = mutableListOf("One", "Two", Three)
+	val firstAndLast = with(numbers) {
+		"First element -> ${fisrt()}, last element -> ${last()}"
+	}
 
-	numbers.myFunction(plus: 1)
+	print(firstAndLast)
 ```
 
-#### Generics
+En el ejemplo vemos que cuando usamos with dentro del bloque de codigo podemos llamar directamente a las funciones del objeto en contexto, a su vez tambien se esta infiriendo que retoranara una cadena de texto que construimos llamado las funciones first() y last().
 
-Los genericos en kotlin basicamente nos van a indicar dos cosas, que las clases que reciben variables puedes aceptar cualquier tipo de dato, y que tipo de dato es el que estamos mandando a esa clase, ejemplo.
+### run
 
-Analizando la clase Array<T> veremos que **T** nos indica que podemos crear un arreglo de cualquier tipo, puede ser de Strigns Array<String>, de ints Array<Int> o de cualquier otro.
-
-Entonces, con genericos podemos crear clases o funciones que acepten cualquier tipo de dato, esto es muy util ya que nos permite a hacer codigo mas usable y reciclable.
+Esta funcion hace lo mismo que with pero se invoca como let, run es util cuando su lambda contiene tanto la inicializacion del objeto como el calculo del valor de retorno.
 
 ```kotlin
-	fun <T> anyToString(val: T): String {
-		return "$val"
+	var inserted: Boolean = run {
+		val person: Person = getPerson()
+    	val personDao: PersonDao = getPersonDao()
+    	personDao.insert(person)
 	}
 ```
-La funcion del ejemplo anterior como su nombre lo dice convierte cualquier valor de cualquier tipo y lo retorna como String, es por eso que se llaman genericos, el mismo codigo se puede usar con distintos tipos.
 
-En el [Reto 01](/../../tree/master/Sesion-06/Reto-01/) podras poner en practica las funciones de extension y los genericos.
+En el ejemplo como podemos observar queremos saber si se inserto una persona o no en la base de datos, para esto run nos permite ejecutar un bloque de codigo y retornar el valor de la operacion de al final.
 
+### apply
+
+Esta funcion se usa para bloques de código que no devuelven un valor y operan principalmente en los miembros del objeto receptor. El caso común para apply es la configuración del objeto. Dichas llamadas pueden leerse como " aplicar las siguientes asignaciones al objeto". "
+
+```kotlin
+	val person = Person("Name").apply {
+		age = 30
+		city = "Mexico"
+	}
+```
+
+Como podemos ver en el ejemplo creamos la una instancia de Person pero por medio de apply obtenemos el contexto del objeto inicializado para asignarle valor a sus propiedades, ya que el bloque se ejecuta dentro del contexto del objeto podemos acceder a las propiedades del objeto sin hacer referencia explicita a el mismo.
+
+### also
+
+also es bueno para realizar algunas acciones que toman el objeto de contexto como argumento. Usamos esta funcion para acciones adicionales que no alteren el objeto, como el registro o la impresión de información de depuración. Por lo general, también puede eliminar las llamadas de la cadena de llamadas sin romper la lógica del programa.
+
+```kotlin
+	val numbers mutableListOf("One", "Two", "Three")
+
+	numbers.also {
+		println("elementos antes de agregar uno nuevo: $it")
+	}.add("Four")
+```
+
+Como podemos ver en realidad estamos agregando un nuevo elemento a la lista mutable numbers pero con el uso de also podemos imprimir los elemntos que contiene antes de agregar uno nuevo.
+
+Ve al [Reto 1](/../../tree/master/Sesion-06/Reto-01) y resuelve los puntos que se presentan ahi con lo que has aprendido en la sesion anterior y en este ejemplo.

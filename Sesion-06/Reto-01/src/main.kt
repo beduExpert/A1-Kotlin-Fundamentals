@@ -1,11 +1,8 @@
-// Function extension
+fun main(args: Array<String>) {
 
-// Generic Function extension
+    val planetas = mutableListOf("mercurio", "venus", "tierra", "marte", "jupiter", "saturno", "urano", "neptuno")
 
+    // let
+    
 
-fun main(args: Array<Int>) {
-    val numbers: Array<Int> = arrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
-
-    println(numbers.stringRepresentation())
-    println(numbers.stringRepresentationWithType())
 }
