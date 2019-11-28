@@ -1,27 +1,16 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Ejemplo 1: Null safety - Kotlin Fundamentals
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Que el alumno logre comprender como es que kotlin evita las excepciones de tipos nulos.
+- Que el alumno logre implementar soluciones con tipos nulables.
 
-#### REQUISITOS
+### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Tener conocimiento previo de tipos de datos y excepciones.
 
-#### DESARROLLO
+### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
 
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 
 
