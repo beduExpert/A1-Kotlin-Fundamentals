@@ -57,7 +57,7 @@ El tipo de la expresión throw es el tipo especial Nothing. Este tipo no tiene v
 	}
 ```
 
-Cuando usamos el tipo Nothing estamos basicamente indicando que la función no va a regresar nada, en este caso nuestra función se encarga solamente de lanzar una exepción.
+Cuando usamos el tipo Nothing estamos básicamente indicando que la función no va a regresar nada, en este caso nuestra función se encarga solamente de lanzar una exepción.
 
 Cuando llames a esta función, el compilador sabrá que la ejecución no continúa más allá de la llamada:
 
@@ -65,4 +65,4 @@ Cuando llames a esta función, el compilador sabrá que la ejecución no contin�
 	val s = person.name ?: fail("Name required")
 ```
 
-Ahora vemos que de esta forma, con ayuda del tipo Nothing, combinándolo con el uso de Elvis, podemos mejorar nuestro codigo para lanzar excepciones, completa el [Reto 02](/../../tree/master/Sesion-07/Reto-02/) y pon en practica lo que acabas de aprender.
+Ahora vemos que de esta forma, con ayuda del tipo Nothing, combinándolo con el uso de Elvis, podemos mejorar nuestro codigo para lanzar excepciones, completa el [Reto 02](/../../tree/master/Sesion-07/Reto-02/) y pon en práctica lo que acabas de aprender.
