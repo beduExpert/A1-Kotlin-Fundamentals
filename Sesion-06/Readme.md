@@ -7,7 +7,6 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
 
 	- [Ejemplo 01: Scope functions II](Ejemplo-01)
 	- [Reto 01](Reto-01)
