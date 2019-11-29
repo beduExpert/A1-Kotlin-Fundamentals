@@ -1,4 +1,4 @@
-## Ejemplo 2: Scope functions I - Kotlin Fundamentals
+## Ejemplo 1: Scope functions I - Kotlin Fundamentals
 
 ### OBJETIVO
 
