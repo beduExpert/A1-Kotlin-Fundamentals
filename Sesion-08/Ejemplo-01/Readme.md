@@ -38,8 +38,12 @@ Y segundo, porque son mucho más eficientes. Varias corrutinas se pueden ejecuta
 coroutine {
     progress.visibility = View.VISIBLE
  
-    val user = suspended { userService.doLogin(username, password) }
-    val currentFriends = suspended { userService.requestCurrentFriends(user) }
+    val user = suspended { 
+		userService.doLogin(username, password) 
+	}
+    val currentFriends = suspended {	
+		userService.requestCurrentFriends(user) 
+	}
  
     val finalUser = user.copy(friends = currentFriends)
     toast("User ${finalUser.name} has ${finalUser.friends.size} friends")
@@ -47,6 +51,8 @@ coroutine {
     progress.visibility = View.GONE
 }
 ```
+
+En el ejemplo anterior, supongamos que tenemos que hacer login y obtener los amigos de el usuario que se logeo, observa y recuerda la keyword **suspended** y la estructura de la corutina de como asignamos valor a variables dentro de bloques suspended, esto lo veremos a detalle en el siguiente ejemplo.
 
 En el [Ejemplo 02](/../../tree/master/Sesion-08/Ejemplo-02/) veremos como implementar corutinas con kotlin.
 
