@@ -1,8 +1,8 @@
-## Titulo del Ejemplo 
+## Reto 02
 
 ### OBJETIVO 
 
-- Que el alumno logre optimizar su codigo mediante el uso de extensiones y genericos con kotlin.
+- Optimizar el código mediante el uso de extensiones y genéricos con Kotlin.
 
 ### REQUISITOS 
 
@@ -11,12 +11,12 @@
 
 ### DESARROLLO
 
-En el proyecto incluido en este reto encontraras un archivo main.kt, en este archivo Resuelve los siguientes puntos:
+En el proyecto incluido en este reto encontrarás un archivo main.kt, en este archivo resuelve los siguientes puntos:
 
-(Considera el arreglo que esta declarado)
+(Considera el arreglo que está declarado)
 
-- Crea una funcion de extencion para la clase Array especificamente cuando el tipo que contenga sea Int, esta funcion debera hacer una representacion string del contenido del arreglo de enteros separando cada uno por el caracter **|** ducha funcion retornara esta representacion string.
-- Crea una funcion de extension con genericos para la clase Array que se encargue de retornar como string el tipo de dato del cual son sus elementos (para saber que tipo de dato es un valor ve a esta [docmunetacion](https://kotlinlang.org/docs/reference/typecasts.html), has almenos 2 comparaciones) mas una representacion de sus elementos como en el punto anterior.
-- Imprime en consola el resultado de cada funcion que creaste.
+- Crea una función de extensión para la clase Array especificamente cuando el tipo que contenga sea Int, esta funcion debera hacer una representación string del contenido del arreglo de enteros separando cada uno por el caracter **|** ducha función retornará esta representación string.
+- Crea una función de extensión con genéricos para la clase Array que se encargue de retornar como string el tipo de dato del cual son sus elementos (para saber qué tipo de dato es un valor ve a esta [docmunetacion](https://kotlinlang.org/docs/reference/typecasts.html), haz almenos 2 comparaciones) más una representación de sus elementos como en el punto anterior.
+- Imprime en consola el resultado de cada función que creaste.
 
 

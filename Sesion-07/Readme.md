@@ -2,7 +2,7 @@
 
 #### OBJETIVOS 
 
-- Que el alumno logre comprender como kotlin trabaja con los tipos nulos, como se manejan las excepciones y los erroras y que logre implementar soluciones con estos conceptos.
+- Comprender cómo Kotlin trabaja con los tipos nulos, cómo se manejan las excepciones y los errores e implementar soluciones con estos conceptos.
 
 #### ORGANIZACION DE LA CLASE 
 
