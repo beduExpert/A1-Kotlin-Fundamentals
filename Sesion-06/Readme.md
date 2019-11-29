@@ -8,8 +8,8 @@
 #### ORGANIZACION DE LA CLASE 
 
 
-	- [Ejemplo 01: Scope functions II](Ejemplo-01)
-	- [Reto 01](Reto-01)
-	- [Ejemplo 02: Extensions & Generics](Ejemplo-02)
-	- [Reto 01](Reto-02)
+	- [Ejemplo 01: Scope functions II](/../../tree/master/Sesion-06/Ejemplo-01/)
+	- [Reto 01](/../../tree/master/Sesion-06/Reto-01/)
+	- [Ejemplo 02: Extensions & Generics](/../../tree/master/Sesion-06/Ejemplo-02/)
+	- [Reto 01](/../../tree/master/Sesion-06/Reto-02/)
 
