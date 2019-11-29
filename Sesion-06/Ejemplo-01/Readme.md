@@ -45,7 +45,7 @@ En el ejemplo anterior estamos usando la función map sobre una lista mutable y 
 
 ### with
 
-Esta función se usa para llamar a funciones en el contexto del objeto sin proporcionar el resultado lambda. Es decir, si lo trataramos de leer textualmente podríamos decir "con este objeto, haga lo sigiente".
+Esta función se usa para llamar a funciones en el contexto del objeto sin proporcionar el resultado lambda. Es decir, si lo trataramos de leer textualmente podríamos decir "con este objeto, haga lo siguiente".
 
 ```kotlin
 	val numbers = mutableListOf("One", "Two", Three)
