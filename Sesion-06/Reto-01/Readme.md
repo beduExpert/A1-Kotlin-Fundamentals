@@ -2,21 +2,24 @@
 
 ### OBJETIVO 
 
-- Que el alumno logre optimizar su codigo mediante el uso de extensiones y genericos con kotlin.
+- Implementar soluciones con la ayuda de las scope functions de Kotlin.
 
 ### REQUISITOS 
 
 1. Conocer a detalle la estructura de las funciones.
 2. Tener conocimiento previo sobre variables y tipos de datos.
+3. Revisar los temas Scope functions I y II.
 
 ### DESARROLLO
 
-En el proyecto incluido en este reto encontraras un archivo main.kt, en este archivo Resuelve los siguientes puntos:
+En el proyecto incluido en este reto, encontraras un archivo main.kt, en este archivo Resuelve los siguientes puntos en cada sección marcada con comentario:
 
-(Considera el arreglo que esta declarado)
+Considera la clase person y el mutableList que ya estan en el archivo.
 
-- Crea una funcion de extencion para la clase Array especificamente cuando el tipo que contenga sea Int, esta funcion debera hacer una representacion string del contenido del arreglo de enteros separando cada uno por el caracter **|** ducha funcion retornara esta representacion string.
-- Crea una funcion de extension con genericos para la clase Array que se encargue de retornar como string el tipo de dato del cual son sus elementos (para saber que tipo de dato es un valor ve a esta [docmunetacion](https://kotlinlang.org/docs/reference/typecasts.html), has almenos 2 comparaciones) mas una representacion de sus elementos como en el punto anterior.
-- Imprime en consola el resultado de cada funcion que creaste.
+- Usando let haz mapping de planetas. Luego aplica un filtro para que obtengamos un mutableList solo con los elementos que tengan más de 5 caracteres y al final si obtubimos el kist imprime su contenido.
+- Usando with crea una variable que tenga un string con todos los planetas separados por **|**.
+- Usando run Crea una instancia del calendario, setea el año a 2019 y haz que retorne el dia de la semana.
+- Usando apply crea una instancia de persona y asigna valor a todas sus propiedades.
+- Usando also agrega "pluton" a planetas, pero antes de eso agrega un **-** a cada uno de los elementos de la lista de planetas.
 
 

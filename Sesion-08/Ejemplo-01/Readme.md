@@ -1,27 +1,54 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Ejemplo 01: Que es programacion asincrona? - Kotlin Fundamentals
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Comprender que es la programacion asincrona.
 
-#### REQUISITOS
+### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Tener conocimiento previo de POO.
+2. Conocimiento de funciones y Higher-order functions.
 
-#### DESARROLLO
+### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Antes de tocar de lleno el tema de programacion asincrona veamos primero el paradigma de programacion funcional FP (Functional Programing), para lograr notar la diferencia entre POO y FP veamos la siguiente comparativa:
 
-<details>
+- Programacion Orientada a Objetos (OOP)
+	- Estructura de datos llamados objetos.
+	- Contienen propiedades y metodos.
+	- Manipula datos de entrada para generar datos de salida.
+- Programacion Funcional (FP)
+	- Estructura mediante expresiones.
+	- Variables inmutables.
+	- Recursion y funciones de primer orden.
+	- Definicion de computos y calculo de lambdas.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Ahora que sabemos esto, Las corrutinas son una de las características más interesantes de Kotlin. Con ellas, se puede simplificar el trabajo de las tareas asíncronas de una manera impresionante y hacer que el código sea mucho más legible y fácil de entender.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Con las corrutinas, puedes escribir código asícrono, que se ha escrito tradicionalmente usando el patrón Callback, pero utilizando estilo síncrono. El valor de retorno de la función proporcionará el resultado de la llamada asíncrona.
+
+Para entender fácilmente las corrutinas, digamos que las corrutinas son como hilos, pero mejores.
+
+Primero, porque las corrutinas te permiten escribir tu código asícrono de forma secuencial, lo que reduce drásticamente la carga cognitiva.
+
+Y segundo, porque son mucho más eficientes. Varias corrutinas se pueden ejecutar utilizando el mismo hilo. Por tanto, mientras que el número de hilos que se pueden ejecutar en una aplicación es bastante limitado, se pueden lanzar tantas corrutinas como se necesite. El límite es casi infinito.
+
+>Ejemplo de una corutina
+```kotlin
+coroutine {
+    progress.visibility = View.VISIBLE
+ 
+    val user = suspended { userService.doLogin(username, password) }
+    val currentFriends = suspended { userService.requestCurrentFriends(user) }
+ 
+    val finalUser = user.copy(friends = currentFriends)
+    toast("User ${finalUser.name} has ${finalUser.friends.size} friends")
+ 
+    progress.visibility = View.GONE
+}
+```
+
+En el [Ejemplo 02](/../../tree/master/Sesion-08/Ejemplo-02/) veremos como implementar corutinas con kotlin.
+
 
 

@@ -1,11 +1,22 @@
-// Function extension
+class Person(name: String) {
+    val name: String?
+    val age: Int?
+    val address: String?
+    val city: String?
+}
 
-// Generic Function extension
+fun main(args: Array<String>) {
 
+    val planetas = mutableListOf("mercurio", "venus", "tierra", "marte", "jupiter", "saturno", "urano", "neptuno")
 
-fun main(args: Array<Int>) {
-    val numbers: Array<Int> = arrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+    // let
 
-    println(numbers.stringRepresentation())
-    println(numbers.stringRepresentationWithType())
+    // with
+
+    // run
+
+    // apply
+
+    // also
+
 }

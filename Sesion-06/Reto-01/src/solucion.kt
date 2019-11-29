@@ -1,34 +1,48 @@
-fun Array<Int>.stringRepresentation(): String {
-    var representation: String = "|"
-    
-    this.forEach { 
-        representation.plus("$it|") 
-    }
-
-    return representation
+class Person(name: String) {
+    val name: String?
+    val age: Int?
+    val address: String?
+    val city: String?
 }
 
-fun Array<T>.stringRepresentationWithType(): String {
-    var representation: String = "TYPE: "
+fun main(args: Array<String>) {
 
-    if (this.get(0) is String) {
-        representation.plus("String |")
+    val planetas = mutableListOf("mercurio", "venus", "tierra", "marte", "jupiter", "saturno", "urano", "neptuno")
+
+    // let
+    planetas.map {
+        it.length
+    }.filter {
+        it > 5
+    }.let {
+        println(it)
     }
 
-    if (this.get(0) is Int) {
-        representation.plus("Int |")
+    // with
+    val sistemaSolar = with(planetas) {
+        val text = "|"
+        this.forEach { text.plus("$it|") }
+        text
     }
 
-    this.forEach { 
-        representation.plus("$it|") 
+    // run
+    val dia: Int = Calendar.getInstance().run {
+        set(Calendar.YEAR, 2019)
+        get(Calendar.DAY_OF_YEAR) 
     }
 
-    return representation
-}
+    // apply
+    val person = Person("Nombre").apply {
+        age = 30
+        address = "Alguna direccion"
+        city = "Mexico"
+    }
 
-fun main(args: Array<Int>) {
-    val numbers: Array<Int> = arrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+    // also
+    planetas.also {
+        it.forEach {
+            it.plus("-")
+        }
+    }.add("Pluton")
 
-    println(numbers.stringRepresentation())
-    println(numbers.stringRepresentationWithType())
 }

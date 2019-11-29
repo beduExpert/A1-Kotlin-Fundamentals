@@ -1,16 +1,16 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Interfaces, herencia, lambda
+## Scope functions II & Extensions & Generics
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Reconocer las scope functions (funciones de alcance) que ofrece kotlin. 
+- Comprender la importancia del uso de extension functions y generics.
 
 #### ORGANIZACION DE LA CLASE 
 
 - Tema que veran en el ejemplo
 
-	- [Ejemplo 01](Ejemplo-01)
+	- [Ejemplo 01: Scope functions II](Ejemplo-01)
 	- [Reto 01](Reto-01)
+	- [Ejemplo 02: Extensions & Generics](Ejemplo-02)
+	- [Reto 01](Reto-02)
 

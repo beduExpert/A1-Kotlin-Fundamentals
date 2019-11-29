@@ -2,7 +2,7 @@
 
 ### OBJETIVOS 
 
-- Que el alumno comprenda y logre poner en practica los siguintes temas: 
+- Comprender y practicar en practica los siguintes temas: 
 	- Interfaces
 	- Clases abstractas.
 	- Clases internas.
@@ -11,7 +11,7 @@
 	- Companion objects.
 
 ### REQUISITOS
-- Haber visto el material del pre-work referente a la programacion orientada a objetos.
+- Revisar el material del pre-work referente a la programación orientada a objetos.
 
 #### ORGANIZACION DE LA CLASE 
 
