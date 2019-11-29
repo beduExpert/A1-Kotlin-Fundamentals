@@ -1,27 +1,21 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 01: Null safety - Kotlin Fundamentals
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno logre comprender como es que kotlin evita las excepciones de tipos nulos.
+- Que el alumno logre implementar soluciones con tipos nulables.
 
-#### REQUISITOS 
+### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber visto el [Ejemplo 01](/../../tree/master/Sesion-07/Ejemplo-01/)
+2. Tener conocimiento previo sobre tipos de datos y variables.
 
-#### DESARROLLO
+### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En el proyecto que esta en este ejemplo encontraras un archivo main.kt que contiene una lista de nullable String, tomando esta lista como base itera sobre cada elemento de la lista y usando :
 
-<details>
+- Comprovacion de nulos en condiciones
+- Safe calls
+- Operador elvis
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+y verifica que cada elemento no sea nulo, si lo es imprime en consola "null" si no imprime el valor que contiene cada elemento.

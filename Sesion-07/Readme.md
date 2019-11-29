@@ -10,7 +10,5 @@
 
 	- [Ejemplo 01: Null safety](Ejemplo-01)
 	- [Reto 01](Reto-01)
-	- [Ejemplo 02: Manejo de errores](Ejemplo-02)
+	- [Ejemplo 02: Excepciones & Manejo de errores](Ejemplo-02)
 	- [Reto 02](Reto-02)
-	- [Ejemplo 03: Excepciones](Ejemplo-03)
-	- [Reto 03](Reto-03)

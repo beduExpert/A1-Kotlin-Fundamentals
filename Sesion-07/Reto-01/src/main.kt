@@ -1,13 +1,9 @@
-fun Array<T>.myFunction(plus: Int) {
-    this.forEach { println("${it + plus}") }
-}
-
 fun main(args: Array<String>) {
-    val numbers: Array<Int> = arrayOf(0, 1, 2, 3, 4, 5, 6)
+    val names: List<String?> = listOf("Name One", null, "Name Three")
 
-	numbers.myFunction(plus: 1)
-}
+    // Condiciones
 
-fun <T> anyToString(val: T): String {
-    return "$val"
+    // Safe calls
+
+    // Elvis
 }
