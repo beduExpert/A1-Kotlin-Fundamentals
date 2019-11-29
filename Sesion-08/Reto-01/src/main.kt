@@ -1,13 +1,23 @@
-fun Array<T>.myFunction(plus: Int) {
-    this.forEach { println("${it + plus}") }
+class User {
+}
+
+class Friend {
+}
+
+class UserService {
 }
 
 fun main(args: Array<String>) {
-    val numbers: Array<Int> = arrayOf(0, 1, 2, 3, 4, 5, 6)
+     //Corrutina simple
+     val service = UserService()
 
-	numbers.myFunction(plus: 1)
-}
+    //Por que falla?
+     coroutine {
+         val user = service.login("username", "password")
+         val friends = service.getFriends(user)
+     }
 
-fun <T> anyToString(val: T): String {
-    return "$val"
+    //Coroutine context
+
+     //Coroutine withContext
 }
