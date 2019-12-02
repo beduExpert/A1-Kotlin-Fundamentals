@@ -41,7 +41,7 @@ Ahora bien, si ya tenemos una variable declarada como nullable ya no podemos hac
 
 Para solucionar esto existen varias formas de trabajar con nullables:
 
-#### Comprovacion de nulos en condiciones
+#### Comprobacion de nulos en condiciones
 
 De esta forma podemos verificar si una variable es nula o no:
 
