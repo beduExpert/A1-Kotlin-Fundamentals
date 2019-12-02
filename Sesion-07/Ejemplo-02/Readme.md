@@ -1,4 +1,4 @@
-## Ejemplo 2: Exeptions & Manejo de errores - Kotlin Fundamentals
+## Ejemplo 2: Exceptions & Manejo de errores - Kotlin Fundamentals
 
 ### OBJETIVO
 
