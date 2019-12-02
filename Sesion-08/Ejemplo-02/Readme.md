@@ -33,7 +33,7 @@ Las funciones de suspensión tienen la capacidad de bloquear la ejecucion de la 
 	}
 ```
 
-Sabiendo que las funciones de suspensión bloquean la ejecución lo que pasa con las funciones ejemplo de la corrutina que habiamos visto es que, primero se ejecuta la foncion que hace el login, ahí se bloquea la ejecución hasta que tenemos una respuesta de login, una vez termina de ejecutarse esa suspended function se ejecuta la siguiente que es la que hace el request de los amigos del usuarios.
+Sabiendo que las funciones de suspensión bloquean la ejecución lo que pasa con las funciones ejemplo de la corrutina que habiamos visto es que, primero se ejecuta la funcion que hace el login, ahí se bloquea la ejecución hasta que tenemos una respuesta de login, una vez termina de ejecutarse esa suspended function se ejecuta la siguiente que es la que hace el request de los amigos del usuarios.
 
 Bien, ahora, donde (en que hilo) se va a ejecutar la corrutina? en el de la UI?, pues esto depende del contexto de la corrutina ->
 
