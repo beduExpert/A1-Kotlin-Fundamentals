@@ -85,4 +85,4 @@ El operador Elvis **?:** hace que lo anterior sea mucho mas sencillo, usándolo 
 
 **?:** se encarga de calcular si el nullable es nulo o no, si lo es, entonces retorna el valor de la derecha, de lo contrario el valor original de la izquierda.
 
-En el [Reto 01](/../../tree/master/Sesion-07/Reto-01/) podras poner en practica este tema y veras que tan importante es. !Exito¡.
+En el [Reto 01](/../../tree/master/Sesion-07/Reto-01/) podras poner en práctica este tema y veras que tan importante es. !Exito¡.
