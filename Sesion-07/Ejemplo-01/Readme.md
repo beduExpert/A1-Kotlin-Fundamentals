@@ -7,11 +7,11 @@
 
 ### REQUISITOS
 
-1. Tener conocimiento previo de tipos de datos y excepciones.
+1. Conocimiento previo de tipos de datos y excepciones.
 
 ### DESARROLLO
 
-Una de las dificultades más comunes en muchos lenguajes de programación, incluido Java, es que acceder a un miembro de una referencia nula dará como resultado una excepción de referencia nula. En Java, esto sería el equivalente de a NullPointerException NPE para abreviar.
+Una de las dificultades más comunes en muchos lenguajes de programación, incluido Java, es que al acceder a un miembro de una referencia nula, dará como resultado una excepción de referencia nula. En Java, esto sería el equivalente de a NullPointerException NPE para abreviar.
 
 En Kotlin, el sistema de tipos distingue entre referencias que pueden contener nulo (referencias anulables) y aquellas que no pueden (referencias no nulas). Por ejemplo, una variable de tipo regular Stringn no puede contener nulo :
 
@@ -53,7 +53,7 @@ De esta forma podemos verificar si una variable es nula o no:
     }
 ```
 
-Podemos observar que en la condición primero verificamos que la variable contenga algo distinto de null y que contenga almenos un caracter. Si esto se cumple podemos acceder directamente a sus propiedades y métodos, de lo contrario ya sabemos que si está vacía la variable.
+Podemos observar que en la condición, primero verificamos que la variable contenga algo distinto de null y que contenga almenos un caracter. Si esto se cumple podemos acceder directamente a sus propiedades y métodos, de lo contrario ya sabemos que sí está vacía la variable.
 
 #### Llamadas seguras (Safe Calls)
 
@@ -65,11 +65,11 @@ Otra opción son las llamadas Safe calls o llamadas seguras, estas las hacemos u
     println(nullableText?.length)
 ```
 
-En el ejemplo anterior, para acceder a propiedades o metodos de nuestra variable utilizamos el operador **?**, lo que sucede a continuecaion es que si nullableText no esta vacia (no es nula) entonces va a imprimir el valor que conrresponde a lu propiedad length, de lo contrario veremos una umpresion en consola como "null".
+En el ejemplo anterior, para acceder a propiedades o métodos de nuestra variable, utilizamos el operador **?**, lo que sucede a continuación es que si nullableText no está vacia (no es nula), entonces va a imprimir el valor que conrresponde a lu propiedad length, de lo contrario veremos una impresión en consola como "null".
 
 #### Operador Elvis
 
-Cuando tenemos una variable nullable, como vimos al principio, podemos saber si contiene o no algo por medio de condiciones, si recordamos que en kotlin no existe un operador ternario y en su lugar podemos usar if como expresión, el primer ejemplo podríamos escribirlo tambien de esta forma: 
+Cuando tenemos una variable nullable, como vimos al principio, podemos saber si contiene o no algo por medio de condiciones, si recordamos que en kotlin no existe un operador ternario, y en su lugar podemos usar if como expresión, el primer ejemplo podríamos escribirlo tambien de esta forma: 
 
 ```kotlin
     val nullableText: String? = "Some text"
