@@ -13,7 +13,7 @@
 
 Una de las dificultades más comunes en muchos lenguajes de programación, incluido Java, es que al acceder a un miembro de una referencia nula, dará como resultado una excepción de referencia nula. En Java, esto sería el equivalente de a NullPointerException NPE para abreviar.
 
-En Kotlin, el sistema de tipos distingue entre referencias que pueden contener nulo (referencias anulables) y aquellas que no pueden (referencias no nulas). Por ejemplo, una variable de tipo regular Stringn no puede contener nulo :
+En Kotlin, el sistema de tipos distingue entre referencias que pueden contener nulo (referencias anulables) y aquellas que no pueden (referencias no nulas). Por ejemplo, una variable de tipo regular String no puede contener nulo :
 
 ```kotlin
     val text: String = "Some text"
