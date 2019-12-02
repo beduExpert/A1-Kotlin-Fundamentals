@@ -57,7 +57,7 @@ El tipo de la expresión throw es el tipo especial Nothing. Este tipo no tiene v
 	}
 ```
 
-Cuando usamos el tipo Nothing, estamos básicamente indicando que la función no va a regresar nada, en este caso nuestra función se encarga solamente de lanzar una exepción.
+Cuando usamos el tipo Nothing, estamos básicamente indicando que la función no va a regresar nada, en este caso nuestra función se encarga solamente de lanzar una excepción.
 
 Cuando llames a esta función, el compilador sabrá que la ejecución no continúa más allá de la llamada:
 
