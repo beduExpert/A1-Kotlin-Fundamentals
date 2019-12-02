@@ -1,13 +1,39 @@
-fun Array<T>.myFunction(plus: Int) {
-    this.forEach { println("${it + plus}") }
-}
-
 fun main(args: Array<String>) {
-    val numbers: Array<Int> = arrayOf(0, 1, 2, 3, 4, 5, 6)
+    coroutine {
+        val user = suspended {
+            userService.doLogin(username, password)
+        }
 
-	numbers.myFunction(plus: 1)
-}
+        val currentFriends = suspended {
+            userService.requestCurrentFriends(user)
+        }
+    }
 
-fun <T> anyToString(val: T): String {
-    return "$val"
+    coroutine(Dispatchers.Main) {
+		//...
+	}
+
+    coroutine(Dispatchers.Main) {
+		val user = withContext(Dispatchers.IO) {
+			userService.doLogin(username, password)
+		}
+	}
+
+    GlobalScope.launch(Dispatchers.Main) {
+		//...
+	}
+
+    val job = GlobalScope.launch(Dispatchers.Main) {
+	
+		doCoroutineTask()
+	
+		val res1 = suspendingTask1()
+		val res2 = suspendingTask2()
+	
+		process(res1, res2)
+	
+	}
+	
+	job.join()
+	job.cancel()
 }

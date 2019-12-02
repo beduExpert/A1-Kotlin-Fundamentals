@@ -2,8 +2,8 @@
 
 ### OBJETIVO 
 
-- Que el alumno logre comprender como es que kotlin evita las excepciones de tipos nulos.
-- Que el alumno logre implementar soluciones con tipos nulables.
+- Comprender cómo es que kotlin evita las excepciones de tipos nulos.
+- Implementar soluciones con tipos nulables.
 
 ### REQUISITOS 
 
@@ -12,9 +12,9 @@
 
 ### DESARROLLO
 
-En el proyecto que esta en este ejemplo encontraras un archivo main.kt que contiene una lista de nullable String, tomando esta lista como base itera sobre cada elemento de la lista y usando :
+En el proyecto que está en este ejemplo encontrarás un archivo main.kt que contiene una lista de nullable String. Tomando esta lista como base, itera sobre cada elemento de la lista y usando :
 
-- Comprovacion de nulos en condiciones
+- Comprobación de nulos en condiciones
 - Safe calls
 - Operador elvis
 
