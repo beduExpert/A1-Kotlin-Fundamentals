@@ -36,5 +36,5 @@ Dentro de la función main:
 - Replica la misma corrutina de las suspended functions pero que esta vez la corrutina se ejecute en el hilo principal.
 - Replica la corrutina anterior pero ahora que la corrutina se ejecute en el hilo principal y las suspended functios en el hilo background.
 
-**!Éxito¡**
+**¡Éxito!**
 
