@@ -1,27 +1,26 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Postwork: Funciones y estructuras de datos.
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Hacer uso adecuado de lo tipos basico s de funciones en kotlin.
+- Identificar las situaciones en las que es mas conveniente usar estructuras de datos.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber completado todos los ejemplos y retos de la [Sesion 02](/../../tree/master/Sesion-02/)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Siguiendo en contexto de tu proyecto final, en esta ocacion concentrate en el uso de colecciones para representar la matriz del tablero dej juego del gato:
 
-<details>
+ ___ ___ ___
+|   |   |   |
+|___|___|___|
+|   |   |   |
+|___|___|___|
+|   |   |   |
+|___|___|___|
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Tip: es un arreglo de arreglos.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+Una vez que lo tengas, imprime la representacion aterior en consola, este punto es muy importante ya que sera muy util para proximos ejersicios.

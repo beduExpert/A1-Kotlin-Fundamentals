@@ -1,27 +1,25 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Postwork: In line functions/anonymous functions, higher-order fuctions & Scope functions I.
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Crear un codigo mas eficiente haciendo uso de las funciones de orden superior.
+- Crear instancias mas claras de objetos mediante el uso de scope functions.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber completado todos los ejemplos y retos de la [Sesion 05](/../../tree/master/Sesion-05/)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+- Mediante el uso de funciones de orden superior, crea una que se encargue de hacer los movimientos en la partida por cada usuario, considera que cada usuario debera introducir la posicion en la cual colocara su pieza.
 
-<details>
+         0   1   2
+         ___ ___ ___
+      0 |   |   |   |
+        |___|___|___|
+      1 |   |   |   |
+        |___|___|___|
+      2 |   |   |   |
+        |___|___|___|
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+- Cada una de las instancias que hagas de jugadores nuevos o de partidas nuevas haslas usando alguna de las scope functions.

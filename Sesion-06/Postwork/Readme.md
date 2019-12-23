@@ -1,27 +1,23 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Postwork: Scope functions II & Extensions & Generics.
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Lograr usar adecuadamente las extension functios en sutuaciones reales.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber completado todos los ejemplos y retos de la [Sesion 06](/../../tree/master/Sesion-06/)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+- Crea una funcion de extension para la coleccion que hayas decidido usar para representar la matriz del tablero que te facilite representar un movimiento en el tablero.
 
-<details>
+- Crea una funcion de extension sobre la coileccion que representa la matriz del tablero que te permita imprimir cada elemento de la coleccion enmarcada con coaracteres como el ejemplo siguiente:
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+ ___ ___ ___
+| x | 0 | 0 |
+|___|___|___|
+| 0 | x | x |
+|___|___|___|
+| 0 | 0 | x |
+|___|___|___|

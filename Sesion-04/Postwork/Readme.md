@@ -1,27 +1,29 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Postwork: Programación orientada a objetos II.
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Lograr reconocer las situaciones que tendran que poder tener una representacion abstracta por medio de la porgramacion orientada a objetos.
+- Representar la realidad por medio objetos creados a partir de clases.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber completado todos los ejemplos y retos de la [Sesion 04](/../../tree/master/Sesion-04/)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Hasta este punto ya deberias de tener la clase que representara a cada jugador con sus propiedades y metodos.
 
-<details>
+Crea una clase que represente el juego del gato como tal y que por medio de un companion object se cree una instancia nueva del juego,considera propiededes como:
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+- Juegos jugados.
+- Jugadores que han jugado.
+- Puntaje mayor.
+- Puntaje menor.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Y metodos como:
 
-
+- Crear partida.
+- Asignar jugadores a partida.
+- Iniciar partida.
+- Finalizar partida.
+- Imprimir tablero.

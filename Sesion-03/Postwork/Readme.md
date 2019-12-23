@@ -1,27 +1,14 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Postwork: Programación orientada a objetos.
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Lograr reconocer las situaciones que tendran que poder tener una representacion abstracta por medio de la porgramacion orientada a objetos.
+- Representar la realidad por medio objetos creados a partir de clases.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber completado todos los ejemplos y retos de la [Sesion 03](/../../tree/master/Sesion-03/)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+Realiza una representacion de Persona por medio de una clase, considera incluir almenos 5 propiedades (incluidas las que consideres necesarias para almacenar partidas jugadas y puntajes), ademas, asegurate de que cuente con metodos relacionados con las actividades que tendra que ejecutar la persona como jugador.

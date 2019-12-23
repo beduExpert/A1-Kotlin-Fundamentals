@@ -1,27 +1,15 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Postwork: Programación asíncrona (Coroutines).
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Completar tu proyecto y ejecutarlo de manera asincrona haciendo uso de las coroutines.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber completado todos los ejemplos y retos de la [Sesion 08](/../../tree/master/Sesion-08/)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+- Une todas las piezas de tu proyecto dentro de una funcion main de una clase que hayas creado para ejecutar tu proyecto, ejecuta tu proyecto y asegurate de que fucnione sumulando una partida.
 
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+- Crea una corrutina la cual usaras para ejecutar tu juego en el hilo principal de ejecucion, analiza lo sucedido e incluye tus comentarios al final de tu codigo.
